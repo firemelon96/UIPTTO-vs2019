@@ -17,5 +17,18 @@ namespace UIPTTO_DATABASE.loginRegister
             InitializeComponent();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            registerForm registerForm = new registerForm();
+            registerForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mainForm mainForm = new mainForm();
+            mainForm.ShowDialog();
+        }
     }
 }
