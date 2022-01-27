@@ -90,9 +90,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 36);
+            this.label1.Size = new System.Drawing.Size(220, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DASHBOARD";
+            this.label1.Text = "DASBOARD";
             // 
             // tableLayoutPanel1
             // 
@@ -137,7 +137,7 @@
             this.copyrightCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.copyrightCount.Location = new System.Drawing.Point(108, 12);
             this.copyrightCount.Name = "copyrightCount";
-            this.copyrightCount.Size = new System.Drawing.Size(80, 49);
+            this.copyrightCount.Size = new System.Drawing.Size(76, 48);
             this.copyrightCount.TabIndex = 1;
             this.copyrightCount.Text = "23";
             // 
@@ -184,7 +184,7 @@
             this.patentCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.patentCount.Location = new System.Drawing.Point(115, 12);
             this.patentCount.Name = "patentCount";
-            this.patentCount.Size = new System.Drawing.Size(83, 49);
+            this.patentCount.Size = new System.Drawing.Size(79, 48);
             this.patentCount.TabIndex = 1;
             this.patentCount.Text = "34";
             // 
@@ -231,7 +231,7 @@
             this.ISSNCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ISSNCount.Location = new System.Drawing.Point(109, 12);
             this.ISSNCount.Name = "ISSNCount";
-            this.ISSNCount.Size = new System.Drawing.Size(71, 49);
+            this.ISSNCount.Size = new System.Drawing.Size(67, 48);
             this.ISSNCount.TabIndex = 1;
             this.ISSNCount.Text = "12";
             // 
@@ -278,7 +278,7 @@
             this.ISBNCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ISBNCount.Location = new System.Drawing.Point(112, 12);
             this.ISBNCount.Name = "ISBNCount";
-            this.ISBNCount.Size = new System.Drawing.Size(62, 49);
+            this.ISBNCount.Size = new System.Drawing.Size(58, 48);
             this.ISBNCount.TabIndex = 1;
             this.ISBNCount.Text = "11";
             // 
@@ -325,7 +325,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Location = new System.Drawing.Point(140, 12);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 49);
+            this.label11.Size = new System.Drawing.Size(39, 48);
             this.label11.TabIndex = 1;
             this.label11.Text = "1";
             // 

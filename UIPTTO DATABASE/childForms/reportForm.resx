@@ -1,0 +1,106 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="material.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="date_filed.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="regissued_no.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="appr_date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="filing_nxt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="expiration.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOLSURBVFhH7VdJTJNBFB5veFAjFy9qNHpQExX3BXeqpXUD
+        FHE9aOKWuEQPevEmmpgYxUg0xrigGBcIAhVbLGlrS6shuMWtmGBYRKgalSKgIj6/mYFSnEb5f/BgwiRf
+        5v1f55/3zXtvXvozIuoE5k5IBiqBoCYUJwaZc3mQ3TCms1wTY3lmJubfoPhTCHfCd4A0oziRmGs5sQwD
+        sUyDDQKiWL4qQvGnEO6EFmXzrqBdwJWFxM4v4CLKWK55JLN0FqH4UwgZ0shO/oRwARlxEpcNTSzHZAgX
+        ofhTiO4IcELAZaRAOu8Qkm3cyiyLURf/UoAHAriIq4uInZkn08BxDjg7n0fmKMuJV/0phF4BHN62KGTH
+        E8syylkA9nUIyzNlK/4UojsC7gJcxL0kOft+AyKk+FOI7ggIhycCsLfiTyF6SkBk9AroFaBBgGclMfss
+        YrZJuF64226A20VoMm5cKW7bZ+NqJbdtDs6zAr/PIWaNkSicgneXSF6bADhzGinl5VFa6z9GzIH+7ogT
+        tvlZKjZdKuwZj/eDR4MRguHEHksjS7ZQ2hsLXftwnzb4j1M/D3qCa7EOAdYJdLD6JiiiMaU7aeyD3cJe
+        7U/DhmZh2z4+lCfl6xGtqaW7qPVnKwV/NFHllwqxZlPZCURislYBWOxEC7XPpOpvH6i8uU7MTxsr0U6H
+        0aD7G7GUKDPgQir45hBwaxSdqisSfNKLI2i9fUUUB/g2IGLLdAjgIbWOx+l3gJZjoG8dsfzhNKJkm3i+
+        FHB2CLgTSzMe7BE8H+7PT2k6osZsqANeH7oE3B5H854cAC3HtEf7EIGhIQEXAw6RKlloKFrbRBqCE1+q
+        tYvf+dgsUsBFaBXAiwsVXY98eoN+etTwmj62NBArGE3RvvVYSnT6rZVY7mCRKuYwUP97CHfhNPwXYBRV
+        vEqsedVcK6Mk06ClCGPoLELMR7R3Lap7u7D3VmSiCOOFzUdFYxVVfX1PKc8P0eGqLMFdQfHaPz0R9r7y
+        CzqKECHt4zLhhDZxpcTdxglP1hRQKpxEIdxpNRYU4V1y1L8kJ/JtfHaQhnvX0NV3bgogamVNNbTlVTre
+        nStTpL0G2htRm3oeQm6HGhHscDiRMvSKUINCT5BNTFcjEosBpEIg0nO7Hc7xaoeNRiUQei8ErQJ6HL0C
+        /g8B+j7NuoYWxZ9C6P047Rq+K/4UQu/n+d/B90zu7I/YL4GcdV6RfAePAAAAAElFTkSuQmCC
+</value>
+  </data>
+</root>

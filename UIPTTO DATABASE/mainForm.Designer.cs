@@ -89,6 +89,7 @@
             this.btnUser.Text = "USERS";
             this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnBackup
             // 
@@ -107,6 +108,7 @@
             this.btnBackup.Text = "BACK UP";
             this.btnBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // btnReport
             // 
@@ -125,6 +127,7 @@
             this.btnReport.Text = "REPORTS";
             this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnTrademark
             // 
@@ -143,6 +146,7 @@
             this.btnTrademark.Text = "TRADEMARKS";
             this.btnTrademark.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrademark.UseVisualStyleBackColor = true;
+            this.btnTrademark.Click += new System.EventHandler(this.btnTrademark_Click);
             // 
             // btnISBN
             // 
@@ -161,6 +165,7 @@
             this.btnISBN.Text = "ISBN";
             this.btnISBN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnISBN.UseVisualStyleBackColor = true;
+            this.btnISBN.Click += new System.EventHandler(this.btnISBN_Click);
             // 
             // btnISSN
             // 
@@ -179,6 +184,7 @@
             this.btnISSN.Text = "ISSN";
             this.btnISSN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnISSN.UseVisualStyleBackColor = true;
+            this.btnISSN.Click += new System.EventHandler(this.btnISSN_Click);
             // 
             // btnPatents
             // 
@@ -197,6 +203,7 @@
             this.btnPatents.Text = "PATENTS";
             this.btnPatents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPatents.UseVisualStyleBackColor = true;
+            this.btnPatents.Click += new System.EventHandler(this.btnPatents_Click);
             // 
             // btnCopyright
             // 
@@ -215,6 +222,7 @@
             this.btnCopyright.Text = "COPYRIGHTS";
             this.btnCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCopyright.UseVisualStyleBackColor = true;
+            this.btnCopyright.Click += new System.EventHandler(this.btnCopyright_Click);
             // 
             // btnProfile
             // 
@@ -234,6 +242,7 @@
             this.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnDashboard
             // 

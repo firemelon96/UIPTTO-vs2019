@@ -32,5 +32,50 @@ namespace UIPTTO_DATABASE
         {
             openChildForm(new dashBoardForm());
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            openChildForm(new profileForm());
+        }
+
+        private void btnCopyright_Click(object sender, EventArgs e)
+        {
+            openChildForm(new copyrightForm());
+        }
+
+        private void btnPatents_Click(object sender, EventArgs e)
+        {
+            openChildForm(new patentForm());
+        }
+
+        private void btnISSN_Click(object sender, EventArgs e)
+        {
+            openChildForm(new issnForm());
+        }
+
+        private void btnISBN_Click(object sender, EventArgs e)
+        {
+            openChildForm(new isbnForm());
+        }
+
+        private void btnTrademark_Click(object sender, EventArgs e)
+        {
+            openChildForm(new trademarkForm());
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            openChildForm(new reportForm());
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+            openChildForm(new backupForm());
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new userForm());
+        }
     }
 }

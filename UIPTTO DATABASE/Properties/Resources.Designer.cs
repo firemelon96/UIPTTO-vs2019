@@ -143,6 +143,16 @@ namespace UIPTTO_DATABASE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap magnifier2 {
+            get {
+                object obj = ResourceManager.GetObject("magnifier2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap open_book2 {
             get {
                 object obj = ResourceManager.GetObject("open-book2", resourceCulture);
@@ -156,6 +166,26 @@ namespace UIPTTO_DATABASE.Properties {
         internal static System.Drawing.Bitmap patent2 {
             get {
                 object obj = ResourceManager.GetObject("patent2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus2 {
+            get {
+                object obj = ResourceManager.GetObject("plus2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap printing2 {
+            get {
+                object obj = ResourceManager.GetObject("printing2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +256,16 @@ namespace UIPTTO_DATABASE.Properties {
         internal static System.Drawing.Bitmap user2 {
             get {
                 object obj = ResourceManager.GetObject("user2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user21 {
+            get {
+                object obj = ResourceManager.GetObject("user21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
