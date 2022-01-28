@@ -35,10 +35,6 @@
             this.btnAddTrademarks = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.material = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.regissued_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +43,10 @@
             this.expiration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +68,7 @@
             this.btnAddTrademarks.Text = "NEW";
             this.btnAddTrademarks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddTrademarks.UseVisualStyleBackColor = false;
+            this.btnAddTrademarks.Click += new System.EventHandler(this.btnAddTrademarks_Click);
             // 
             // label3
             // 
@@ -142,49 +143,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1090, 591);
             this.dataGridView1.TabIndex = 24;
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(867, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 29);
-            this.textBox1.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gotham Thin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(12, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 21);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "List of Trademarks";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(12, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 36);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Trademarks";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(867, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 29);
-            this.textBox2.TabIndex = 23;
-            // 
             // material
             // 
             this.material.HeaderText = "Name of Material";
@@ -234,6 +192,49 @@
             this.delete.HeaderText = "Del";
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(867, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(235, 29);
+            this.textBox1.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gotham Thin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.Location = new System.Drawing.Point(12, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 21);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "List of Trademarks";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gotham Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 36);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "TRADEMARKS";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(867, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(235, 29);
+            this.textBox2.TabIndex = 23;
             // 
             // trademarkForm
             // 

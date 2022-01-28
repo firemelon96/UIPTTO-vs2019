@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UIPTTO_DATABASE.childForms.popupForm
 {
-    public partial class addCopyrightForm : Form
+    public partial class addUserForm : Form
     {
-        public addCopyrightForm()
+        public addUserForm()
         {
             InitializeComponent();
-        }
-
-        private void rbApproved_CheckedChanged(object sender, EventArgs e)
-        {
-            dtpDateApproved.Enabled = rbApproved.Checked;
         }
     }
 }

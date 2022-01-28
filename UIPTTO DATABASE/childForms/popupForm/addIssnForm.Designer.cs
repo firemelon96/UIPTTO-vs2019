@@ -1,6 +1,6 @@
 ﻿namespace UIPTTO_DATABASE.childForms.popupForm
 {
-    partial class addPatentForm
+    partial class addIssnForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addPatentForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addIssnForm));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAddAuthor = new System.Windows.Forms.Button();
@@ -133,7 +133,7 @@
             this.textBox12.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox12.Location = new System.Drawing.Point(436, 188);
             this.textBox12.Name = "textBox12";
-            this.textBox12.PlaceholderText = "Application No.";
+            this.textBox12.PlaceholderText = "Issued No.";
             this.textBox12.Size = new System.Drawing.Size(363, 43);
             this.textBox12.TabIndex = 5;
             // 
@@ -179,7 +179,7 @@
             this.textBox10.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox10.Location = new System.Drawing.Point(35, 188);
             this.textBox10.Name = "textBox10";
-            this.textBox10.PlaceholderText = "Date of creation";
+            this.textBox10.PlaceholderText = "Filing Date";
             this.textBox10.Size = new System.Drawing.Size(363, 43);
             this.textBox10.TabIndex = 4;
             // 
@@ -225,7 +225,7 @@
             this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(35, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Title of the Invention";
+            this.textBox1.PlaceholderText = "Name of the Material/Publication";
             this.textBox1.Size = new System.Drawing.Size(764, 43);
             this.textBox1.TabIndex = 1;
             // 
@@ -264,7 +264,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 67);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(847, 421);
-            this.panel2.TabIndex = 5;
+            this.panel2.TabIndex = 7;
             // 
             // textBox5
             // 
@@ -287,7 +287,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(847, 67);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 6;
             // 
             // label1
             // 
@@ -296,9 +296,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(86, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 33);
+            this.label1.Size = new System.Drawing.Size(172, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "NEW PATENT";
+            this.label1.Text = "NEW ISSN";
             // 
             // pictureBox1
             // 
@@ -310,7 +310,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // addPatentForm
+            // addIssnForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,8 +319,8 @@
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "addPatentForm";
-            this.Text = "addPatentForm";
+            this.Name = "addIssnForm";
+            this.Text = "addIssnForm";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

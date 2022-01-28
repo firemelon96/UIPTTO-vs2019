@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UIPTTO_DATABASE.childForms.popupForm;
 
 namespace UIPTTO_DATABASE.childForms
 {
@@ -15,6 +16,12 @@ namespace UIPTTO_DATABASE.childForms
         public userForm()
         {
             InitializeComponent();
+        }
+
+        private void btnAddUsers_Click(object sender, EventArgs e)
+        {
+            addUserForm addUserForm = new addUserForm();
+            addUserForm.ShowDialog(); 
         }
     }
 }

@@ -67,6 +67,7 @@
             this.btnAddUsers.Text = "NEW";
             this.btnAddUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddUsers.UseVisualStyleBackColor = false;
+            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
             // 
             // label3
             // 

@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addCopyrightForm));
             this.button1 = new System.Windows.Forms.Button();
             this.btnAddAuthor = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.rbtnApproved = new System.Windows.Forms.RadioButton();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.rbOnProcess = new System.Windows.Forms.RadioButton();
+            this.rbApproved = new System.Windows.Forms.RadioButton();
+            this.txtboxRegNo = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dtpDateApproved = new System.Windows.Forms.DateTimePicker();
+            this.dtpDateFiled = new System.Windows.Forms.DateTimePicker();
+            this.cbAuthor = new System.Windows.Forms.ComboBox();
+            this.txtboxCollege = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNewCopyright = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -92,39 +92,39 @@
             this.btnAddAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddAuthor.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rbOnProcess
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(217, 283);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(193, 35);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "On process";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbOnProcess.AutoSize = true;
+            this.rbOnProcess.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbOnProcess.Location = new System.Drawing.Point(217, 283);
+            this.rbOnProcess.Name = "rbOnProcess";
+            this.rbOnProcess.Size = new System.Drawing.Size(193, 35);
+            this.rbOnProcess.TabIndex = 8;
+            this.rbOnProcess.TabStop = true;
+            this.rbOnProcess.Text = "On process";
+            this.rbOnProcess.UseVisualStyleBackColor = true;
             // 
-            // rbtnApproved
+            // rbApproved
             // 
-            this.rbtnApproved.AutoSize = true;
-            this.rbtnApproved.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnApproved.Location = new System.Drawing.Point(35, 283);
-            this.rbtnApproved.Name = "rbtnApproved";
-            this.rbtnApproved.Size = new System.Drawing.Size(176, 35);
-            this.rbtnApproved.TabIndex = 7;
-            this.rbtnApproved.TabStop = true;
-            this.rbtnApproved.Text = "Approved";
-            this.rbtnApproved.UseVisualStyleBackColor = true;
+            this.rbApproved.AutoSize = true;
+            this.rbApproved.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbApproved.Location = new System.Drawing.Point(35, 283);
+            this.rbApproved.Name = "rbApproved";
+            this.rbApproved.Size = new System.Drawing.Size(176, 35);
+            this.rbApproved.TabIndex = 7;
+            this.rbApproved.Text = "Approved";
+            this.rbApproved.UseVisualStyleBackColor = true;
+            this.rbApproved.CheckedChanged += new System.EventHandler(this.rbApproved_CheckedChanged);
             // 
-            // textBox12
+            // txtboxRegNo
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(436, 188);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.PlaceholderText = "Registration No.";
-            this.textBox12.Size = new System.Drawing.Size(363, 43);
-            this.textBox12.TabIndex = 5;
+            this.txtboxRegNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxRegNo.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxRegNo.Location = new System.Drawing.Point(436, 188);
+            this.txtboxRegNo.Name = "txtboxRegNo";
+            this.txtboxRegNo.PlaceholderText = "Registration No.";
+            this.txtboxRegNo.Size = new System.Drawing.Size(363, 43);
+            this.txtboxRegNo.TabIndex = 5;
             // 
             // textBox11
             // 
@@ -138,18 +138,6 @@
             this.textBox11.Size = new System.Drawing.Size(363, 43);
             this.textBox11.TabIndex = 4;
             // 
-            // textBox14
-            // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Enabled = false;
-            this.textBox14.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox14.Location = new System.Drawing.Point(436, 269);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.PlaceholderText = "Date of Approval";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(363, 43);
-            this.textBox14.TabIndex = 6;
-            // 
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -161,16 +149,6 @@
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(363, 43);
             this.textBox13.TabIndex = 4;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(35, 188);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.PlaceholderText = "Date of creation";
-            this.textBox10.Size = new System.Drawing.Size(363, 43);
-            this.textBox10.TabIndex = 4;
             // 
             // textBox9
             // 
@@ -209,18 +187,18 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.dtpDateApproved);
+            this.panel2.Controls.Add(this.dtpDateFiled);
+            this.panel2.Controls.Add(this.cbAuthor);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnAddAuthor);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.rbtnApproved);
-            this.panel2.Controls.Add(this.textBox12);
+            this.panel2.Controls.Add(this.rbOnProcess);
+            this.panel2.Controls.Add(this.rbApproved);
+            this.panel2.Controls.Add(this.txtboxRegNo);
             this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.textBox14);
             this.panel2.Controls.Add(this.textBox13);
-            this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtboxCollege);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.textBox1);
@@ -231,28 +209,53 @@
             this.panel2.Size = new System.Drawing.Size(847, 421);
             this.panel2.TabIndex = 3;
             // 
-            // comboBox1
+            // dtpDateApproved
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.dtpDateApproved.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateApproved.CustomFormat = "";
+            this.dtpDateApproved.Enabled = false;
+            this.dtpDateApproved.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateApproved.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateApproved.Location = new System.Drawing.Point(436, 272);
+            this.dtpDateApproved.Name = "dtpDateApproved";
+            this.dtpDateApproved.Size = new System.Drawing.Size(363, 43);
+            this.dtpDateApproved.TabIndex = 12;
+            this.dtpDateApproved.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            // 
+            // dtpDateFiled
+            // 
+            this.dtpDateFiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateFiled.CustomFormat = "";
+            this.dtpDateFiled.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateFiled.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateFiled.Location = new System.Drawing.Point(35, 188);
+            this.dtpDateFiled.Name = "dtpDateFiled";
+            this.dtpDateFiled.Size = new System.Drawing.Size(363, 43);
+            this.dtpDateFiled.TabIndex = 12;
+            this.dtpDateFiled.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            // 
+            // cbAuthor
+            // 
+            this.cbAuthor.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbAuthor.FormattingEnabled = true;
+            this.cbAuthor.Items.AddRange(new object[] {
             "SELECT AUTHOR"});
-            this.comboBox1.Location = new System.Drawing.Point(35, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(363, 44);
-            this.comboBox1.TabIndex = 11;
+            this.cbAuthor.Location = new System.Drawing.Point(35, 105);
+            this.cbAuthor.Name = "cbAuthor";
+            this.cbAuthor.Size = new System.Drawing.Size(363, 44);
+            this.cbAuthor.TabIndex = 11;
             // 
-            // textBox4
+            // txtboxCollege
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(436, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "College";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(363, 43);
-            this.textBox4.TabIndex = 3;
+            this.txtboxCollege.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxCollege.Enabled = false;
+            this.txtboxCollege.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxCollege.Location = new System.Drawing.Point(436, 105);
+            this.txtboxCollege.Name = "txtboxCollege";
+            this.txtboxCollege.PlaceholderText = "College";
+            this.txtboxCollege.ReadOnly = true;
+            this.txtboxCollege.Size = new System.Drawing.Size(363, 43);
+            this.txtboxCollege.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -281,7 +284,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblNewCopyright);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -289,16 +292,16 @@
             this.panel1.Size = new System.Drawing.Size(847, 67);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // lblNewCopyright
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(86, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "NEW COPYRIGHT";
+            this.lblNewCopyright.AutoSize = true;
+            this.lblNewCopyright.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNewCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNewCopyright.Location = new System.Drawing.Point(86, 19);
+            this.lblNewCopyright.Name = "lblNewCopyright";
+            this.lblNewCopyright.Size = new System.Drawing.Size(286, 33);
+            this.lblNewCopyright.TabIndex = 1;
+            this.lblNewCopyright.Text = "NEW COPYRIGHT";
             // 
             // pictureBox1
             // 
@@ -317,6 +320,8 @@
             this.ClientSize = new System.Drawing.Size(847, 488);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "addCopyrightForm";
             this.Text = "addCopyrightForm";
             this.panel2.ResumeLayout(false);
@@ -332,23 +337,23 @@
 
         private Button button1;
         private Button btnAddAuthor;
-        private RadioButton radioButton2;
-        private RadioButton rbtnApproved;
-        private TextBox textBox12;
+        private RadioButton rbOnProcess;
+        private RadioButton rbApproved;
+        private TextBox txtboxRegNo;
         private TextBox textBox11;
-        private TextBox textBox14;
         private TextBox textBox13;
-        private TextBox textBox10;
         private TextBox textBox9;
         private TextBox textBox5;
         private TextBox textBox1;
         private Panel panel2;
         private TextBox textBox2;
         private Panel panel1;
-        private Label label1;
+        private Label lblNewCopyright;
         private PictureBox pictureBox1;
-        private ComboBox comboBox1;
-        private TextBox textBox4;
+        private ComboBox cbAuthor;
+        private TextBox txtboxCollege;
         private TextBox textBox3;
+        private DateTimePicker dtpDateFiled;
+        private DateTimePicker dtpDateApproved;
     }
 }
