@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addCopyrightForm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAddAuthor = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.rbOnProcess = new System.Windows.Forms.RadioButton();
             this.rbApproved = new System.Windows.Forms.RadioButton();
             this.txtboxRegNo = new System.Windows.Forms.TextBox();
@@ -38,59 +38,60 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtboxTitle = new System.Windows.Forms.TextBox();
+            this.pnlBody = new System.Windows.Forms.Panel();
             this.dtpDateApproved = new System.Windows.Forms.DateTimePicker();
             this.dtpDateFiled = new System.Windows.Forms.DateTimePicker();
             this.cbAuthor = new System.Windows.Forms.ComboBox();
             this.txtboxCollege = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblNewCopyright = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbCopyright = new System.Windows.Forms.PictureBox();
+            this.pnlBody.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(411, 339);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(202, 53);
-            this.button1.TabIndex = 10;
-            this.button1.TabStop = false;
-            this.button1.Text = "CANCEL";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(411, 339);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnCancel.Size = new System.Drawing.Size(202, 53);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // btnAddAuthor
+            // btnSave
             // 
-            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnAddAuthor.FlatAppearance.BorderSize = 0;
-            this.btnAddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAuthor.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddAuthor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAuthor.Image")));
-            this.btnAddAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAuthor.Location = new System.Drawing.Point(631, 339);
-            this.btnAddAuthor.Name = "btnAddAuthor";
-            this.btnAddAuthor.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddAuthor.Size = new System.Drawing.Size(168, 53);
-            this.btnAddAuthor.TabIndex = 10;
-            this.btnAddAuthor.TabStop = false;
-            this.btnAddAuthor.Text = "SAVE";
-            this.btnAddAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddAuthor.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(631, 339);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnSave.Size = new System.Drawing.Size(168, 53);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.TabStop = false;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // rbOnProcess
             // 
@@ -174,40 +175,40 @@
             this.textBox5.Size = new System.Drawing.Size(363, 43);
             this.textBox5.TabIndex = 4;
             // 
-            // textBox1
+            // txtboxTitle
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(35, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Title";
-            this.textBox1.Size = new System.Drawing.Size(764, 43);
-            this.textBox1.TabIndex = 1;
+            this.txtboxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxTitle.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxTitle.Location = new System.Drawing.Point(35, 23);
+            this.txtboxTitle.Name = "txtboxTitle";
+            this.txtboxTitle.PlaceholderText = "Title";
+            this.txtboxTitle.Size = new System.Drawing.Size(764, 43);
+            this.txtboxTitle.TabIndex = 1;
             // 
-            // panel2
+            // pnlBody
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            this.panel2.Controls.Add(this.dtpDateApproved);
-            this.panel2.Controls.Add(this.dtpDateFiled);
-            this.panel2.Controls.Add(this.cbAuthor);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnAddAuthor);
-            this.panel2.Controls.Add(this.rbOnProcess);
-            this.panel2.Controls.Add(this.rbApproved);
-            this.panel2.Controls.Add(this.txtboxRegNo);
-            this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.textBox13);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.txtboxCollege);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(847, 421);
-            this.panel2.TabIndex = 3;
+            this.pnlBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            this.pnlBody.Controls.Add(this.dtpDateApproved);
+            this.pnlBody.Controls.Add(this.dtpDateFiled);
+            this.pnlBody.Controls.Add(this.cbAuthor);
+            this.pnlBody.Controls.Add(this.btnCancel);
+            this.pnlBody.Controls.Add(this.btnSave);
+            this.pnlBody.Controls.Add(this.rbOnProcess);
+            this.pnlBody.Controls.Add(this.rbApproved);
+            this.pnlBody.Controls.Add(this.txtboxRegNo);
+            this.pnlBody.Controls.Add(this.textBox11);
+            this.pnlBody.Controls.Add(this.textBox13);
+            this.pnlBody.Controls.Add(this.textBox9);
+            this.pnlBody.Controls.Add(this.txtboxCollege);
+            this.pnlBody.Controls.Add(this.textBox3);
+            this.pnlBody.Controls.Add(this.textBox5);
+            this.pnlBody.Controls.Add(this.txtboxTitle);
+            this.pnlBody.Controls.Add(this.textBox2);
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.Location = new System.Drawing.Point(0, 67);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(847, 421);
+            this.pnlBody.TabIndex = 3;
             // 
             // dtpDateApproved
             // 
@@ -281,16 +282,16 @@
             this.textBox2.Size = new System.Drawing.Size(764, 43);
             this.textBox2.TabIndex = 4;
             // 
-            // panel1
+            // pnlTitle
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel1.Controls.Add(this.lblNewCopyright);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 67);
-            this.panel1.TabIndex = 2;
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlTitle.Controls.Add(this.lblNewCopyright);
+            this.pnlTitle.Controls.Add(this.pbCopyright);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(847, 67);
+            this.pnlTitle.TabIndex = 2;
             // 
             // lblNewCopyright
             // 
@@ -303,40 +304,40 @@
             this.lblNewCopyright.TabIndex = 1;
             this.lblNewCopyright.Text = "NEW COPYRIGHT";
             // 
-            // pictureBox1
+            // pbCopyright
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbCopyright.Image = ((System.Drawing.Image)(resources.GetObject("pbCopyright.Image")));
+            this.pbCopyright.Location = new System.Drawing.Point(35, 12);
+            this.pbCopyright.Name = "pbCopyright";
+            this.pbCopyright.Size = new System.Drawing.Size(42, 49);
+            this.pbCopyright.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCopyright.TabIndex = 0;
+            this.pbCopyright.TabStop = false;
             // 
             // addCopyrightForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 488);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlBody);
+            this.Controls.Add(this.pnlTitle);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addCopyrightForm";
             this.Text = "addCopyrightForm";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlBody.ResumeLayout(false);
+            this.pnlBody.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Button button1;
-        private Button btnAddAuthor;
+        private Button btnCancel;
+        private Button btnSave;
         private RadioButton rbOnProcess;
         private RadioButton rbApproved;
         private TextBox txtboxRegNo;
@@ -344,12 +345,12 @@
         private TextBox textBox13;
         private TextBox textBox9;
         private TextBox textBox5;
-        private TextBox textBox1;
-        private Panel panel2;
+        private TextBox txtboxTitle;
+        private Panel pnlBody;
         private TextBox textBox2;
-        private Panel panel1;
+        private Panel pnlTitle;
         private Label lblNewCopyright;
-        private PictureBox pictureBox1;
+        private PictureBox pbCopyright;
         private ComboBox cbAuthor;
         private TextBox txtboxCollege;
         private TextBox textBox3;

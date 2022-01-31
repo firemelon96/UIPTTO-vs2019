@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
         0AAADdABEGw9BwAAAYlJREFUWEfN17lOw0AQxvE0tKlAokGioKTggfJKSLRcSsMjIB6BKh09Ek1qpIAE
@@ -71,7 +71,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="btnAddAuthor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAVBJREFUWEftl0FuwjAQRdmyqOAMvWAFFyF36a5dd82WA7RdV1kBiuT+HzFomEzs
@@ -83,10 +83,10 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbPatent.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        XgAADV4Bkdb9agAAA0dJREFUaEPt2UtsTUEcx3GvIJ5pq0VCY4GIlTWCxALpBgsRYSEsiARpI1K1IEIi
+        XAAADVwB7ig+4wAAA0dJREFUaEPt2UtsTUEcx3GvIJ5pq0VCY4GIlTWCxALpBgsRYSEsiARpI1K1IEIi
         aWkbz6pI1FKCnVhZC0uJWNiIZ4j3u1zfn8w0c8bc29PbuT1ncW/ySe7MmfnP/9/eOefcc0cVCoWE/v7+
         ZehCAZ/xMSc+QTn1ocnPO9EQBp1zJuXRV1z08040hEE9+GYm5dF3XPLzTjSEQRfwxUzKI/2Re/y8Ew1h
         ULWQEVItJK0rOIHOlE7iPH4gFK+YihaiOZpbjmMIxSymooXchU1sXEp2/HWEYhZT8Y+Wrr5P8SIljX2P

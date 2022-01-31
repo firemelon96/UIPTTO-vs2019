@@ -29,70 +29,70 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashBoardForm));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDashboard = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlCopyright = new System.Windows.Forms.Panel();
             this.copyrightCount = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDashCopyright = new System.Windows.Forms.Label();
+            this.pbCopyright = new System.Windows.Forms.PictureBox();
+            this.pnlPatents = new System.Windows.Forms.Panel();
             this.patentCount = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pbPatents = new System.Windows.Forms.PictureBox();
+            this.lblDashPatents = new System.Windows.Forms.Label();
+            this.pnlIssn = new System.Windows.Forms.Panel();
             this.ISSNCount = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pbIssn = new System.Windows.Forms.PictureBox();
+            this.lblDashIssn = new System.Windows.Forms.Label();
+            this.pnlIsbn = new System.Windows.Forms.Panel();
             this.ISBNCount = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.trademarkCount = new System.Windows.Forms.Label();
+            this.pbIsbn = new System.Windows.Forms.PictureBox();
+            this.lblDashIsbn = new System.Windows.Forms.Label();
+            this.pnlTrademark = new System.Windows.Forms.Panel();
+            this.trademarkCounts = new System.Windows.Forms.Label();
+            this.pbTrademarks = new System.Windows.Forms.PictureBox();
+            this.lblDashTrademarks = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnlPieChart = new System.Windows.Forms.Panel();
+            this.pieChartTitleBar = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlGraph = new System.Windows.Forms.Panel();
             this.graphTitlebar = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.pnlAbout = new System.Windows.Forms.Panel();
+            this.aboutTitleBar = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pnlCopyright.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).BeginInit();
+            this.pnlPatents.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPatents)).BeginInit();
+            this.pnlIssn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIssn)).BeginInit();
+            this.pnlIsbn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIsbn)).BeginInit();
+            this.pnlTrademark.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrademarks)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.pnlPieChart.SuspendLayout();
+            this.pieChartTitleBar.SuspendLayout();
+            this.pnlGraph.SuspendLayout();
             this.graphTitlebar.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.pnlAbout.SuspendLayout();
+            this.aboutTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDashboard
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(12, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DASBOARD";
+            this.lblDashboard.AutoSize = true;
+            this.lblDashboard.Font = new System.Drawing.Font("Gotham Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDashboard.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblDashboard.Location = new System.Drawing.Point(12, 26);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(220, 36);
+            this.lblDashboard.TabIndex = 0;
+            this.lblDashboard.Text = "DASBOARD";
             // 
             // tableLayoutPanel1
             // 
@@ -104,11 +104,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlCopyright, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlPatents, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlIssn, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlIsbn, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlTrademark, 4, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 78);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -116,18 +116,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1090, 174);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // panel1
+            // pnlCopyright
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel1.Controls.Add(this.copyrightCount);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(10, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(10);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(198, 154);
-            this.panel1.TabIndex = 0;
+            this.pnlCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlCopyright.Controls.Add(this.copyrightCount);
+            this.pnlCopyright.Controls.Add(this.lblDashCopyright);
+            this.pnlCopyright.Controls.Add(this.pbCopyright);
+            this.pnlCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCopyright.Location = new System.Drawing.Point(10, 10);
+            this.pnlCopyright.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlCopyright.Name = "pnlCopyright";
+            this.pnlCopyright.Size = new System.Drawing.Size(198, 154);
+            this.pnlCopyright.TabIndex = 0;
             // 
             // copyrightCount
             // 
@@ -141,40 +141,40 @@
             this.copyrightCount.TabIndex = 1;
             this.copyrightCount.Text = "23";
             // 
-            // label2
+            // lblDashCopyright
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(13, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "COPYRIGHTS";
+            this.lblDashCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDashCopyright.AutoSize = true;
+            this.lblDashCopyright.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDashCopyright.Location = new System.Drawing.Point(13, 111);
+            this.lblDashCopyright.Name = "lblDashCopyright";
+            this.lblDashCopyright.Size = new System.Drawing.Size(169, 25);
+            this.lblDashCopyright.TabIndex = 1;
+            this.lblDashCopyright.Text = "COPYRIGHTS";
             // 
-            // pictureBox1
+            // pbCopyright
             // 
-            this.pictureBox1.Image = global::UIPTTO_DATABASE.Properties.Resources.copyright3;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbCopyright.Image = global::UIPTTO_DATABASE.Properties.Resources.copyright3;
+            this.pbCopyright.Location = new System.Drawing.Point(13, 12);
+            this.pbCopyright.Name = "pbCopyright";
+            this.pbCopyright.Size = new System.Drawing.Size(83, 85);
+            this.pbCopyright.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCopyright.TabIndex = 0;
+            this.pbCopyright.TabStop = false;
             // 
-            // panel2
+            // pnlPatents
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel2.Controls.Add(this.patentCount);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(228, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(198, 154);
-            this.panel2.TabIndex = 0;
+            this.pnlPatents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlPatents.Controls.Add(this.patentCount);
+            this.pnlPatents.Controls.Add(this.pbPatents);
+            this.pnlPatents.Controls.Add(this.lblDashPatents);
+            this.pnlPatents.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPatents.Location = new System.Drawing.Point(228, 10);
+            this.pnlPatents.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlPatents.Name = "pnlPatents";
+            this.pnlPatents.Size = new System.Drawing.Size(198, 154);
+            this.pnlPatents.TabIndex = 0;
             // 
             // patentCount
             // 
@@ -188,40 +188,40 @@
             this.patentCount.TabIndex = 1;
             this.patentCount.Text = "34";
             // 
-            // pictureBox2
+            // pbPatents
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(83, 85);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbPatents.Image = ((System.Drawing.Image)(resources.GetObject("pbPatents.Image")));
+            this.pbPatents.Location = new System.Drawing.Point(14, 12);
+            this.pbPatents.Name = "pbPatents";
+            this.pbPatents.Size = new System.Drawing.Size(83, 85);
+            this.pbPatents.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPatents.TabIndex = 0;
+            this.pbPatents.TabStop = false;
             // 
-            // label4
+            // lblDashPatents
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(14, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "PATENTS";
+            this.lblDashPatents.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDashPatents.AutoSize = true;
+            this.lblDashPatents.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashPatents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDashPatents.Location = new System.Drawing.Point(14, 111);
+            this.lblDashPatents.Name = "lblDashPatents";
+            this.lblDashPatents.Size = new System.Drawing.Size(123, 25);
+            this.lblDashPatents.TabIndex = 1;
+            this.lblDashPatents.Text = "PATENTS";
             // 
-            // panel3
+            // pnlIssn
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel3.Controls.Add(this.ISSNCount);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(446, 10);
-            this.panel3.Margin = new System.Windows.Forms.Padding(10);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(198, 154);
-            this.panel3.TabIndex = 0;
+            this.pnlIssn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlIssn.Controls.Add(this.ISSNCount);
+            this.pnlIssn.Controls.Add(this.pbIssn);
+            this.pnlIssn.Controls.Add(this.lblDashIssn);
+            this.pnlIssn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlIssn.Location = new System.Drawing.Point(446, 10);
+            this.pnlIssn.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlIssn.Name = "pnlIssn";
+            this.pnlIssn.Size = new System.Drawing.Size(198, 154);
+            this.pnlIssn.TabIndex = 0;
             // 
             // ISSNCount
             // 
@@ -235,40 +235,40 @@
             this.ISSNCount.TabIndex = 1;
             this.ISSNCount.Text = "12";
             // 
-            // pictureBox3
+            // pbIssn
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(16, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(83, 85);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.pbIssn.Image = ((System.Drawing.Image)(resources.GetObject("pbIssn.Image")));
+            this.pbIssn.Location = new System.Drawing.Point(16, 12);
+            this.pbIssn.Name = "pbIssn";
+            this.pbIssn.Size = new System.Drawing.Size(83, 85);
+            this.pbIssn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIssn.TabIndex = 0;
+            this.pbIssn.TabStop = false;
             // 
-            // label6
+            // lblDashIssn
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(16, 111);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 25);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "ISSN";
+            this.lblDashIssn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDashIssn.AutoSize = true;
+            this.lblDashIssn.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashIssn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDashIssn.Location = new System.Drawing.Point(16, 111);
+            this.lblDashIssn.Name = "lblDashIssn";
+            this.lblDashIssn.Size = new System.Drawing.Size(67, 25);
+            this.lblDashIssn.TabIndex = 1;
+            this.lblDashIssn.Text = "ISSN";
             // 
-            // panel4
+            // pnlIsbn
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel4.Controls.Add(this.ISBNCount);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(664, 10);
-            this.panel4.Margin = new System.Windows.Forms.Padding(10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(198, 154);
-            this.panel4.TabIndex = 0;
+            this.pnlIsbn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlIsbn.Controls.Add(this.ISBNCount);
+            this.pnlIsbn.Controls.Add(this.pbIsbn);
+            this.pnlIsbn.Controls.Add(this.lblDashIsbn);
+            this.pnlIsbn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlIsbn.Location = new System.Drawing.Point(664, 10);
+            this.pnlIsbn.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlIsbn.Name = "pnlIsbn";
+            this.pnlIsbn.Size = new System.Drawing.Size(198, 154);
+            this.pnlIsbn.TabIndex = 0;
             // 
             // ISBNCount
             // 
@@ -282,74 +282,74 @@
             this.ISBNCount.TabIndex = 1;
             this.ISBNCount.Text = "11";
             // 
-            // pictureBox4
+            // pbIsbn
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(83, 85);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pbIsbn.Image = ((System.Drawing.Image)(resources.GetObject("pbIsbn.Image")));
+            this.pbIsbn.Location = new System.Drawing.Point(14, 12);
+            this.pbIsbn.Name = "pbIsbn";
+            this.pbIsbn.Size = new System.Drawing.Size(83, 85);
+            this.pbIsbn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIsbn.TabIndex = 0;
+            this.pbIsbn.TabStop = false;
             // 
-            // label7
+            // lblDashIsbn
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(14, 111);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 25);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "ISBN";
+            this.lblDashIsbn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDashIsbn.AutoSize = true;
+            this.lblDashIsbn.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashIsbn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDashIsbn.Location = new System.Drawing.Point(14, 111);
+            this.lblDashIsbn.Name = "lblDashIsbn";
+            this.lblDashIsbn.Size = new System.Drawing.Size(69, 25);
+            this.lblDashIsbn.TabIndex = 1;
+            this.lblDashIsbn.Text = "ISBN";
             // 
-            // panel5
+            // pnlTrademark
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Controls.Add(this.trademarkCount);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(882, 10);
-            this.panel5.Margin = new System.Windows.Forms.Padding(10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(198, 154);
-            this.panel5.TabIndex = 0;
+            this.pnlTrademark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlTrademark.Controls.Add(this.trademarkCounts);
+            this.pnlTrademark.Controls.Add(this.pbTrademarks);
+            this.pnlTrademark.Controls.Add(this.lblDashTrademarks);
+            this.pnlTrademark.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTrademark.Location = new System.Drawing.Point(882, 10);
+            this.pnlTrademark.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlTrademark.Name = "pnlTrademark";
+            this.pnlTrademark.Size = new System.Drawing.Size(198, 154);
+            this.pnlTrademark.TabIndex = 0;
             // 
-            // label11
+            // trademarkCounts
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Gotham Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(140, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 48);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "1";
+            this.trademarkCounts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.trademarkCounts.AutoSize = true;
+            this.trademarkCounts.Font = new System.Drawing.Font("Gotham Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.trademarkCounts.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.trademarkCounts.Location = new System.Drawing.Point(140, 12);
+            this.trademarkCounts.Name = "trademarkCounts";
+            this.trademarkCounts.Size = new System.Drawing.Size(39, 48);
+            this.trademarkCounts.TabIndex = 1;
+            this.trademarkCounts.Text = "1";
             // 
-            // pictureBox5
+            // pbTrademarks
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(13, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(83, 85);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pbTrademarks.Image = ((System.Drawing.Image)(resources.GetObject("pbTrademarks.Image")));
+            this.pbTrademarks.Location = new System.Drawing.Point(13, 12);
+            this.pbTrademarks.Name = "pbTrademarks";
+            this.pbTrademarks.Size = new System.Drawing.Size(83, 85);
+            this.pbTrademarks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTrademarks.TabIndex = 0;
+            this.pbTrademarks.TabStop = false;
             // 
-            // trademarkCount
+            // lblDashTrademarks
             // 
-            this.trademarkCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trademarkCount.AutoSize = true;
-            this.trademarkCount.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.trademarkCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.trademarkCount.Location = new System.Drawing.Point(13, 111);
-            this.trademarkCount.Name = "trademarkCount";
-            this.trademarkCount.Size = new System.Drawing.Size(182, 25);
-            this.trademarkCount.TabIndex = 1;
-            this.trademarkCount.Text = "TRADEMARKS";
+            this.lblDashTrademarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDashTrademarks.AutoSize = true;
+            this.lblDashTrademarks.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashTrademarks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDashTrademarks.Location = new System.Drawing.Point(13, 111);
+            this.lblDashTrademarks.Name = "lblDashTrademarks";
+            this.lblDashTrademarks.Size = new System.Drawing.Size(182, 25);
+            this.lblDashTrademarks.TabIndex = 1;
+            this.lblDashTrademarks.Text = "TRADEMARKS";
             // 
             // tableLayoutPanel2
             // 
@@ -358,8 +358,8 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.panel7, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel6, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlPieChart, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlGraph, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 255);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -367,26 +367,26 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1090, 374);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // panel7
+            // pnlPieChart
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(555, 10);
-            this.panel7.Margin = new System.Windows.Forms.Padding(10);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(525, 354);
-            this.panel7.TabIndex = 0;
+            this.pnlPieChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlPieChart.Controls.Add(this.pieChartTitleBar);
+            this.pnlPieChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPieChart.Location = new System.Drawing.Point(555, 10);
+            this.pnlPieChart.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlPieChart.Name = "pnlPieChart";
+            this.pnlPieChart.Size = new System.Drawing.Size(525, 354);
+            this.pnlPieChart.TabIndex = 0;
             // 
-            // panel9
+            // pieChartTitleBar
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel9.Controls.Add(this.label5);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(525, 48);
-            this.panel9.TabIndex = 0;
+            this.pieChartTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pieChartTitleBar.Controls.Add(this.label5);
+            this.pieChartTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pieChartTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.pieChartTitleBar.Name = "pieChartTitleBar";
+            this.pieChartTitleBar.Size = new System.Drawing.Size(525, 48);
+            this.pieChartTitleBar.TabIndex = 0;
             // 
             // label5
             // 
@@ -399,16 +399,16 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "PIE CHART";
             // 
-            // panel6
+            // pnlGraph
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel6.Controls.Add(this.graphTitlebar);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(10, 10);
-            this.panel6.Margin = new System.Windows.Forms.Padding(10);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(525, 354);
-            this.panel6.TabIndex = 0;
+            this.pnlGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlGraph.Controls.Add(this.graphTitlebar);
+            this.pnlGraph.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlGraph.Location = new System.Drawing.Point(10, 10);
+            this.pnlGraph.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlGraph.Name = "pnlGraph";
+            this.pnlGraph.Size = new System.Drawing.Size(525, 354);
+            this.pnlGraph.TabIndex = 0;
             // 
             // graphTitlebar
             // 
@@ -437,7 +437,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.panel8, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pnlAbout, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 632);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -445,26 +445,26 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1090, 364);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // panel8
+            // pnlAbout
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel8.Controls.Add(this.panel10);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(10, 10);
-            this.panel8.Margin = new System.Windows.Forms.Padding(10);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1070, 344);
-            this.panel8.TabIndex = 0;
+            this.pnlAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlAbout.Controls.Add(this.aboutTitleBar);
+            this.pnlAbout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAbout.Location = new System.Drawing.Point(10, 10);
+            this.pnlAbout.Margin = new System.Windows.Forms.Padding(10);
+            this.pnlAbout.Name = "pnlAbout";
+            this.pnlAbout.Size = new System.Drawing.Size(1070, 344);
+            this.pnlAbout.TabIndex = 0;
             // 
-            // panel10
+            // aboutTitleBar
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel10.Controls.Add(this.label8);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1070, 48);
-            this.panel10.TabIndex = 0;
+            this.aboutTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.aboutTitleBar.Controls.Add(this.label8);
+            this.aboutTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.aboutTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.aboutTitleBar.Name = "aboutTitleBar";
+            this.aboutTitleBar.Size = new System.Drawing.Size(1070, 48);
+            this.aboutTitleBar.TabIndex = 0;
             // 
             // label8
             // 
@@ -485,36 +485,36 @@
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDashboard);
             this.Name = "dashBoardForm";
             this.Text = "dashBoardForm";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pnlCopyright.ResumeLayout(false);
+            this.pnlCopyright.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).EndInit();
+            this.pnlPatents.ResumeLayout(false);
+            this.pnlPatents.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPatents)).EndInit();
+            this.pnlIssn.ResumeLayout(false);
+            this.pnlIssn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIssn)).EndInit();
+            this.pnlIsbn.ResumeLayout(false);
+            this.pnlIsbn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIsbn)).EndInit();
+            this.pnlTrademark.ResumeLayout(false);
+            this.pnlTrademark.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrademarks)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel6.ResumeLayout(false);
+            this.pnlPieChart.ResumeLayout(false);
+            this.pieChartTitleBar.ResumeLayout(false);
+            this.pieChartTitleBar.PerformLayout();
+            this.pnlGraph.ResumeLayout(false);
             this.graphTitlebar.ResumeLayout(false);
             this.graphTitlebar.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.pnlAbout.ResumeLayout(false);
+            this.aboutTitleBar.ResumeLayout(false);
+            this.aboutTitleBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -522,38 +522,38 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblDashboard;
         private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Panel panel5;
+        private Panel pnlCopyright;
+        private Panel pnlPatents;
+        private Panel pnlIssn;
+        private Panel pnlIsbn;
+        private Panel pnlTrademark;
         private TableLayoutPanel tableLayoutPanel2;
-        private Panel panel7;
-        private Panel panel6;
+        private Panel pnlPieChart;
+        private Panel pnlGraph;
         private TableLayoutPanel tableLayoutPanel3;
-        private Panel panel8;
+        private Panel pnlAbout;
         private Label copyrightCount;
-        private Label label2;
-        private PictureBox pictureBox1;
+        private Label lblDashCopyright;
+        private PictureBox pbCopyright;
         private Label patentCount;
-        private PictureBox pictureBox2;
-        private Label label4;
+        private PictureBox pbPatents;
+        private Label lblDashPatents;
         private Label ISSNCount;
-        private PictureBox pictureBox3;
-        private Label label6;
+        private PictureBox pbIssn;
+        private Label lblDashIssn;
         private Label ISBNCount;
-        private PictureBox pictureBox4;
-        private Label label7;
-        private Label label11;
-        private PictureBox pictureBox5;
-        private Label trademarkCount;
-        private Panel panel9;
+        private PictureBox pbIsbn;
+        private Label lblDashIsbn;
+        private Label trademarkCounts;
+        private PictureBox pbTrademarks;
+        private Label lblDashTrademarks;
+        private Panel pieChartTitleBar;
         private Label label5;
         private Panel graphTitlebar;
         private Label label3;
-        private Panel panel10;
+        private Panel aboutTitleBar;
         private Label label8;
     }
 }

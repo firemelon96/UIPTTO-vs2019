@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlSideNavigation = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -40,37 +40,37 @@
             this.btnCopyright = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlLogo = new System.Windows.Forms.Panel();
+            this.pbUIPTTOlogo = new System.Windows.Forms.PictureBox();
+            this.pnlMainTitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelBody = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlFooter = new System.Windows.Forms.Panel();
+            this.pnlSideNavigation.SuspendLayout();
+            this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).BeginInit();
+            this.pnlMainTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlSideNavigation
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.btnUser);
-            this.panel1.Controls.Add(this.btnBackup);
-            this.panel1.Controls.Add(this.btnReport);
-            this.panel1.Controls.Add(this.btnTrademark);
-            this.panel1.Controls.Add(this.btnISBN);
-            this.panel1.Controls.Add(this.btnISSN);
-            this.panel1.Controls.Add(this.btnPatents);
-            this.panel1.Controls.Add(this.btnCopyright);
-            this.panel1.Controls.Add(this.btnProfile);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 913);
-            this.panel1.TabIndex = 0;
+            this.pnlSideNavigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlSideNavigation.Controls.Add(this.btnUser);
+            this.pnlSideNavigation.Controls.Add(this.btnBackup);
+            this.pnlSideNavigation.Controls.Add(this.btnReport);
+            this.pnlSideNavigation.Controls.Add(this.btnTrademark);
+            this.pnlSideNavigation.Controls.Add(this.btnISBN);
+            this.pnlSideNavigation.Controls.Add(this.btnISSN);
+            this.pnlSideNavigation.Controls.Add(this.btnPatents);
+            this.pnlSideNavigation.Controls.Add(this.btnCopyright);
+            this.pnlSideNavigation.Controls.Add(this.btnProfile);
+            this.pnlSideNavigation.Controls.Add(this.btnDashboard);
+            this.pnlSideNavigation.Controls.Add(this.pnlLogo);
+            this.pnlSideNavigation.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSideNavigation.Location = new System.Drawing.Point(0, 0);
+            this.pnlSideNavigation.Name = "pnlSideNavigation";
+            this.pnlSideNavigation.Size = new System.Drawing.Size(280, 913);
+            this.pnlSideNavigation.TabIndex = 0;
             // 
             // btnUser
             // 
@@ -263,36 +263,36 @@
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // panel3
+            // pnlLogo
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(280, 151);
-            this.panel3.TabIndex = 0;
+            this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlLogo.Controls.Add(this.pbUIPTTOlogo);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(280, 151);
+            this.pnlLogo.TabIndex = 0;
             // 
-            // pictureBox1
+            // pbUIPTTOlogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::UIPTTO_DATABASE.Properties.Resources._254553707_137563841925666_2808408810307729993_n;
-            this.pictureBox1.Location = new System.Drawing.Point(104, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbUIPTTOlogo.BackColor = System.Drawing.Color.White;
+            this.pbUIPTTOlogo.Image = global::UIPTTO_DATABASE.Properties.Resources._254553707_137563841925666_2808408810307729993_n;
+            this.pbUIPTTOlogo.Location = new System.Drawing.Point(104, 22);
+            this.pbUIPTTOlogo.Name = "pbUIPTTOlogo";
+            this.pbUIPTTOlogo.Size = new System.Drawing.Size(65, 88);
+            this.pbUIPTTOlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUIPTTOlogo.TabIndex = 2;
+            this.pbUIPTTOlogo.TabStop = false;
             // 
-            // panel2
+            // pnlMainTitleBar
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(280, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1132, 61);
-            this.panel2.TabIndex = 1;
+            this.pnlMainTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlMainTitleBar.Controls.Add(this.label1);
+            this.pnlMainTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMainTitleBar.Location = new System.Drawing.Point(280, 0);
+            this.pnlMainTitleBar.Name = "pnlMainTitleBar";
+            this.pnlMainTitleBar.Size = new System.Drawing.Size(1132, 61);
+            this.pnlMainTitleBar.TabIndex = 1;
             // 
             // label1
             // 
@@ -315,42 +315,42 @@
             this.panelBody.Size = new System.Drawing.Size(1132, 852);
             this.panelBody.TabIndex = 2;
             // 
-            // panel4
+            // pnlFooter
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(280, 889);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1132, 24);
-            this.panel4.TabIndex = 3;
+            this.pnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlFooter.Location = new System.Drawing.Point(280, 889);
+            this.pnlFooter.Name = "pnlFooter";
+            this.pnlFooter.Size = new System.Drawing.Size(1132, 24);
+            this.pnlFooter.TabIndex = 3;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1412, 913);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.panelBody);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMainTitleBar);
+            this.Controls.Add(this.pnlSideNavigation);
             this.Name = "mainForm";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlSideNavigation.ResumeLayout(false);
+            this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).EndInit();
+            this.pnlMainTitleBar.ResumeLayout(false);
+            this.pnlMainTitleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel3;
-        private Panel panel2;
+        private Panel pnlSideNavigation;
+        private Panel pnlLogo;
+        private Panel pnlMainTitleBar;
         private Button btnDashboard;
-        private PictureBox pictureBox1;
+        private PictureBox pbUIPTTOlogo;
         private Button btnUser;
         private Button btnBackup;
         private Button btnReport;
@@ -362,6 +362,6 @@
         private Button btnProfile;
         private Label label1;
         private Panel panelBody;
-        private Panel panel4;
+        private Panel pnlFooter;
     }
 }

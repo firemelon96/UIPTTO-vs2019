@@ -29,112 +29,112 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addUserForm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAddAuthor = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.txtboxPassword = new System.Windows.Forms.TextBox();
+            this.txtboxLastName = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtboxUsername = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtboxEmail = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.lblNewUser = new System.Windows.Forms.Label();
+            this.pbUser = new System.Windows.Forms.PictureBox();
+            this.pnlBody = new System.Windows.Forms.Panel();
+            this.dtpDateFiled = new System.Windows.Forms.DateTimePicker();
+            this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
+            this.pnlBody.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(411, 339);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(202, 53);
-            this.button1.TabIndex = 10;
-            this.button1.TabStop = false;
-            this.button1.Text = "CANCEL";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(411, 339);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnCancel.Size = new System.Drawing.Size(202, 53);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // btnAddAuthor
+            // btnSave
             // 
-            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnAddAuthor.FlatAppearance.BorderSize = 0;
-            this.btnAddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAuthor.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddAuthor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAuthor.Image")));
-            this.btnAddAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAuthor.Location = new System.Drawing.Point(631, 339);
-            this.btnAddAuthor.Name = "btnAddAuthor";
-            this.btnAddAuthor.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddAuthor.Size = new System.Drawing.Size(168, 53);
-            this.btnAddAuthor.TabIndex = 10;
-            this.btnAddAuthor.TabStop = false;
-            this.btnAddAuthor.Text = "SAVE";
-            this.btnAddAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddAuthor.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(631, 339);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnSave.Size = new System.Drawing.Size(168, 53);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.TabStop = false;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rbFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(568, 277);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(146, 37);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbFemale.Location = new System.Drawing.Point(568, 277);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(146, 37);
+            this.rbFemale.TabIndex = 8;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(436, 277);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 37);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbMale.Location = new System.Drawing.Point(436, 277);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(105, 37);
+            this.rbMale.TabIndex = 7;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // txtboxPassword
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(436, 188);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.PlaceholderText = "Password";
-            this.textBox12.Size = new System.Drawing.Size(363, 43);
-            this.textBox12.TabIndex = 5;
+            this.txtboxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxPassword.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxPassword.Location = new System.Drawing.Point(436, 188);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.PlaceholderText = "Password";
+            this.txtboxPassword.Size = new System.Drawing.Size(363, 43);
+            this.txtboxPassword.TabIndex = 5;
             // 
-            // textBox4
+            // txtboxLastName
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(436, 23);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "Last Name";
-            this.textBox4.Size = new System.Drawing.Size(363, 43);
-            this.textBox4.TabIndex = 2;
+            this.txtboxLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxLastName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxLastName.Location = new System.Drawing.Point(436, 23);
+            this.txtboxLastName.Name = "txtboxLastName";
+            this.txtboxLastName.PlaceholderText = "Last Name";
+            this.txtboxLastName.Size = new System.Drawing.Size(363, 43);
+            this.txtboxLastName.TabIndex = 2;
             // 
             // textBox11
             // 
@@ -160,16 +160,6 @@
             this.textBox3.Size = new System.Drawing.Size(363, 43);
             this.textBox3.TabIndex = 4;
             // 
-            // textBox14
-            // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox14.Location = new System.Drawing.Point(35, 270);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.PlaceholderText = "Birthday";
-            this.textBox14.Size = new System.Drawing.Size(363, 43);
-            this.textBox14.TabIndex = 6;
-            // 
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -182,15 +172,15 @@
             this.textBox13.Size = new System.Drawing.Size(363, 43);
             this.textBox13.TabIndex = 4;
             // 
-            // textBox10
+            // txtboxUsername
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(35, 188);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.PlaceholderText = "Username";
-            this.textBox10.Size = new System.Drawing.Size(363, 43);
-            this.textBox10.TabIndex = 4;
+            this.txtboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxUsername.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxUsername.Location = new System.Drawing.Point(35, 188);
+            this.txtboxUsername.Name = "txtboxUsername";
+            this.txtboxUsername.PlaceholderText = "Username";
+            this.txtboxUsername.Size = new System.Drawing.Size(363, 43);
+            this.txtboxUsername.TabIndex = 4;
             // 
             // textBox9
             // 
@@ -204,15 +194,15 @@
             this.textBox9.Size = new System.Drawing.Size(363, 43);
             this.textBox9.TabIndex = 4;
             // 
-            // textBox6
+            // txtboxEmail
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(35, 105);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PlaceholderText = "Email";
-            this.textBox6.Size = new System.Drawing.Size(764, 43);
-            this.textBox6.TabIndex = 3;
+            this.txtboxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxEmail.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxEmail.Location = new System.Drawing.Point(35, 105);
+            this.txtboxEmail.Name = "txtboxEmail";
+            this.txtboxEmail.PlaceholderText = "Email";
+            this.txtboxEmail.Size = new System.Drawing.Size(764, 43);
+            this.txtboxEmail.TabIndex = 3;
             // 
             // textBox5
             // 
@@ -226,15 +216,15 @@
             this.textBox5.Size = new System.Drawing.Size(764, 43);
             this.textBox5.TabIndex = 4;
             // 
-            // textBox1
+            // txtboxFirstName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(35, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "First Name";
-            this.textBox1.Size = new System.Drawing.Size(363, 43);
-            this.textBox1.TabIndex = 1;
+            this.txtboxFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxFirstName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxFirstName.Location = new System.Drawing.Point(35, 23);
+            this.txtboxFirstName.Name = "txtboxFirstName";
+            this.txtboxFirstName.PlaceholderText = "First Name";
+            this.txtboxFirstName.Size = new System.Drawing.Size(363, 43);
+            this.txtboxFirstName.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -248,104 +238,116 @@
             this.textBox2.Size = new System.Drawing.Size(363, 43);
             this.textBox2.TabIndex = 4;
             // 
-            // panel1
+            // pnlTitle
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 67);
-            this.panel1.TabIndex = 2;
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlTitle.Controls.Add(this.lblNewUser);
+            this.pnlTitle.Controls.Add(this.pbUser);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(847, 67);
+            this.pnlTitle.TabIndex = 2;
             // 
-            // label1
+            // lblNewUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(86, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "NEW USER";
+            this.lblNewUser.AutoSize = true;
+            this.lblNewUser.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNewUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNewUser.Location = new System.Drawing.Point(86, 19);
+            this.lblNewUser.Name = "lblNewUser";
+            this.lblNewUser.Size = new System.Drawing.Size(185, 33);
+            this.lblNewUser.TabIndex = 1;
+            this.lblNewUser.Text = "NEW USER";
             // 
-            // pictureBox1
+            // pbUser
             // 
-            this.pictureBox1.Image = global::UIPTTO_DATABASE.Properties.Resources.user21;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbUser.Image = global::UIPTTO_DATABASE.Properties.Resources.user21;
+            this.pbUser.Location = new System.Drawing.Point(35, 12);
+            this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(42, 49);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUser.TabIndex = 0;
+            this.pbUser.TabStop = false;
             // 
-            // panel2
+            // pnlBody
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnAddAuthor);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Controls.Add(this.textBox12);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox14);
-            this.panel2.Controls.Add(this.textBox13);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(847, 421);
-            this.panel2.TabIndex = 3;
+            this.pnlBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            this.pnlBody.Controls.Add(this.dtpDateFiled);
+            this.pnlBody.Controls.Add(this.btnCancel);
+            this.pnlBody.Controls.Add(this.btnSave);
+            this.pnlBody.Controls.Add(this.rbFemale);
+            this.pnlBody.Controls.Add(this.rbMale);
+            this.pnlBody.Controls.Add(this.txtboxPassword);
+            this.pnlBody.Controls.Add(this.txtboxLastName);
+            this.pnlBody.Controls.Add(this.textBox11);
+            this.pnlBody.Controls.Add(this.textBox3);
+            this.pnlBody.Controls.Add(this.textBox13);
+            this.pnlBody.Controls.Add(this.txtboxUsername);
+            this.pnlBody.Controls.Add(this.textBox9);
+            this.pnlBody.Controls.Add(this.txtboxEmail);
+            this.pnlBody.Controls.Add(this.textBox5);
+            this.pnlBody.Controls.Add(this.txtboxFirstName);
+            this.pnlBody.Controls.Add(this.textBox2);
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.Location = new System.Drawing.Point(0, 67);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(847, 421);
+            this.pnlBody.TabIndex = 3;
+            // 
+            // dtpDateFiled
+            // 
+            this.dtpDateFiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateFiled.CustomFormat = "";
+            this.dtpDateFiled.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateFiled.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateFiled.Location = new System.Drawing.Point(35, 271);
+            this.dtpDateFiled.Name = "dtpDateFiled";
+            this.dtpDateFiled.Size = new System.Drawing.Size(363, 43);
+            this.dtpDateFiled.TabIndex = 6;
+            this.dtpDateFiled.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
             // 
             // addUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 488);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlBody);
+            this.Controls.Add(this.pnlTitle);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addUserForm";
             this.Text = "addUserForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
+            this.pnlBody.ResumeLayout(false);
+            this.pnlBody.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Button button1;
-        private Button btnAddAuthor;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private TextBox textBox12;
-        private TextBox textBox4;
+        private Button btnCancel;
+        private Button btnSave;
+        private RadioButton rbFemale;
+        private RadioButton rbMale;
+        private TextBox txtboxPassword;
+        private TextBox txtboxLastName;
         private TextBox textBox11;
         private TextBox textBox3;
-        private TextBox textBox14;
         private TextBox textBox13;
-        private TextBox textBox10;
+        private TextBox txtboxUsername;
         private TextBox textBox9;
-        private TextBox textBox6;
+        private TextBox txtboxEmail;
         private TextBox textBox5;
-        private TextBox textBox1;
+        private TextBox txtboxFirstName;
         private TextBox textBox2;
-        private Panel panel1;
-        private Label label1;
-        private PictureBox pictureBox1;
-        private Panel panel2;
+        private Panel pnlTitle;
+        private Label lblNewUser;
+        private PictureBox pbUser;
+        private Panel pnlBody;
+        private DateTimePicker dtpDateFiled;
     }
 }

@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
         0AAADdABEGw9BwAAAYlJREFUWEfN17lOw0AQxvE0tKlAokGioKTggfJKSLRcSsMjIB6BKh09Ek1qpIAE
@@ -71,7 +71,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="btnAddAuthor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAVBJREFUWEftl0FuwjAQRdmyqOAMvWAFFyF36a5dd82WA7RdV1kBiuT+HzFomEzs
@@ -83,10 +83,10 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbIsbn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAB19JREFUeF7t3WvInnMcB/BtTps5JlOOLVmIsg2jyRvCixGRsFCYTJpiScihVsJI
+        vwAADr8BOAVTJAAAB19JREFUeF7t3WvInnMcB/BtTps5JlOOLVmIsg2jyRvCixGRsFCYTJpiScihVsJI
         y5k3vJAcajkkDRNp4oVkDmOtiZHDyOQwNny/67nq32/f+/9c931f/+f+Xc/9u+tT63df/8N1fXc/z3W6
         n2vCli1bxtqLsAnWwSpYDkvgLDgQVJvQI1ks7AP4r4Ot8C5cA9NAtQ9dkMXCXgcVrvU7PA6zQPUTapDF
         wuoGnFoGx4PqL2TIYmG9BFxh0BNB9RsEWSysn4DpQ5gCqu9gyGJh/QZMa+FQUP2HhCwW1kTA9AfMBzVG

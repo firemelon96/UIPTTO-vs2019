@@ -21,5 +21,10 @@ namespace UIPTTO_DATABASE.childForms.popupForm
         {
             dtpDateApproved.Enabled = rbApproved.Checked;
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
