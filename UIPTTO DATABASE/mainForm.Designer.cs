@@ -43,13 +43,15 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pbUIPTTOlogo = new System.Windows.Forms.PictureBox();
             this.pnlMainTitleBar = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panelBody = new System.Windows.Forms.Panel();
             this.pnlFooter = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideNavigation.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).BeginInit();
             this.pnlMainTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSideNavigation
@@ -287,25 +289,26 @@
             // pnlMainTitleBar
             // 
             this.pnlMainTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pnlMainTitleBar.Controls.Add(this.label1);
+            this.pnlMainTitleBar.Controls.Add(this.pictureBox1);
+            this.pnlMainTitleBar.Controls.Add(this.lblUsername);
             this.pnlMainTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMainTitleBar.Location = new System.Drawing.Point(280, 0);
             this.pnlMainTitleBar.Name = "pnlMainTitleBar";
             this.pnlMainTitleBar.Size = new System.Drawing.Size(1132, 61);
             this.pnlMainTitleBar.TabIndex = 1;
             // 
-            // label1
+            // lblUsername
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(876, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hello, USER";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsername.Location = new System.Drawing.Point(916, 22);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(126, 23);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Hello, USER";
             // 
             // panelBody
             // 
@@ -324,6 +327,16 @@
             this.pnlFooter.Size = new System.Drawing.Size(1132, 24);
             this.pnlFooter.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1057, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -340,6 +353,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).EndInit();
             this.pnlMainTitleBar.ResumeLayout(false);
             this.pnlMainTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,8 +374,9 @@
         private Button btnPatents;
         private Button btnCopyright;
         private Button btnProfile;
-        private Label label1;
+        private Label lblUsername;
         private Panel panelBody;
         private Panel pnlFooter;
+        private PictureBox pictureBox1;
     }
 }
