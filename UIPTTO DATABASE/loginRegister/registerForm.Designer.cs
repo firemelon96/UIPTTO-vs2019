@@ -70,7 +70,7 @@
             this.textBox3.Location = new System.Drawing.Point(63, 190);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.PlaceholderText = "Last Name";
+            //this.textBox3.PlaceholderText = "Last Name";
             this.textBox3.Size = new System.Drawing.Size(363, 43);
             this.textBox3.TabIndex = 2;
             // 
@@ -91,7 +91,7 @@
             this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(63, 114);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "First Name";
+            //this.textBox1.PlaceholderText = "First Name";
             this.textBox1.Size = new System.Drawing.Size(363, 43);
             this.textBox1.TabIndex = 1;
             // 
@@ -155,7 +155,7 @@
             this.textBox5.Location = new System.Drawing.Point(63, 347);
             this.textBox5.Name = "textBox5";
             this.textBox5.PasswordChar = '*';
-            this.textBox5.PlaceholderText = "Password";
+            //this.textBox5.PlaceholderText = "Password";
             this.textBox5.Size = new System.Drawing.Size(363, 43);
             this.textBox5.TabIndex = 4;
             // 
@@ -176,7 +176,7 @@
             this.textBox7.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox7.Location = new System.Drawing.Point(63, 268);
             this.textBox7.Name = "textBox7";
-            this.textBox7.PlaceholderText = "Username";
+            //this.textBox7.PlaceholderText = "Username";
             this.textBox7.Size = new System.Drawing.Size(363, 43);
             this.textBox7.TabIndex = 3;
             // 
@@ -198,7 +198,7 @@
             this.textBox9.Location = new System.Drawing.Point(63, 429);
             this.textBox9.Name = "textBox9";
             this.textBox9.PasswordChar = '*';
-            this.textBox9.PlaceholderText = "Email";
+            //this.textBox9.PlaceholderText = "Email";
             this.textBox9.Size = new System.Drawing.Size(363, 43);
             this.textBox9.TabIndex = 5;
             // 

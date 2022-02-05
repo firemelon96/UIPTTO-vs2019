@@ -148,7 +148,7 @@
             this.txtboxTitle.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxTitle.Location = new System.Drawing.Point(35, 23);
             this.txtboxTitle.Name = "txtboxTitle";
-            this.txtboxTitle.PlaceholderText = "Name of the Material/Publication";
+            //this.txtboxTitle.PlaceholderText = "Name of the Material/Publication";
             this.txtboxTitle.Size = new System.Drawing.Size(764, 43);
             this.txtboxTitle.TabIndex = 1;
             // 
@@ -244,7 +244,7 @@
             this.txtboxRegistrationNo.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxRegistrationNo.Location = new System.Drawing.Point(35, 105);
             this.txtboxRegistrationNo.Name = "txtboxRegistrationNo";
-            this.txtboxRegistrationNo.PlaceholderText = "Registration No. Issued";
+            //this.txtboxRegistrationNo.PlaceholderText = "Registration No. Issued";
             this.txtboxRegistrationNo.Size = new System.Drawing.Size(764, 43);
             this.txtboxRegistrationNo.TabIndex = 2;
             // 

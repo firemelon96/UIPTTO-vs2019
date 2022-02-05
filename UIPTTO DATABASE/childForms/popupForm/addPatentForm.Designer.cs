@@ -133,7 +133,7 @@
             this.txtboxApplicationNo.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxApplicationNo.Location = new System.Drawing.Point(436, 188);
             this.txtboxApplicationNo.Name = "txtboxApplicationNo";
-            this.txtboxApplicationNo.PlaceholderText = "Application No.";
+            //this.txtboxApplicationNo.PlaceholderText = "Application No.";
             this.txtboxApplicationNo.Size = new System.Drawing.Size(363, 43);
             this.txtboxApplicationNo.TabIndex = 4;
             // 
@@ -183,7 +183,7 @@
             this.txtboxCollege.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxCollege.Location = new System.Drawing.Point(436, 105);
             this.txtboxCollege.Name = "txtboxCollege";
-            this.txtboxCollege.PlaceholderText = "College/Unit";
+            //this.txtboxCollege.PlaceholderText = "College/Unit";
             this.txtboxCollege.ReadOnly = true;
             this.txtboxCollege.Size = new System.Drawing.Size(363, 43);
             this.txtboxCollege.TabIndex = 3;
@@ -207,7 +207,7 @@
             this.txtboxInvention.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxInvention.Location = new System.Drawing.Point(35, 23);
             this.txtboxInvention.Name = "txtboxInvention";
-            this.txtboxInvention.PlaceholderText = "Title of the Invention";
+            //this.txtboxInvention.PlaceholderText = "Title of the Invention";
             this.txtboxInvention.Size = new System.Drawing.Size(764, 43);
             this.txtboxInvention.TabIndex = 1;
             // 

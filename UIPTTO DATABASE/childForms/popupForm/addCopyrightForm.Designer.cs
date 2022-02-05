@@ -123,7 +123,7 @@
             this.txtboxRegNo.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxRegNo.Location = new System.Drawing.Point(436, 188);
             this.txtboxRegNo.Name = "txtboxRegNo";
-            this.txtboxRegNo.PlaceholderText = "Registration No.";
+            //this.txtboxRegNo.PlaceholderText = "Registration No.";
             this.txtboxRegNo.Size = new System.Drawing.Size(363, 43);
             this.txtboxRegNo.TabIndex = 5;
             // 
@@ -181,7 +181,7 @@
             this.txtboxTitle.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxTitle.Location = new System.Drawing.Point(35, 23);
             this.txtboxTitle.Name = "txtboxTitle";
-            this.txtboxTitle.PlaceholderText = "Title";
+            //this.txtboxTitle.PlaceholderText = "Title";
             this.txtboxTitle.Size = new System.Drawing.Size(764, 43);
             this.txtboxTitle.TabIndex = 1;
             // 
@@ -253,7 +253,7 @@
             this.txtboxCollege.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxCollege.Location = new System.Drawing.Point(436, 105);
             this.txtboxCollege.Name = "txtboxCollege";
-            this.txtboxCollege.PlaceholderText = "College";
+            //this.txtboxCollege.PlaceholderText = "College";
             this.txtboxCollege.ReadOnly = true;
             this.txtboxCollege.Size = new System.Drawing.Size(363, 43);
             this.txtboxCollege.TabIndex = 3;

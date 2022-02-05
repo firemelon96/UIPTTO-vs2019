@@ -106,7 +106,7 @@
             this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(61, 185);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Username";
+            //this.textBox1.PlaceholderText = "Username";
             this.textBox1.Size = new System.Drawing.Size(363, 43);
             this.textBox1.TabIndex = 1;
             // 
@@ -128,7 +128,7 @@
             this.textBox3.Location = new System.Drawing.Point(61, 270);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.PlaceholderText = "Password";
+            //this.textBox3.PlaceholderText = "Password";
             this.textBox3.Size = new System.Drawing.Size(363, 43);
             this.textBox3.TabIndex = 2;
             this.textBox3.UseSystemPasswordChar = true;

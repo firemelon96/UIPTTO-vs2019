@@ -38,15 +38,16 @@
             this.txtboxSearchProfile = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dgvProfile = new System.Windows.Forms.DataGridView();
-            this.Full_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSearchProfile = new System.Windows.Forms.Label();
+            this.btnAddAuthor = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lblSearchProfile = new System.Windows.Forms.Label();
-            this.btnAddAuthor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,6 @@
             this.lblProfileTitle.Size = new System.Drawing.Size(169, 36);
             this.lblProfileTitle.TabIndex = 1;
             this.lblProfileTitle.Text = "PROFILE";
-            this.lblProfileTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,7 +72,6 @@
             this.label2.Size = new System.Drawing.Size(260, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "List of Authors/Inventors";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtboxSearchProfile
             // 
@@ -83,7 +82,6 @@
             this.txtboxSearchProfile.Name = "txtboxSearchProfile";
             this.txtboxSearchProfile.Size = new System.Drawing.Size(235, 29);
             this.txtboxSearchProfile.TabIndex = 2;
-            this.txtboxSearchProfile.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -95,10 +93,11 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(235, 29);
             this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // dgvProfile
             // 
+            this.dgvProfile.AllowUserToAddRows = false;
+            this.dgvProfile.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
@@ -123,7 +122,8 @@
             this.dgvProfile.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProfile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Full_Name,
+            this.id,
+            this.fullname,
             this.email,
             this.college,
             this.birthday,
@@ -142,6 +142,7 @@
             this.dgvProfile.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvProfile.Location = new System.Drawing.Point(12, 154);
             this.dgvProfile.Name = "dgvProfile";
+            this.dgvProfile.ReadOnly = true;
             this.dgvProfile.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -158,61 +159,7 @@
             this.dgvProfile.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProfile.Size = new System.Drawing.Size(1090, 579);
             this.dgvProfile.TabIndex = 3;
-            this.dgvProfile.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Full_Name
-            // 
-            this.Full_Name.HeaderText = "Full Name";
-            this.Full_Name.MinimumWidth = 6;
-            this.Full_Name.Name = "Full_Name";
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            // 
-            // college
-            // 
-            this.college.HeaderText = "College/Unit";
-            this.college.MinimumWidth = 6;
-            this.college.Name = "college";
-            // 
-            // birthday
-            // 
-            this.birthday.HeaderText = "Birthday";
-            this.birthday.MinimumWidth = 6;
-            this.birthday.Name = "birthday";
-            // 
-            // gender
-            // 
-            this.gender.HeaderText = "Gender";
-            this.gender.MinimumWidth = 6;
-            this.gender.Name = "gender";
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.FillWeight = 35F;
-            this.edit.HeaderText = "Edit";
-            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.MinimumWidth = 6;
-            this.edit.Name = "edit";
-            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.edit.Width = 98;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.FillWeight = 35F;
-            this.delete.HeaderText = "Del";
-            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 88;
+            this.dgvProfile.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProfile_CellContentClick);
             // 
             // lblSearchProfile
             // 
@@ -225,7 +172,6 @@
             this.lblSearchProfile.Size = new System.Drawing.Size(135, 31);
             this.lblSearchProfile.TabIndex = 4;
             this.lblSearchProfile.Text = "SEARCH";
-            this.lblSearchProfile.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnAddAuthor
             // 
@@ -248,6 +194,80 @@
             this.btnAddAuthor.UseVisualStyleBackColor = false;
             this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // fullname
+            // 
+            this.fullname.DataPropertyName = "fullname";
+            this.fullname.HeaderText = "Full Name";
+            this.fullname.MinimumWidth = 6;
+            this.fullname.Name = "fullname";
+            this.fullname.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "Email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // college
+            // 
+            this.college.DataPropertyName = "college";
+            this.college.HeaderText = "College/Unit";
+            this.college.MinimumWidth = 6;
+            this.college.Name = "college";
+            this.college.ReadOnly = true;
+            // 
+            // birthday
+            // 
+            this.birthday.DataPropertyName = "birthday";
+            this.birthday.HeaderText = "Birthday";
+            this.birthday.MinimumWidth = 6;
+            this.birthday.Name = "birthday";
+            this.birthday.ReadOnly = true;
+            // 
+            // gender
+            // 
+            this.gender.DataPropertyName = "gender";
+            this.gender.HeaderText = "Gender";
+            this.gender.MinimumWidth = 6;
+            this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.edit.FillWeight = 35F;
+            this.edit.HeaderText = "Edit";
+            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
+            this.edit.MinimumWidth = 6;
+            this.edit.Name = "edit";
+            this.edit.ReadOnly = true;
+            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.edit.Width = 98;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.FillWeight = 35F;
+            this.delete.HeaderText = "Del";
+            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.delete.Width = 88;
+            // 
             // profileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -262,6 +282,7 @@
             this.Controls.Add(this.textBox2);
             this.Name = "profileForm";
             this.Text = "profileForm";
+            this.Load += new System.EventHandler(this.profileForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -274,10 +295,11 @@
         private Label label2;
         private TextBox txtboxSearchProfile;
         private TextBox textBox2;
-        private DataGridView dgvProfile;
         private Label lblSearchProfile;
         private Button btnAddAuthor;
-        private DataGridViewTextBoxColumn Full_Name;
+        public DataGridView dgvProfile;
+        private DataGridViewTextBoxColumn id;
+        private DataGridViewTextBoxColumn fullname;
         private DataGridViewTextBoxColumn email;
         private DataGridViewTextBoxColumn college;
         private DataGridViewTextBoxColumn birthday;

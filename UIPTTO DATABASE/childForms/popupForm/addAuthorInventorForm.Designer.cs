@@ -191,7 +191,6 @@
             this.txtboxPassword.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxPassword.Location = new System.Drawing.Point(436, 188);
             this.txtboxPassword.Name = "txtboxPassword";
-            this.txtboxPassword.PlaceholderText = "Password";
             this.txtboxPassword.Size = new System.Drawing.Size(363, 43);
             this.txtboxPassword.TabIndex = 5;
             // 
@@ -201,7 +200,6 @@
             this.txtboxLastName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxLastName.Location = new System.Drawing.Point(436, 23);
             this.txtboxLastName.Name = "txtboxLastName";
-            this.txtboxLastName.PlaceholderText = "Last Name";
             this.txtboxLastName.Size = new System.Drawing.Size(363, 43);
             this.txtboxLastName.TabIndex = 2;
             // 
@@ -250,7 +248,6 @@
             this.txtboxUsername.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxUsername.Location = new System.Drawing.Point(35, 188);
             this.txtboxUsername.Name = "txtboxUsername";
-            this.txtboxUsername.PlaceholderText = "Username";
             this.txtboxUsername.Size = new System.Drawing.Size(363, 43);
             this.txtboxUsername.TabIndex = 4;
             // 
@@ -273,7 +270,6 @@
             this.txtboxEmail.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxEmail.Location = new System.Drawing.Point(35, 105);
             this.txtboxEmail.Name = "txtboxEmail";
-            this.txtboxEmail.PlaceholderText = "Email";
             this.txtboxEmail.Size = new System.Drawing.Size(764, 43);
             this.txtboxEmail.TabIndex = 3;
             // 
@@ -296,7 +292,6 @@
             this.txtboxFirstName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxFirstName.Location = new System.Drawing.Point(35, 23);
             this.txtboxFirstName.Name = "txtboxFirstName";
-            this.txtboxFirstName.PlaceholderText = "First Name";
             this.txtboxFirstName.Size = new System.Drawing.Size(363, 43);
             this.txtboxFirstName.TabIndex = 1;
             // 
@@ -324,6 +319,7 @@
             this.MinimizeBox = false;
             this.Name = "addAuthorInventorForm";
             this.Text = "Add new Profile";
+            this.Load += new System.EventHandler(this.addAuthorInventorForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
@@ -336,24 +332,24 @@
         #endregion
 
         private Panel panel1;
-        private Label lblNewProfile;
         private PictureBox pbProfile;
         private Panel panel2;
-        private TextBox txtboxPassword;
-        private TextBox txtboxLastName;
         private TextBox textBox11;
         private TextBox textBox3;
         private TextBox textBox13;
-        private TextBox txtboxUsername;
         private TextBox textBox9;
-        private TextBox txtboxEmail;
         private TextBox textBox5;
-        private TextBox txtboxFirstName;
         private TextBox textBox2;
-        private RadioButton rbFemale;
-        private RadioButton rbMale;
         private Button btnCancel;
         private Button btnSave;
-        private DateTimePicker dtpDOB;
+        public Label lblNewProfile;
+        public TextBox txtboxPassword;
+        public TextBox txtboxLastName;
+        public TextBox txtboxUsername;
+        public TextBox txtboxEmail;
+        public TextBox txtboxFirstName;
+        public RadioButton rbFemale;
+        public RadioButton rbMale;
+        public DateTimePicker dtpDOB;
     }
 }
