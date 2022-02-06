@@ -38,6 +38,13 @@ namespace UIPTTO_DATABASE.Models
         [Column("p_DOB", TypeName = "date")]
         public DateTime? PDob { get; set; }
 
+        public string? PFullname 
+        {
+            get {
+                return PFname + " " + PLname;
+            }
+        }
+
         [InverseProperty(nameof(CopyrightTable.PIdNavigation))]
         public virtual ICollection<CopyrightTable> CopyrightTables { get; set; }
         [InverseProperty(nameof(IsbnTable.PIdNavigation))]

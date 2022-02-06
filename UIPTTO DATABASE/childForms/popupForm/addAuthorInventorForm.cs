@@ -17,14 +17,28 @@ namespace UIPTTO_DATABASE.childForms.popupForm
     {
         
         private mainDBContext db = new mainDBContext();
-        public addAuthorInventorForm()
+
+        profileForm pform;
+        public addAuthorInventorForm(profileForm pf)
         {
             InitializeComponent();
+            this.pform = pf;
         }
 
         private void addAuthorInventorForm_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
