@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNewProfile = new System.Windows.Forms.Label();
             this.pbProfile = new System.Windows.Forms.PictureBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,7 +65,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.panel1.Controls.Add(this.lblNewProfile);
             this.panel1.Controls.Add(this.pbProfile);
-            this.panel1.Controls.Add(this.txtId);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -93,18 +91,6 @@
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbProfile.TabIndex = 0;
             this.pbProfile.TabStop = false;
-            // 
-            // txtId
-            // 
-            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtId.Enabled = false;
-            this.txtId.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtId.ForeColor = System.Drawing.Color.Gray;
-            this.txtId.Location = new System.Drawing.Point(328, 26);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(68, 25);
-            this.txtId.TabIndex = 1;
-            this.txtId.Visible = false;
             // 
             // panel2
             // 
@@ -171,7 +157,6 @@
             this.label5.Size = new System.Drawing.Size(163, 25);
             this.label5.TabIndex = 11;
             this.label5.Text = "College/Unit:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -219,9 +204,9 @@
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(116, 433);
+            this.btnCancel.Location = new System.Drawing.Point(133, 433);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(152, 42);
+            this.btnCancel.Size = new System.Drawing.Size(146, 42);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "CANCEL";
@@ -237,9 +222,9 @@
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(285, 433);
+            this.btnSave.Location = new System.Drawing.Point(297, 433);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(123, 42);
+            this.btnSave.Size = new System.Drawing.Size(113, 42);
             this.btnSave.TabIndex = 9;
             this.btnSave.TabStop = false;
             this.btnSave.Text = "SAVE";
@@ -460,6 +445,5 @@
         private Label label4;
         private Label label3;
         private Label label1;
-        public TextBox txtId;
     }
 }

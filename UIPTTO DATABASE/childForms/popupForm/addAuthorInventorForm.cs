@@ -17,6 +17,7 @@ namespace UIPTTO_DATABASE.childForms.popupForm
     {
         
         private mainDBContext db = new mainDBContext();
+        ProfileTable profileTable = new ProfileTable();
 
         profileForm pform;
         public addAuthorInventorForm(profileForm pf)
@@ -32,13 +33,32 @@ namespace UIPTTO_DATABASE.childForms.popupForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
+            profileTable.PFname = txtboxFirstName.Text.Trim();
+            profileTable.PLname = txtboxLastName.Text.Trim();
+            profileTable.PEmail = txtboxEmail.Text.Trim();
+            profileTable.PCollege = txtboxCollege.Text.Trim();
+            if (rbMale.Checked)
+            {
+                profileTable.PGender = "male";
+            }
+            else
+            {
+                profileTable.PGender = "female";
+            }
+            profileTable.PDob = dtpDOB.Value;
+            //profileTable.PFname = txtboxFirstName.Text.Trim();
+            if (profileTable.PId == 0)
+            {
+                db.ProfileTables.Add(profileTable);
+                db.SaveChanges();
+                MessageBox.Show("Author Profile added Successfully!");
+            }
+            else
+            {
+                db.Entry(profileTable).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.SaveChanges();
+            }
+            pform.populateDgv();
         }
     }
 }

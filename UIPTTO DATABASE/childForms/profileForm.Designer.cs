@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profileForm));
             this.lblProfileTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxSearchProfile = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dgvProfile = new System.Windows.Forms.DataGridView();
-            this.lblSearchProfile = new System.Windows.Forms.Label();
-            this.btnAddAuthor = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSearchProfile = new System.Windows.Forms.Label();
+            this.btnAddAuthor = new System.Windows.Forms.Button();
+            this.btnEditAuthor = new System.Windows.Forms.Button();
+            this.btnDelAuthor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,12 +98,15 @@
             // 
             this.dgvProfile.AllowUserToAddRows = false;
             this.dgvProfile.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProfile.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProfile.AllowUserToResizeColumns = false;
+            this.dgvProfile.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProfile.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -109,14 +115,14 @@
             this.dgvProfile.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProfile.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvProfile.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProfile.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProfile.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvProfile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -125,14 +131,14 @@
             this.college,
             this.birthday,
             this.gender});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProfile.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProfile.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvProfile.EnableHeadersVisualStyles = false;
             this.dgvProfile.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvProfile.Location = new System.Drawing.Point(12, 154);
@@ -140,55 +146,23 @@
             this.dgvProfile.Name = "dgvProfile";
             this.dgvProfile.ReadOnly = true;
             this.dgvProfile.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProfile.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProfile.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvProfile.RowHeadersVisible = false;
             this.dgvProfile.RowHeadersWidth = 51;
             this.dgvProfile.RowTemplate.Height = 29;
+            this.dgvProfile.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProfile.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvProfile.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProfile.Size = new System.Drawing.Size(1090, 579);
             this.dgvProfile.TabIndex = 3;
             this.dgvProfile.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProfile_CellContentClick);
-            // 
-            // lblSearchProfile
-            // 
-            this.lblSearchProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSearchProfile.AutoSize = true;
-            this.lblSearchProfile.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSearchProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchProfile.Location = new System.Drawing.Point(722, 109);
-            this.lblSearchProfile.Name = "lblSearchProfile";
-            this.lblSearchProfile.Size = new System.Drawing.Size(135, 31);
-            this.lblSearchProfile.TabIndex = 4;
-            this.lblSearchProfile.Text = "SEARCH";
-            // 
-            // btnAddAuthor
-            // 
-            this.btnAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnAddAuthor.FlatAppearance.BorderSize = 0;
-            this.btnAddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAuthor.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddAuthor.Image = global::UIPTTO_DATABASE.Properties.Resources.plus2;
-            this.btnAddAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAuthor.Location = new System.Drawing.Point(934, 751);
-            this.btnAddAuthor.Name = "btnAddAuthor";
-            this.btnAddAuthor.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddAuthor.Size = new System.Drawing.Size(168, 53);
-            this.btnAddAuthor.TabIndex = 5;
-            this.btnAddAuthor.TabStop = false;
-            this.btnAddAuthor.Text = "NEW";
-            this.btnAddAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddAuthor.UseVisualStyleBackColor = false;
-            this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
             // 
             // id
             // 
@@ -197,6 +171,7 @@
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.ReadOnly = true;
+            this.id.Visible = false;
             // 
             // fullname
             // 
@@ -238,11 +213,86 @@
             this.gender.Name = "gender";
             this.gender.ReadOnly = true;
             // 
+            // lblSearchProfile
+            // 
+            this.lblSearchProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearchProfile.AutoSize = true;
+            this.lblSearchProfile.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSearchProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSearchProfile.Location = new System.Drawing.Point(722, 109);
+            this.lblSearchProfile.Name = "lblSearchProfile";
+            this.lblSearchProfile.Size = new System.Drawing.Size(135, 31);
+            this.lblSearchProfile.TabIndex = 4;
+            this.lblSearchProfile.Text = "SEARCH";
+            // 
+            // btnAddAuthor
+            // 
+            this.btnAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnAddAuthor.FlatAppearance.BorderSize = 0;
+            this.btnAddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAuthor.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddAuthor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAuthor.Image")));
+            this.btnAddAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddAuthor.Location = new System.Drawing.Point(13, 752);
+            this.btnAddAuthor.Name = "btnAddAuthor";
+            this.btnAddAuthor.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAddAuthor.Size = new System.Drawing.Size(110, 47);
+            this.btnAddAuthor.TabIndex = 5;
+            this.btnAddAuthor.TabStop = false;
+            this.btnAddAuthor.Text = "NEW";
+            this.btnAddAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddAuthor.UseVisualStyleBackColor = false;
+            this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
+            // 
+            // btnEditAuthor
+            // 
+            this.btnEditAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnEditAuthor.FlatAppearance.BorderSize = 0;
+            this.btnEditAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditAuthor.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditAuthor.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAuthor.Image")));
+            this.btnEditAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditAuthor.Location = new System.Drawing.Point(147, 752);
+            this.btnEditAuthor.Name = "btnEditAuthor";
+            this.btnEditAuthor.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnEditAuthor.Size = new System.Drawing.Size(105, 47);
+            this.btnEditAuthor.TabIndex = 6;
+            this.btnEditAuthor.Text = "EDIT";
+            this.btnEditAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditAuthor.UseVisualStyleBackColor = false;
+            this.btnEditAuthor.Click += new System.EventHandler(this.btnEditAuthor_Click);
+            // 
+            // btnDelAuthor
+            // 
+            this.btnDelAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnDelAuthor.FlatAppearance.BorderSize = 0;
+            this.btnDelAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelAuthor.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelAuthor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDelAuthor.Image = ((System.Drawing.Image)(resources.GetObject("btnDelAuthor.Image")));
+            this.btnDelAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelAuthor.Location = new System.Drawing.Point(277, 752);
+            this.btnDelAuthor.Name = "btnDelAuthor";
+            this.btnDelAuthor.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnDelAuthor.Size = new System.Drawing.Size(105, 47);
+            this.btnDelAuthor.TabIndex = 6;
+            this.btnDelAuthor.Text = "EDIT";
+            this.btnDelAuthor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelAuthor.UseVisualStyleBackColor = false;
+            this.btnDelAuthor.Click += new System.EventHandler(this.btnDelAuthor_Click);
+            // 
             // profileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
+            this.Controls.Add(this.btnDelAuthor);
+            this.Controls.Add(this.btnEditAuthor);
             this.Controls.Add(this.btnAddAuthor);
             this.Controls.Add(this.lblSearchProfile);
             this.Controls.Add(this.dgvProfile);
@@ -274,5 +324,7 @@
         private DataGridViewTextBoxColumn college;
         private DataGridViewTextBoxColumn birthday;
         private DataGridViewTextBoxColumn gender;
+        private Button btnEditAuthor;
+        private Button btnDelAuthor;
     }
 }

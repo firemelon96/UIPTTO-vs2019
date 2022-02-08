@@ -33,7 +33,7 @@ namespace UIPTTO_DATABASE.Models
         [StringLength(50)]
         public string? PCollege { get; set; }
         [Column("p_Gender")]
-        [StringLength(10)]
+        [StringLength(50)]
         public string? PGender { get; set; }
         [Column("p_DOB", TypeName = "date")]
         public DateTime? PDob { get; set; }

@@ -15,19 +15,32 @@ namespace UIPTTO_DATABASE.childForms
     public partial class profileForm : Form
     {
         private mainDBContext db = new mainDBContext();
-        public bool Checked { get; set;}
         public profileForm()
         {
             InitializeComponent();
+
+            this.btnEditAuthor.Enabled = false;
+            this.btnDelAuthor.Enabled = false;
         }
 
         private void btnAddAuthor_Click(object sender, EventArgs e)
         {
-            addAuthorInventorForm addAuthorInventorForm = new addAuthorInventorForm(this);
-            addAuthorInventorForm.ShowDialog();
+            using (addAuthorInventorForm addAuthorInventorForm = new addAuthorInventorForm(this))
+            {
+                if (addAuthorInventorForm.ShowDialog() == DialogResult.OK)
+                {
+
+                }
+            }
         }
 
         private void profileForm_Load(object sender, EventArgs e)
+        {
+            populateDgv();
+            //dgvProfile.DataSource = db.ProfileTables.ToList();
+        }
+
+        public void populateDgv()
         {
             var authors = from p in db.ProfileTables
                           select new {
@@ -39,46 +52,30 @@ namespace UIPTTO_DATABASE.childForms
                               gender = p.PGender
                           };
             dgvProfile.DataSource = authors.ToList();
-            //dgvProfile.DataSource = db.ProfileTables.ToList();
         }
 
         private void dgvProfile_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-            if (dgvProfile.Columns[e.ColumnIndex].Name == "fullname")
+            if (dgvProfile.SelectedRows.Count > 0)
             {
-                var id = dgvProfile.Rows[e.RowIndex].Cells[0].Value;
-                //MessageBox.Show(id);
-                var prof = db.ProfileTables.Find(id);
-                
-                if (prof != null)
-                {
-                    addAuthorInventorForm aform = new addAuthorInventorForm(this);
-                    aform.lblNewProfile.Text = "EDIT PROFILE";
-                    aform.txtId.Text = id.ToString();
-                    aform.txtboxFirstName.Text = prof.PFname;
-                    aform.txtboxLastName.Text = prof.PLname;
-                    aform.txtboxEmail.Text = prof.PEmail;
-                    aform.txtboxCollege.Text = prof.PCollege;
-                    aform.txtboxContact.Text = prof.PEmail;
-                    DateTime pDob = (DateTime)prof.PDob;
-                    aform.dtpDOB.Value = pDob;
-                    if (prof.PGender == "male")
-                    {
-                        aform.rbMale.Checked = true;
-                    }
-                    //aform.txtboxFirstName.Text = dgvProfile.CurrentRow.Cells[0].Value.ToString();
-                    aform.ShowDialog();
-                }
-                
+                this.btnEditAuthor.Enabled = true;
+                this.btnDelAuthor.Enabled = true;
             }
-            if (dgvProfile.Columns[e.ColumnIndex].Name == "delete")
+            else
             {
-                if (MessageBox.Show("Are you sure you want to delete?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-                    MessageBox.Show("deleted");
-                }
+                this.btnEditAuthor.Enabled = false;
+                this.btnDelAuthor.Enabled = false;
             }
+        }
+
+        private void btnEditAuthor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelAuthor_Click(object sender, EventArgs e)
+        {
 
         }
     }
