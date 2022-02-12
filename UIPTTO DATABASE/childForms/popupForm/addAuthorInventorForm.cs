@@ -28,15 +28,24 @@ namespace UIPTTO_DATABASE.childForms.popupForm
 
         private void addAuthorInventorForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            //kunin ko lang ang id ng nasa form, hindi ang id ng selected na row, kasi ang formload ay auto select sa row.
+            //profileTable.PId = Convert.ToInt32(lblID);
+            //find id where the
+            //profileTable.PId = Convert.ToInt32(pform.dgvProfile.CurrentRow.Cells["id"].Value);
+            //profileTable.PId = Convert.ToInt32(pform.dgvProfile.CurrentRow.Cells["id"].Value);
+            //
+            //maglalagay ako ulit ng hidden textbox kong saan ilalagay ko ang value mula sa btnedit at btnadd at icoconvvert sa integer
+            profileTable.PId = Convert.ToInt32(txtboxId.Text);
             profileTable.PFname = txtboxFirstName.Text.Trim();
             profileTable.PLname = txtboxLastName.Text.Trim();
             profileTable.PEmail = txtboxEmail.Text.Trim();
             profileTable.PCollege = txtboxCollege.Text.Trim();
+            
             if (rbMale.Checked)
             {
                 profileTable.PGender = "male";
@@ -46,18 +55,22 @@ namespace UIPTTO_DATABASE.childForms.popupForm
                 profileTable.PGender = "female";
             }
             profileTable.PDob = dtpDOB.Value;
-            //profileTable.PFname = txtboxFirstName.Text.Trim();
+            
+            //kapag naconvert na sa integer, iccheck ko. if(profileTable.PId == 0)
             if (profileTable.PId == 0)
             {
                 db.ProfileTables.Add(profileTable);
-                db.SaveChanges();
+                
                 MessageBox.Show("Author Profile added Successfully!");
             }
             else
-            {
-                db.Entry(profileTable).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                db.SaveChanges();
+            {                
+                db.Entry(profileTable).State = Microsoft.EntityFrameworkCore.EntityState.Modified;                
+                MessageBox.Show("Upadted Profile Successfully");
+                
             }
+            db.SaveChanges();
+            this.Close();
             pform.populateDgv();
         }
     }

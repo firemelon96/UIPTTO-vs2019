@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addAuthorInventorForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtboxId = new System.Windows.Forms.TextBox();
             this.lblNewProfile = new System.Windows.Forms.Label();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -63,6 +64,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.panel1.Controls.Add(this.txtboxId);
             this.panel1.Controls.Add(this.lblNewProfile);
             this.panel1.Controls.Add(this.pbProfile);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -70,6 +72,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 67);
             this.panel1.TabIndex = 0;
+            // 
+            // txtboxId
+            // 
+            this.txtboxId.Location = new System.Drawing.Point(328, 19);
+            this.txtboxId.Name = "txtboxId";
+            this.txtboxId.ReadOnly = true;
+            this.txtboxId.Size = new System.Drawing.Size(41, 27);
+            this.txtboxId.TabIndex = 2;
+            this.txtboxId.Visible = false;
             // 
             // lblNewProfile
             // 
@@ -204,13 +215,13 @@
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(133, 433);
+            this.btnCancel.Location = new System.Drawing.Point(104, 433);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(146, 42);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "CANCEL";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSave
@@ -222,13 +233,13 @@
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(297, 433);
+            this.btnSave.Location = new System.Drawing.Point(267, 433);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(113, 42);
+            this.btnSave.Size = new System.Drawing.Size(143, 42);
             this.btnSave.TabIndex = 9;
             this.btnSave.TabStop = false;
             this.btnSave.Text = "SAVE";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -429,7 +440,6 @@
         private TextBox textBox5;
         private TextBox textBox2;
         private Button btnCancel;
-        private Button btnSave;
         public Label lblNewProfile;
         public TextBox txtboxCollege;
         public TextBox txtboxLastName;
@@ -445,5 +455,7 @@
         private Label label4;
         private Label label3;
         private Label label1;
+        public Button btnSave;
+        public TextBox txtboxId;
     }
 }

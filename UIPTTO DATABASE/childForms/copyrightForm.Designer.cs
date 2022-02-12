@@ -28,49 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(copyrightForm));
-            this.btnAddCopyright = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxSearchCopyright = new System.Windows.Forms.TextBox();
             this.dgvCopyright = new System.Windows.Forms.DataGridView();
+            this.cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appr_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.lblSearchCopyright = new System.Windows.Forms.Label();
+            this.btnDelCopyright = new System.Windows.Forms.Button();
+            this.btnEditCopyright = new System.Windows.Forms.Button();
+            this.btnAddCopyright = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCopyright)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAddCopyright
-            // 
-            this.btnAddCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnAddCopyright.FlatAppearance.BorderSize = 0;
-            this.btnAddCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCopyright.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddCopyright.Image = global::UIPTTO_DATABASE.Properties.Resources.plus2;
-            this.btnAddCopyright.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddCopyright.Location = new System.Drawing.Point(934, 755);
-            this.btnAddCopyright.Name = "btnAddCopyright";
-            this.btnAddCopyright.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddCopyright.Size = new System.Drawing.Size(168, 53);
-            this.btnAddCopyright.TabIndex = 12;
-            this.btnAddCopyright.TabStop = false;
-            this.btnAddCopyright.Text = "NEW";
-            this.btnAddCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddCopyright.UseVisualStyleBackColor = false;
-            this.btnAddCopyright.Click += new System.EventHandler(this.btnAddCopyright_Click);
             // 
             // textBox2
             // 
@@ -117,12 +97,14 @@
             // 
             // dgvCopyright
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCopyright.AllowUserToAddRows = false;
+            this.dgvCopyright.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -131,45 +113,45 @@
             this.dgvCopyright.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCopyright.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvCopyright.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvCopyright.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCopyright.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cid,
             this.title,
             this.college,
             this.author,
             this.date_filed,
             this.reg_no,
-            this.appr_date,
-            this.edit,
-            this.delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.DefaultCellStyle = dataGridViewCellStyle3;
+            this.appr_date});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvCopyright.EnableHeadersVisualStyles = false;
             this.dgvCopyright.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvCopyright.Location = new System.Drawing.Point(12, 152);
             this.dgvCopyright.Name = "dgvCopyright";
+            this.dgvCopyright.ReadOnly = true;
             this.dgvCopyright.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvCopyright.RowHeadersVisible = false;
             this.dgvCopyright.RowHeadersWidth = 51;
             this.dgvCopyright.RowTemplate.Height = 29;
@@ -178,12 +160,21 @@
             this.dgvCopyright.Size = new System.Drawing.Size(1090, 584);
             this.dgvCopyright.TabIndex = 10;
             // 
+            // cid
+            // 
+            this.cid.HeaderText = "copyright";
+            this.cid.MinimumWidth = 6;
+            this.cid.Name = "cid";
+            this.cid.ReadOnly = true;
+            this.cid.Visible = false;
+            // 
             // title
             // 
             this.title.FillWeight = 109.5583F;
             this.title.HeaderText = "Title";
             this.title.MinimumWidth = 6;
             this.title.Name = "title";
+            this.title.ReadOnly = true;
             // 
             // college
             // 
@@ -191,6 +182,7 @@
             this.college.HeaderText = "College";
             this.college.MinimumWidth = 6;
             this.college.Name = "college";
+            this.college.ReadOnly = true;
             // 
             // author
             // 
@@ -198,6 +190,7 @@
             this.author.HeaderText = "Author";
             this.author.MinimumWidth = 6;
             this.author.Name = "author";
+            this.author.ReadOnly = true;
             // 
             // date_filed
             // 
@@ -205,6 +198,7 @@
             this.date_filed.HeaderText = "Date Filed";
             this.date_filed.MinimumWidth = 6;
             this.date_filed.Name = "date_filed";
+            this.date_filed.ReadOnly = true;
             // 
             // reg_no
             // 
@@ -212,6 +206,7 @@
             this.reg_no.HeaderText = "Reg. No.";
             this.reg_no.MinimumWidth = 6;
             this.reg_no.Name = "reg_no";
+            this.reg_no.ReadOnly = true;
             // 
             // appr_date
             // 
@@ -219,29 +214,7 @@
             this.appr_date.HeaderText = "Approval Date";
             this.appr_date.MinimumWidth = 6;
             this.appr_date.Name = "appr_date";
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.FillWeight = 39.30481F;
-            this.edit.HeaderText = "Edit";
-            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.MinimumWidth = 6;
-            this.edit.Name = "edit";
-            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.edit.Width = 75;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.FillWeight = 38.34541F;
-            this.delete.HeaderText = "Del";
-            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 88;
+            this.appr_date.ReadOnly = true;
             // 
             // lblSearchCopyright
             // 
@@ -255,11 +228,69 @@
             this.lblSearchCopyright.TabIndex = 11;
             this.lblSearchCopyright.Text = "SEARCH";
             // 
+            // btnDelCopyright
+            // 
+            this.btnDelCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnDelCopyright.FlatAppearance.BorderSize = 0;
+            this.btnDelCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelCopyright.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDelCopyright.Image = ((System.Drawing.Image)(resources.GetObject("btnDelCopyright.Image")));
+            this.btnDelCopyright.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelCopyright.Location = new System.Drawing.Point(278, 759);
+            this.btnDelCopyright.Name = "btnDelCopyright";
+            this.btnDelCopyright.Size = new System.Drawing.Size(143, 47);
+            this.btnDelCopyright.TabIndex = 15;
+            this.btnDelCopyright.Text = "DELETE";
+            this.btnDelCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnDelCopyright.UseVisualStyleBackColor = false;
+            // 
+            // btnEditCopyright
+            // 
+            this.btnEditCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnEditCopyright.FlatAppearance.BorderSize = 0;
+            this.btnEditCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCopyright.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditCopyright.Image = ((System.Drawing.Image)(resources.GetObject("btnEditCopyright.Image")));
+            this.btnEditCopyright.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditCopyright.Location = new System.Drawing.Point(148, 759);
+            this.btnEditCopyright.Name = "btnEditCopyright";
+            this.btnEditCopyright.Size = new System.Drawing.Size(105, 47);
+            this.btnEditCopyright.TabIndex = 14;
+            this.btnEditCopyright.Text = "EDIT";
+            this.btnEditCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnEditCopyright.UseVisualStyleBackColor = false;
+            // 
+            // btnAddCopyright
+            // 
+            this.btnAddCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnAddCopyright.FlatAppearance.BorderSize = 0;
+            this.btnAddCopyright.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCopyright.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddCopyright.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCopyright.Image")));
+            this.btnAddCopyright.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddCopyright.Location = new System.Drawing.Point(14, 759);
+            this.btnAddCopyright.Name = "btnAddCopyright";
+            this.btnAddCopyright.Size = new System.Drawing.Size(110, 47);
+            this.btnAddCopyright.TabIndex = 13;
+            this.btnAddCopyright.TabStop = false;
+            this.btnAddCopyright.Text = "NEW";
+            this.btnAddCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAddCopyright.UseVisualStyleBackColor = false;
+            this.btnAddCopyright.Click += new System.EventHandler(this.btnAddCopyright_Click_1);
+            // 
             // copyrightForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
+            this.Controls.Add(this.btnDelCopyright);
+            this.Controls.Add(this.btnEditCopyright);
             this.Controls.Add(this.btnAddCopyright);
             this.Controls.Add(this.lblSearchCopyright);
             this.Controls.Add(this.dgvCopyright);
@@ -276,21 +307,21 @@
         }
 
         #endregion
-
-        private Button btnAddCopyright;
         private TextBox textBox2;
         private Label lblCopyright;
         private Label label2;
         private TextBox txtboxSearchCopyright;
         private DataGridView dgvCopyright;
         private Label lblSearchCopyright;
+        private DataGridViewTextBoxColumn cid;
         private DataGridViewTextBoxColumn title;
         private DataGridViewTextBoxColumn college;
         private DataGridViewTextBoxColumn author;
         private DataGridViewTextBoxColumn date_filed;
         private DataGridViewTextBoxColumn reg_no;
         private DataGridViewTextBoxColumn appr_date;
-        private DataGridViewImageColumn edit;
-        private DataGridViewImageColumn delete;
+        private Button btnDelCopyright;
+        private Button btnEditCopyright;
+        private Button btnAddCopyright;
     }
 }

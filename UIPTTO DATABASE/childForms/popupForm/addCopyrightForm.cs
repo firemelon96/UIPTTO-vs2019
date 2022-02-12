@@ -17,14 +17,5 @@ namespace UIPTTO_DATABASE.childForms.popupForm
             InitializeComponent();
         }
 
-        private void rbApproved_CheckedChanged(object sender, EventArgs e)
-        {
-            dtpDateApproved.Enabled = rbApproved.Checked;
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

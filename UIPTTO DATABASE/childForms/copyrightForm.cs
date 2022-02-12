@@ -18,7 +18,7 @@ namespace UIPTTO_DATABASE.childForms
             InitializeComponent();
         }
 
-        private void btnAddCopyright_Click(object sender, EventArgs e)
+        private void btnAddCopyright_Click_1(object sender, EventArgs e)
         {
             addCopyrightForm addCopyrightForm = new addCopyrightForm();
             addCopyrightForm.ShowDialog();
