@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(copyrightForm));
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxSearchCopyright = new System.Windows.Forms.TextBox();
             this.dgvCopyright = new System.Windows.Forms.DataGridView();
+            this.lblSearchCopyright = new System.Windows.Forms.Label();
+            this.btnDelCopyright = new System.Windows.Forms.Button();
+            this.btnEditCopyright = new System.Windows.Forms.Button();
+            this.btnAddCopyright = new System.Windows.Forms.Button();
             this.cid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,10 +49,6 @@
             this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appr_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblSearchCopyright = new System.Windows.Forms.Label();
-            this.btnDelCopyright = new System.Windows.Forms.Button();
-            this.btnEditCopyright = new System.Windows.Forms.Button();
-            this.btnAddCopyright = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCopyright)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,12 +99,12 @@
             // 
             this.dgvCopyright.AllowUserToAddRows = false;
             this.dgvCopyright.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -113,14 +113,14 @@
             this.dgvCopyright.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCopyright.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dgvCopyright.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCopyright.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCopyright.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cid,
@@ -130,28 +130,28 @@
             this.date_filed,
             this.reg_no,
             this.appr_date});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCopyright.EnableHeadersVisualStyles = false;
             this.dgvCopyright.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvCopyright.Location = new System.Drawing.Point(12, 152);
             this.dgvCopyright.Name = "dgvCopyright";
             this.dgvCopyright.ReadOnly = true;
             this.dgvCopyright.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCopyright.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCopyright.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCopyright.RowHeadersVisible = false;
             this.dgvCopyright.RowHeadersWidth = 51;
             this.dgvCopyright.RowTemplate.Height = 29;
@@ -159,62 +159,6 @@
             this.dgvCopyright.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCopyright.Size = new System.Drawing.Size(1090, 584);
             this.dgvCopyright.TabIndex = 10;
-            // 
-            // cid
-            // 
-            this.cid.HeaderText = "copyright";
-            this.cid.MinimumWidth = 6;
-            this.cid.Name = "cid";
-            this.cid.ReadOnly = true;
-            this.cid.Visible = false;
-            // 
-            // title
-            // 
-            this.title.FillWeight = 109.5583F;
-            this.title.HeaderText = "Title";
-            this.title.MinimumWidth = 6;
-            this.title.Name = "title";
-            this.title.ReadOnly = true;
-            // 
-            // college
-            // 
-            this.college.FillWeight = 109.5583F;
-            this.college.HeaderText = "College";
-            this.college.MinimumWidth = 6;
-            this.college.Name = "college";
-            this.college.ReadOnly = true;
-            // 
-            // author
-            // 
-            this.author.FillWeight = 109.5583F;
-            this.author.HeaderText = "Author";
-            this.author.MinimumWidth = 6;
-            this.author.Name = "author";
-            this.author.ReadOnly = true;
-            // 
-            // date_filed
-            // 
-            this.date_filed.FillWeight = 109.5583F;
-            this.date_filed.HeaderText = "Date Filed";
-            this.date_filed.MinimumWidth = 6;
-            this.date_filed.Name = "date_filed";
-            this.date_filed.ReadOnly = true;
-            // 
-            // reg_no
-            // 
-            this.reg_no.FillWeight = 109.5583F;
-            this.reg_no.HeaderText = "Reg. No.";
-            this.reg_no.MinimumWidth = 6;
-            this.reg_no.Name = "reg_no";
-            this.reg_no.ReadOnly = true;
-            // 
-            // appr_date
-            // 
-            this.appr_date.FillWeight = 109.5583F;
-            this.appr_date.HeaderText = "Approval Date";
-            this.appr_date.MinimumWidth = 6;
-            this.appr_date.Name = "appr_date";
-            this.appr_date.ReadOnly = true;
             // 
             // lblSearchCopyright
             // 
@@ -284,6 +228,63 @@
             this.btnAddCopyright.UseVisualStyleBackColor = false;
             this.btnAddCopyright.Click += new System.EventHandler(this.btnAddCopyright_Click_1);
             // 
+            // cid
+            // 
+            this.cid.DataPropertyName = "cid";
+            this.cid.HeaderText = "cId";
+            this.cid.MinimumWidth = 6;
+            this.cid.Name = "cid";
+            this.cid.ReadOnly = true;
+            this.cid.Visible = false;
+            // 
+            // title
+            // 
+            this.title.FillWeight = 109.5583F;
+            this.title.HeaderText = "Title";
+            this.title.MinimumWidth = 6;
+            this.title.Name = "title";
+            this.title.ReadOnly = true;
+            // 
+            // college
+            // 
+            this.college.FillWeight = 109.5583F;
+            this.college.HeaderText = "College";
+            this.college.MinimumWidth = 6;
+            this.college.Name = "college";
+            this.college.ReadOnly = true;
+            // 
+            // author
+            // 
+            this.author.FillWeight = 109.5583F;
+            this.author.HeaderText = "Author";
+            this.author.MinimumWidth = 6;
+            this.author.Name = "author";
+            this.author.ReadOnly = true;
+            // 
+            // date_filed
+            // 
+            this.date_filed.FillWeight = 109.5583F;
+            this.date_filed.HeaderText = "Date Filed";
+            this.date_filed.MinimumWidth = 6;
+            this.date_filed.Name = "date_filed";
+            this.date_filed.ReadOnly = true;
+            // 
+            // reg_no
+            // 
+            this.reg_no.FillWeight = 109.5583F;
+            this.reg_no.HeaderText = "Reg. No.";
+            this.reg_no.MinimumWidth = 6;
+            this.reg_no.Name = "reg_no";
+            this.reg_no.ReadOnly = true;
+            // 
+            // appr_date
+            // 
+            this.appr_date.FillWeight = 109.5583F;
+            this.appr_date.HeaderText = "Approval Date";
+            this.appr_date.MinimumWidth = 6;
+            this.appr_date.Name = "appr_date";
+            this.appr_date.ReadOnly = true;
+            // 
             // copyrightForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -313,6 +314,9 @@
         private TextBox txtboxSearchCopyright;
         private DataGridView dgvCopyright;
         private Label lblSearchCopyright;
+        private Button btnDelCopyright;
+        private Button btnEditCopyright;
+        private Button btnAddCopyright;
         private DataGridViewTextBoxColumn cid;
         private DataGridViewTextBoxColumn title;
         private DataGridViewTextBoxColumn college;
@@ -320,8 +324,5 @@
         private DataGridViewTextBoxColumn date_filed;
         private DataGridViewTextBoxColumn reg_no;
         private DataGridViewTextBoxColumn appr_date;
-        private Button btnDelCopyright;
-        private Button btnEditCopyright;
-        private Button btnAddCopyright;
     }
 }

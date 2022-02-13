@@ -20,7 +20,7 @@ namespace UIPTTO_DATABASE.childForms
 
         private void btnAddCopyright_Click_1(object sender, EventArgs e)
         {
-            addCopyrightForm addCopyrightForm = new addCopyrightForm();
+            addCopyrightForm addCopyrightForm = new addCopyrightForm(this);
             addCopyrightForm.ShowDialog();
         }
     }

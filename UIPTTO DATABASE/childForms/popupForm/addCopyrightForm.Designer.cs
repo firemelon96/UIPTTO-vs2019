@@ -34,16 +34,18 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtboxCtitle = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
+            this.dptDatefiled = new System.Windows.Forms.DateTimePicker();
+            this.dptApprovaldate = new System.Windows.Forms.DateTimePicker();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.rbProgress = new System.Windows.Forms.RadioButton();
             this.rbApproved = new System.Windows.Forms.RadioButton();
-            this.txtboxContact = new System.Windows.Forms.TextBox();
+            this.txtboxCregno = new System.Windows.Forms.TextBox();
             this.txtboxCcollege = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -53,8 +55,7 @@
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblNewCopyright = new System.Windows.Forms.Label();
             this.pbCopyright = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtboxId = new System.Windows.Forms.TextBox();
             this.pnlBody.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).BeginInit();
@@ -73,12 +74,12 @@
             this.pnlBody.Controls.Add(this.label4);
             this.pnlBody.Controls.Add(this.label1);
             this.pnlBody.Controls.Add(this.textBox2);
-            this.pnlBody.Controls.Add(this.dateTimePicker1);
-            this.pnlBody.Controls.Add(this.dtpDOB);
+            this.pnlBody.Controls.Add(this.dptDatefiled);
+            this.pnlBody.Controls.Add(this.dptApprovaldate);
             this.pnlBody.Controls.Add(this.textBox5);
             this.pnlBody.Controls.Add(this.rbProgress);
             this.pnlBody.Controls.Add(this.rbApproved);
-            this.pnlBody.Controls.Add(this.txtboxContact);
+            this.pnlBody.Controls.Add(this.txtboxCregno);
             this.pnlBody.Controls.Add(this.txtboxCcollege);
             this.pnlBody.Controls.Add(this.textBox13);
             this.pnlBody.Controls.Add(this.textBox11);
@@ -99,6 +100,7 @@
             this.cbAuthor.Name = "cbAuthor";
             this.cbAuthor.Size = new System.Drawing.Size(367, 31);
             this.cbAuthor.TabIndex = 1;
+            this.cbAuthor.SelectedIndexChanged += new System.EventHandler(this.cbAuthor_SelectedIndexChanged);
             // 
             // btnCancel
             // 
@@ -145,6 +147,19 @@
             this.btnSave.Text = "SAVE";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(29, 352);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(183, 25);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Approval Date:";
             // 
             // label5
             // 
@@ -189,9 +204,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(29, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 25);
+            this.label1.Size = new System.Drawing.Size(204, 25);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Author/Inventor";
+            this.label1.Text = "Author/Inventor:";
             // 
             // textBox2
             // 
@@ -206,20 +221,34 @@
             this.textBox2.Size = new System.Drawing.Size(367, 25);
             this.textBox2.TabIndex = 17;
             // 
-            // dtpDOB
+            // dptDatefiled
             // 
-            this.dtpDOB.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDOB.CalendarForeColor = System.Drawing.Color.Gray;
-            this.dtpDOB.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dtpDOB.CustomFormat = "";
-            this.dtpDOB.Enabled = false;
-            this.dtpDOB.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDOB.Location = new System.Drawing.Point(35, 380);
-            this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(369, 29);
-            this.dtpDOB.TabIndex = 23;
-            this.dtpDOB.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.dptDatefiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptDatefiled.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dptDatefiled.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dptDatefiled.CustomFormat = "";
+            this.dptDatefiled.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptDatefiled.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dptDatefiled.Location = new System.Drawing.Point(35, 212);
+            this.dptDatefiled.Name = "dptDatefiled";
+            this.dptDatefiled.Size = new System.Drawing.Size(369, 29);
+            this.dptDatefiled.TabIndex = 23;
+            this.dptDatefiled.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            // 
+            // dptApprovaldate
+            // 
+            this.dptApprovaldate.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptApprovaldate.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dptApprovaldate.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dptApprovaldate.CustomFormat = "";
+            this.dptApprovaldate.Enabled = false;
+            this.dptApprovaldate.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptApprovaldate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dptApprovaldate.Location = new System.Drawing.Point(35, 380);
+            this.dptApprovaldate.Name = "dptApprovaldate";
+            this.dptApprovaldate.Size = new System.Drawing.Size(369, 29);
+            this.dptApprovaldate.TabIndex = 23;
+            this.dptApprovaldate.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
             // 
             // textBox5
             // 
@@ -257,16 +286,17 @@
             this.rbApproved.TabIndex = 24;
             this.rbApproved.Text = "Approved";
             this.rbApproved.UseVisualStyleBackColor = true;
+            this.rbApproved.CheckedChanged += new System.EventHandler(this.rbApproved_CheckedChanged);
             // 
-            // txtboxContact
+            // txtboxCregno
             // 
-            this.txtboxContact.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxContact.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxContact.ForeColor = System.Drawing.Color.Gray;
-            this.txtboxContact.Location = new System.Drawing.Point(35, 277);
-            this.txtboxContact.Name = "txtboxContact";
-            this.txtboxContact.Size = new System.Drawing.Size(369, 25);
-            this.txtboxContact.TabIndex = 21;
+            this.txtboxCregno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxCregno.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxCregno.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxCregno.Location = new System.Drawing.Point(35, 277);
+            this.txtboxCregno.Name = "txtboxCregno";
+            this.txtboxCregno.Size = new System.Drawing.Size(369, 25);
+            this.txtboxCregno.TabIndex = 21;
             // 
             // txtboxCcollege
             // 
@@ -345,6 +375,7 @@
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.pnlTitle.Controls.Add(this.txtboxId);
             this.pnlTitle.Controls.Add(this.lblNewCopyright);
             this.pnlTitle.Controls.Add(this.pbCopyright);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -374,31 +405,14 @@
             this.pbCopyright.TabIndex = 0;
             this.pbCopyright.TabStop = false;
             // 
-            // dateTimePicker1
+            // txtboxId
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Gray;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(35, 212);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(369, 29);
-            this.dateTimePicker1.TabIndex = 23;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(29, 352);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(183, 25);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Approval Date:";
+            this.txtboxId.Location = new System.Drawing.Point(378, 19);
+            this.txtboxId.Name = "txtboxId";
+            this.txtboxId.ReadOnly = true;
+            this.txtboxId.Size = new System.Drawing.Size(41, 27);
+            this.txtboxId.TabIndex = 3;
+            this.txtboxId.Visible = false;
             // 
             // addCopyrightForm
             // 
@@ -410,7 +424,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addCopyrightForm";
-            this.Text = "addCopyrightForm";
+            this.Text = "Copyright Form";
+            this.Load += new System.EventHandler(this.addCopyrightForm_Load);
             this.pnlBody.ResumeLayout(false);
             this.pnlBody.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
@@ -432,11 +447,11 @@
         private Label label4;
         private Label label1;
         private TextBox textBox2;
-        public DateTimePicker dtpDOB;
+        public DateTimePicker dptApprovaldate;
         private TextBox textBox5;
         public RadioButton rbProgress;
         public RadioButton rbApproved;
-        public TextBox txtboxContact;
+        public TextBox txtboxCregno;
         public TextBox txtboxCcollege;
         private TextBox textBox13;
         private TextBox textBox11;
@@ -445,7 +460,8 @@
         private Button btnCancel;
         public Button btnSave;
         private ComboBox cbAuthor;
-        public DateTimePicker dateTimePicker1;
+        public DateTimePicker dptDatefiled;
         private Label label6;
+        public TextBox txtboxId;
     }
 }
