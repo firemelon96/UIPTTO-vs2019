@@ -53,9 +53,9 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.txtboxId = new System.Windows.Forms.TextBox();
             this.lblNewCopyright = new System.Windows.Forms.Label();
             this.pbCopyright = new System.Windows.Forms.PictureBox();
-            this.txtboxId = new System.Windows.Forms.TextBox();
             this.pnlBody.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCopyright)).BeginInit();
@@ -99,7 +99,7 @@
             this.cbAuthor.Location = new System.Drawing.Point(35, 27);
             this.cbAuthor.Name = "cbAuthor";
             this.cbAuthor.Size = new System.Drawing.Size(367, 31);
-            this.cbAuthor.TabIndex = 1;
+            this.cbAuthor.TabIndex = 4;
             this.cbAuthor.SelectedIndexChanged += new System.EventHandler(this.cbAuthor_SelectedIndexChanged);
             // 
             // btnCancel
@@ -226,14 +226,14 @@
             this.dptDatefiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dptDatefiled.CalendarForeColor = System.Drawing.Color.Gray;
             this.dptDatefiled.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dptDatefiled.CustomFormat = "";
+            this.dptDatefiled.CustomFormat = "dd/MM/yyyy";
             this.dptDatefiled.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dptDatefiled.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dptDatefiled.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dptDatefiled.Location = new System.Drawing.Point(35, 212);
             this.dptDatefiled.Name = "dptDatefiled";
             this.dptDatefiled.Size = new System.Drawing.Size(369, 29);
             this.dptDatefiled.TabIndex = 23;
-            this.dptDatefiled.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.dptDatefiled.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
             // 
             // dptApprovaldate
             // 
@@ -248,7 +248,7 @@
             this.dptApprovaldate.Name = "dptApprovaldate";
             this.dptApprovaldate.Size = new System.Drawing.Size(369, 29);
             this.dptApprovaldate.TabIndex = 23;
-            this.dptApprovaldate.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.dptApprovaldate.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // textBox5
             // 
@@ -384,6 +384,15 @@
             this.pnlTitle.Size = new System.Drawing.Size(448, 67);
             this.pnlTitle.TabIndex = 2;
             // 
+            // txtboxId
+            // 
+            this.txtboxId.Location = new System.Drawing.Point(378, 19);
+            this.txtboxId.Name = "txtboxId";
+            this.txtboxId.ReadOnly = true;
+            this.txtboxId.Size = new System.Drawing.Size(41, 27);
+            this.txtboxId.TabIndex = 3;
+            this.txtboxId.Visible = false;
+            // 
             // lblNewCopyright
             // 
             this.lblNewCopyright.AutoSize = true;
@@ -404,15 +413,6 @@
             this.pbCopyright.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCopyright.TabIndex = 0;
             this.pbCopyright.TabStop = false;
-            // 
-            // txtboxId
-            // 
-            this.txtboxId.Location = new System.Drawing.Point(378, 19);
-            this.txtboxId.Name = "txtboxId";
-            this.txtboxId.ReadOnly = true;
-            this.txtboxId.Size = new System.Drawing.Size(41, 27);
-            this.txtboxId.TabIndex = 3;
-            this.txtboxId.Visible = false;
             // 
             // addCopyrightForm
             // 
@@ -438,7 +438,6 @@
         #endregion
         private Panel pnlBody;
         private Panel pnlTitle;
-        private Label lblNewCopyright;
         private PictureBox pbCopyright;
         public TextBox txtboxCtitle;
         private Label label2;
@@ -459,9 +458,10 @@
         private TextBox textBox9;
         private Button btnCancel;
         public Button btnSave;
-        private ComboBox cbAuthor;
         public DateTimePicker dptDatefiled;
         private Label label6;
         public TextBox txtboxId;
+        public Label lblNewCopyright;
+        public ComboBox cbAuthor;
     }
 }

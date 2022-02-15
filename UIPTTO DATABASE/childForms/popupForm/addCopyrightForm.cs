@@ -44,6 +44,8 @@ namespace UIPTTO_DATABASE.childForms.popupForm
                     .FirstOrDefault<ProfileTable>();
                     if (profile_id != null)
                     {
+                        //trial to see if i could give the combobox a text when selecteditem is not null
+                        //cbAuthor.SelectedItem = profile_id.PFullname;
                         txtboxCcollege.Text = profile_id.PCollege;
                     }
                 }
@@ -53,16 +55,7 @@ namespace UIPTTO_DATABASE.childForms.popupForm
 
         private void addCopyrightForm_Load(object sender, EventArgs e)
         {
-            List<ProfileTable> profileTables = (from ProfileTable in db.ProfileTables select ProfileTable).ToList();
-
-            profileTables.Insert(0, new ProfileTable
-            {
-                PId = 0,
-                PFname = "select author"
-            });
-            cbAuthor.DataSource = profileTables;
-            cbAuthor.DisplayMember = "PFullname";
-            cbAuthor.ValueMember = "PId";
+           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -76,8 +69,18 @@ namespace UIPTTO_DATABASE.childForms.popupForm
             copyright.PId = Convert.ToInt32(cbAuthor.SelectedValue);
             if (rbApproved.Checked)
             {
+                copyright.CStatus = "Approved";
                 copyright.CApprDate = dptApprovaldate.Value;
             }
+            else
+            {
+                copyright.CStatus = "On progress";
+            }
+            db.CopyrightTables.Add(copyright);
+            db.SaveChanges();
+            cform.populateDgv();
+            this.Close();
+            MessageBox.Show("Added Cppyright");
         }
     }
 }

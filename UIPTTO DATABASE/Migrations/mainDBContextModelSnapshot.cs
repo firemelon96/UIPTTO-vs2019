@@ -43,6 +43,11 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("c_RegNo");
 
+                    b.Property<string>("CStatus")
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("c_Status");
+
                     b.Property<string>("CTitle")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")

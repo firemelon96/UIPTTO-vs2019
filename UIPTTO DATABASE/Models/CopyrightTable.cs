@@ -15,6 +15,9 @@ namespace UIPTTO_DATABASE.Models
         [Column("c_Title")]
         [StringLength(50)]
         public string? CTitle { get; set; }
+        [Column("c_Status")]
+        [StringLength(15)]
+        public string? CStatus { get; set; }
         [Column("c_DateFiled", TypeName = "date")]
         public DateTime? CDateFiled { get; set; }
         [Column("c_RegNo")]

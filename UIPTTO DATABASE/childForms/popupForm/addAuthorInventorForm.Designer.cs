@@ -197,9 +197,9 @@
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDOB.CalendarForeColor = System.Drawing.Color.Gray;
             this.dtpDOB.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dtpDOB.CustomFormat = "";
+            this.dtpDOB.CustomFormat = "yyyy-MM-dd";
             this.dtpDOB.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDOB.Location = new System.Drawing.Point(41, 339);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(369, 29);

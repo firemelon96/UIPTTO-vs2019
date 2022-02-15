@@ -78,6 +78,8 @@ namespace UIPTTO_DATABASE.childForms
             }
             else
             {
+
+                this.btnEditAuthor.ForeColor = System.Drawing.Color.Gray;
                 this.btnEditAuthor.Enabled = false;
                 this.btnDelAuthor.Enabled = false;
             }
@@ -100,7 +102,9 @@ namespace UIPTTO_DATABASE.childForms
                         authorInventorForm.txtboxEmail.Text = prof.PEmail;
                         authorInventorForm.txtboxCollege.Text = prof.PCollege;
                         authorInventorForm.txtboxContact.Text = prof.PEmail;
-                        if (prof.PGender == "male")
+                        //retrieve database datetime value to datetimepicker 
+                        //authorInventorForm.dtpDOB.Value = prof.PEmail;
+                    if (prof.PGender == "male")
                         {
                            authorInventorForm.rbMale.Checked = true;
                         }

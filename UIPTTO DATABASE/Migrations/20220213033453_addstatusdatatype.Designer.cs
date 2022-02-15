@@ -12,8 +12,8 @@ using UIPTTO_DATABASE.Models;
 namespace UIPTTO_DATABASE.Migrations
 {
     [DbContext(typeof(mainDBContext))]
-    [Migration("20220206093327_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220213033453_addstatusdatatype")]
+    partial class addstatusdatatype
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,11 @@ namespace UIPTTO_DATABASE.Migrations
                     b.Property<int?>("CRegNo")
                         .HasColumnType("int")
                         .HasColumnName("c_RegNo");
+
+                    b.Property<string>("CStatus")
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("c_Status");
 
                     b.Property<string>("CTitle")
                         .HasMaxLength(50)
@@ -201,8 +206,8 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnName("p_Fname");
 
                     b.Property<string>("PGender")
-                        .HasMaxLength(10)
-                        .HasColumnType("nchar(10)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nchar(50)")
                         .HasColumnName("p_Gender")
                         .IsFixedLength();
 

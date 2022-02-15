@@ -32,7 +32,7 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlCopyright = new System.Windows.Forms.Panel();
-            this.copyrightCount = new System.Windows.Forms.Label();
+            this.lblcopyrightCount = new System.Windows.Forms.Label();
             this.lblDashCopyright = new System.Windows.Forms.Label();
             this.pbCopyright = new System.Windows.Forms.PictureBox();
             this.pnlPatents = new System.Windows.Forms.Panel();
@@ -119,7 +119,7 @@
             // pnlCopyright
             // 
             this.pnlCopyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pnlCopyright.Controls.Add(this.copyrightCount);
+            this.pnlCopyright.Controls.Add(this.lblcopyrightCount);
             this.pnlCopyright.Controls.Add(this.lblDashCopyright);
             this.pnlCopyright.Controls.Add(this.pbCopyright);
             this.pnlCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -129,17 +129,17 @@
             this.pnlCopyright.Size = new System.Drawing.Size(198, 154);
             this.pnlCopyright.TabIndex = 0;
             // 
-            // copyrightCount
+            // lblcopyrightCount
             // 
-            this.copyrightCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.copyrightCount.AutoSize = true;
-            this.copyrightCount.Font = new System.Drawing.Font("Gotham Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.copyrightCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.copyrightCount.Location = new System.Drawing.Point(108, 12);
-            this.copyrightCount.Name = "copyrightCount";
-            this.copyrightCount.Size = new System.Drawing.Size(76, 48);
-            this.copyrightCount.TabIndex = 1;
-            this.copyrightCount.Text = "23";
+            this.lblcopyrightCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblcopyrightCount.AutoSize = true;
+            this.lblcopyrightCount.Font = new System.Drawing.Font("Gotham Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblcopyrightCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblcopyrightCount.Location = new System.Drawing.Point(108, 12);
+            this.lblcopyrightCount.Name = "lblcopyrightCount";
+            this.lblcopyrightCount.Size = new System.Drawing.Size(76, 48);
+            this.lblcopyrightCount.TabIndex = 1;
+            this.lblcopyrightCount.Text = "23";
             // 
             // lblDashCopyright
             // 
@@ -488,6 +488,7 @@
             this.Controls.Add(this.lblDashboard);
             this.Name = "dashBoardForm";
             this.Text = "dashBoardForm";
+            this.Load += new System.EventHandler(this.dashBoardForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnlCopyright.ResumeLayout(false);
             this.pnlCopyright.PerformLayout();
@@ -534,7 +535,7 @@
         private Panel pnlGraph;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel pnlAbout;
-        private Label copyrightCount;
+        private Label lblcopyrightCount;
         private Label lblDashCopyright;
         private PictureBox pbCopyright;
         private Label patentCount;
