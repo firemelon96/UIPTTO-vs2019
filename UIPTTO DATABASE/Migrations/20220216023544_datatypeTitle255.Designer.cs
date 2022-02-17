@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UIPTTO_DATABASE.Models;
 
@@ -11,9 +12,10 @@ using UIPTTO_DATABASE.Models;
 namespace UIPTTO_DATABASE.Migrations
 {
     [DbContext(typeof(mainDBContext))]
-    partial class mainDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220216023544_datatypeTitle255")]
+    partial class datatypeTitle255
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,14 +87,9 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("is_IssuedNo");
 
-                    b.Property<string>("IsStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("is_Status");
-
                     b.Property<string>("IsTitle")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("is_Title");
 
                     b.Property<int?>("PId")
@@ -127,14 +124,9 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("i_IssuedNo");
 
-                    b.Property<string>("IStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("i_Status");
-
                     b.Property<string>("ITitle")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("i_Title");
 
                     b.Property<int?>("PId")
@@ -173,14 +165,9 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("pt_RegNo");
 
-                    b.Property<string>("PtStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("pt_Status");
-
                     b.Property<string>("PtTitle")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("pt_Title");
 
                     b.HasKey("PtId");
@@ -264,8 +251,8 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnName("t_RegNo");
 
                     b.Property<string>("TTitle")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("t_Title");
 
                     b.HasKey("TId");

@@ -13,7 +13,7 @@ namespace UIPTTO_DATABASE.Models
         [Column("t_Id")]
         public int TId { get; set; }
         [Column("t_Title")]
-        [StringLength(50)]
+        [StringLength(255)]
         public string? TTitle { get; set; }
         [Column("t_DateFiled", TypeName = "date")]
         public DateTime? TDateFiled { get; set; }

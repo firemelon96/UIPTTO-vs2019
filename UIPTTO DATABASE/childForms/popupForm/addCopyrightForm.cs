@@ -44,8 +44,6 @@ namespace UIPTTO_DATABASE.childForms.popupForm
                     .FirstOrDefault<ProfileTable>();
                     if (profile_id != null)
                     {
-                        //trial to see if i could give the combobox a text when selecteditem is not null
-                        //cbAuthor.SelectedItem = profile_id.PFullname;
                         txtboxCcollege.Text = profile_id.PCollege;
                     }
                 }
@@ -62,6 +60,7 @@ namespace UIPTTO_DATABASE.childForms.popupForm
         {
             //var test = cbAuthor.SelectedValue.ToString();
             //MessageBox.Show(test);
+            copyright.CId = Convert.ToInt32(txtboxId.Text);
             copyright.CTitle = txtboxCtitle.Text;
             copyright.CDateFiled = dptDatefiled.Value;
             copyright.CRegNo = Convert.ToInt32(txtboxCregno.Text);
@@ -76,11 +75,20 @@ namespace UIPTTO_DATABASE.childForms.popupForm
             {
                 copyright.CStatus = "On progress";
             }
-            db.CopyrightTables.Add(copyright);
+            if (copyright.CId == 0)
+            {
+                db.CopyrightTables.Add(copyright);
+                MessageBox.Show("Added Copyright successfully");
+            }
+            else
+            {
+                db.Entry(copyright).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                MessageBox.Show("Updated Copyright successfully");
+            }
+            
             db.SaveChanges();
             cform.populateDgv();
             this.Close();
-            MessageBox.Show("Added Cppyright");
         }
     }
 }

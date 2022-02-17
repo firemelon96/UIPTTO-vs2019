@@ -27,6 +27,9 @@ namespace UIPTTO_DATABASE.childForms
         private void btnAddCopyright_Click_1(object sender, EventArgs e)
         {
             addCopyrightForm addCopyrightForm = new addCopyrightForm(this);
+
+            addCopyrightForm.txtboxId.Text = "0";
+
             List<ProfileTable> profileTables = (from ProfileTable in db.ProfileTables select ProfileTable).ToList();
 
             profileTables.Insert(0, new ProfileTable {
@@ -58,7 +61,7 @@ namespace UIPTTO_DATABASE.childForms
                     status = c.CStatus
                 }
                 );
-            dgvCopyright.DataSource = joinTbles.ToList(); ;
+            dgvCopyright.DataSource = joinTbles.ToList();
         }
 
         private void copyrightForm_Load(object sender, EventArgs e)
@@ -76,8 +79,6 @@ namespace UIPTTO_DATABASE.childForms
             }
             else
             {
-
-                //this.btnEditAuthor.ForeColor = System.Drawing.Color.Gray;
                 this.btnEditCopyright.Enabled = true;
                 this.btnDelCopyright.Enabled = true;
             }
@@ -88,8 +89,6 @@ namespace UIPTTO_DATABASE.childForms
             using (addCopyrightForm copyrightForm = new addCopyrightForm(this))
             {
                 var copyId = Convert.ToInt32(dgvCopyright.CurrentRow.Cells["cid"].Value);
-                //MessageBox.Show(copyId.ToString());
-                //var cop = db.CopyrightTables.Where(c => c.CId == copyId).FirstOrDefault();
                 var copy = db.CopyrightTables
                 .Join(
                 db.ProfileTables,
@@ -103,11 +102,11 @@ namespace UIPTTO_DATABASE.childForms
                     date_filed = c.CDateFiled,
                     reg_no = c.CRegNo,
                     status = c.CStatus,
+                    apprdate = c.CApprDate,
                     pid = p.PId
                 }
                 ).Where(e => e.id == copyId).FirstOrDefault();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                 if (copy != null)
-                   // if (cop != null)
                     {
                     List<ProfileTable> profileTables = (from ProfileTable in db.ProfileTables select ProfileTable).ToList();
 
@@ -115,31 +114,39 @@ namespace UIPTTO_DATABASE.childForms
                         PId = copy.pid,
                         PFname = copy.author
                     });                    
-                    //List a selected id of author from copyright table
                     copyrightForm.cbAuthor.DataSource = profileTables;
                     copyrightForm.cbAuthor.DisplayMember = "PFullname";
                     copyrightForm.cbAuthor.ValueMember = "PId";
-                    //ilalagay ko sa txtboxId ang value ng mareretrieve ko na id mula sa database.
                     copyrightForm.lblNewCopyright.Text = "EDIT COPYRIGHT";
                     copyrightForm.txtboxId.Text = copy.id.ToString();
-                    //copyrightForm.cbAuthor.SelectedItem = copy.author;
                     copyrightForm.txtboxCcollege.Text = copy.college;
-                    //copyrightForm.dptDatefiled.Value = copy.date_filed.Value.Date;
-                    //copyrightForm.txtboxCregno.Text = copy.reg_no.ToString();
-                    //authorInventorForm.txtboxEmail.Text = prof.PEmail;
-                    //authorInventorForm.txtboxCollege.Text = prof.PCollege;
-                    //authorInventorForm.txtboxContact.Text = prof.PEmail;
-                   // if (cop.CStatus == "Approved")
-                   // {
-                   //     copyrightForm.rbApproved.Checked = true;
-                   // }
-                  //  else
-                  //  {
-                   //     copyrightForm.rbProgress.Checked = true;
-                  //  }
+                    copyrightForm.txtboxCtitle.Text = copy.title;
+                    copyrightForm.dptDatefiled.Value = Convert.ToDateTime(copy.date_filed);
+                    copyrightForm.txtboxCregno.Text = copy.reg_no.ToString();
+                    copyrightForm.dptApprovaldate.Value = Convert.ToDateTime(copy.apprdate);
+                    if (copy.status == "Approved")
+                    {
+                        copyrightForm.rbApproved.Checked = true;
+                    }
+                    else
+                    {
+                        copyrightForm.rbProgress.Checked = true;
+                    }
                     copyrightForm.btnSave.Text = "Update";
                     copyrightForm.ShowDialog();
-                }
+                } 
+            }
+        }
+
+        private void btnDelCopyright_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Author Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                db.CopyrightTables.Remove(copyrightTable);
+                db.SaveChanges();
+
+                MessageBox.Show("Author Record Deleted Successfully!");
+                populateDgv();
             }
         }
     }

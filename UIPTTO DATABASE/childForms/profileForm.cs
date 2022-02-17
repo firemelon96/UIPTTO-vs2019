@@ -103,7 +103,7 @@ namespace UIPTTO_DATABASE.childForms
                         authorInventorForm.txtboxCollege.Text = prof.PCollege;
                         authorInventorForm.txtboxContact.Text = prof.PEmail;
                         //retrieve database datetime value to datetimepicker 
-                        //authorInventorForm.dtpDOB.Value = prof.PEmail;
+                        authorInventorForm.dtpDOB.Value = Convert.ToDateTime(prof.PDob);
                     if (prof.PGender == "male")
                         {
                            authorInventorForm.rbMale.Checked = true;

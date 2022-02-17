@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UIPTTO_DATABASE.Models;
 
@@ -11,9 +12,10 @@ using UIPTTO_DATABASE.Models;
 namespace UIPTTO_DATABASE.Migrations
 {
     [DbContext(typeof(mainDBContext))]
-    partial class mainDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220216074355_title255")]
+    partial class title255
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,11 +87,6 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("is_IssuedNo");
 
-                    b.Property<string>("IsStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("is_Status");
-
                     b.Property<string>("IsTitle")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
@@ -126,11 +123,6 @@ namespace UIPTTO_DATABASE.Migrations
                     b.Property<int?>("IIssuedNo")
                         .HasColumnType("int")
                         .HasColumnName("i_IssuedNo");
-
-                    b.Property<string>("IStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("i_Status");
 
                     b.Property<string>("ITitle")
                         .HasMaxLength(255)

@@ -13,7 +13,7 @@ namespace UIPTTO_DATABASE.Models
         [Column("is_Id")]
         public int IsId { get; set; }
         [Column("is_Title")]
-        [StringLength(50)]
+        [StringLength(255)]
         public string? IsTitle { get; set; }
         [Column("is_DateFiled", TypeName = "date")]
         public DateTime? IsDateFiled { get; set; }
@@ -21,6 +21,9 @@ namespace UIPTTO_DATABASE.Models
         public int? IsIssuedNo { get; set; }
         [Column("is_ApprDate", TypeName = "date")]
         public DateTime? IsApprDate { get; set; }
+        [Column("is_Status")]
+        [StringLength(15)]
+        public string? IsStatus { get; set; }
         [Column("p_Id")]
         public int? PId { get; set; }
 

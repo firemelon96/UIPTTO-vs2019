@@ -28,49 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(patentForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(patentForm));
-            this.btnAddPatents = new System.Windows.Forms.Button();
             this.lblSearchPatents = new System.Windows.Forms.Label();
-            this.dgvPatents = new System.Windows.Forms.DataGridView();
             this.txtboxSearchPatents = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblPatents = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.invention = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDelPatent = new System.Windows.Forms.Button();
+            this.btnEditPatent = new System.Windows.Forms.Button();
+            this.btnAddPatent = new System.Windows.Forms.Button();
+            this.dgvPatents = new System.Windows.Forms.DataGridView();
+            this.ptid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inventionTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inventor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.app_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appr_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatents)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAddPatents
-            // 
-            this.btnAddPatents.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddPatents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnAddPatents.FlatAppearance.BorderSize = 0;
-            this.btnAddPatents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPatents.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddPatents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddPatents.Image = global::UIPTTO_DATABASE.Properties.Resources.plus2;
-            this.btnAddPatents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPatents.Location = new System.Drawing.Point(934, 753);
-            this.btnAddPatents.Name = "btnAddPatents";
-            this.btnAddPatents.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddPatents.Size = new System.Drawing.Size(168, 53);
-            this.btnAddPatents.TabIndex = 19;
-            this.btnAddPatents.TabStop = false;
-            this.btnAddPatents.Text = "NEW";
-            this.btnAddPatents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddPatents.UseVisualStyleBackColor = false;
-            this.btnAddPatents.Click += new System.EventHandler(this.btnAddPatents_Click);
             // 
             // lblSearchPatents
             // 
@@ -83,69 +63,6 @@
             this.lblSearchPatents.Size = new System.Drawing.Size(135, 31);
             this.lblSearchPatents.TabIndex = 18;
             this.lblSearchPatents.Text = "SEARCH";
-            // 
-            // dgvPatents
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPatents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPatents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPatents.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            this.dgvPatents.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvPatents.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.dgvPatents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPatents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPatents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.invention,
-            this.college,
-            this.inventor,
-            this.date_filed,
-            this.app_no,
-            this.appr_date,
-            this.edit,
-            this.delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatents.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPatents.EnableHeadersVisualStyles = false;
-            this.dgvPatents.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvPatents.Location = new System.Drawing.Point(12, 152);
-            this.dgvPatents.Name = "dgvPatents";
-            this.dgvPatents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatents.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvPatents.RowHeadersVisible = false;
-            this.dgvPatents.RowHeadersWidth = 51;
-            this.dgvPatents.RowTemplate.Height = 29;
-            this.dgvPatents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvPatents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPatents.Size = new System.Drawing.Size(1090, 584);
-            this.dgvPatents.TabIndex = 17;
             // 
             // txtboxSearchPatents
             // 
@@ -190,80 +107,220 @@
             this.textBox2.Size = new System.Drawing.Size(235, 29);
             this.textBox2.TabIndex = 16;
             // 
-            // invention
+            // btnDelPatent
             // 
-            this.invention.HeaderText = "Invention Name";
-            this.invention.MinimumWidth = 6;
-            this.invention.Name = "invention";
+            this.btnDelPatent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelPatent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnDelPatent.FlatAppearance.BorderSize = 0;
+            this.btnDelPatent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelPatent.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelPatent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDelPatent.Image = ((System.Drawing.Image)(resources.GetObject("btnDelPatent.Image")));
+            this.btnDelPatent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelPatent.Location = new System.Drawing.Point(278, 761);
+            this.btnDelPatent.Name = "btnDelPatent";
+            this.btnDelPatent.Size = new System.Drawing.Size(143, 47);
+            this.btnDelPatent.TabIndex = 21;
+            this.btnDelPatent.Text = "DELETE";
+            this.btnDelPatent.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnDelPatent.UseVisualStyleBackColor = false;
+            this.btnDelPatent.Click += new System.EventHandler(this.btnDelPatent_Click);
+            // 
+            // btnEditPatent
+            // 
+            this.btnEditPatent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditPatent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnEditPatent.FlatAppearance.BorderSize = 0;
+            this.btnEditPatent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPatent.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEditPatent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditPatent.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPatent.Image")));
+            this.btnEditPatent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditPatent.Location = new System.Drawing.Point(148, 761);
+            this.btnEditPatent.Name = "btnEditPatent";
+            this.btnEditPatent.Size = new System.Drawing.Size(105, 47);
+            this.btnEditPatent.TabIndex = 20;
+            this.btnEditPatent.Text = "EDIT";
+            this.btnEditPatent.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnEditPatent.UseVisualStyleBackColor = false;
+            this.btnEditPatent.Click += new System.EventHandler(this.btnEditPatent_Click);
+            // 
+            // btnAddPatent
+            // 
+            this.btnAddPatent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddPatent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnAddPatent.FlatAppearance.BorderSize = 0;
+            this.btnAddPatent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPatent.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddPatent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddPatent.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPatent.Image")));
+            this.btnAddPatent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddPatent.Location = new System.Drawing.Point(14, 761);
+            this.btnAddPatent.Name = "btnAddPatent";
+            this.btnAddPatent.Size = new System.Drawing.Size(110, 47);
+            this.btnAddPatent.TabIndex = 19;
+            this.btnAddPatent.TabStop = false;
+            this.btnAddPatent.Text = "NEW";
+            this.btnAddPatent.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAddPatent.UseVisualStyleBackColor = false;
+            this.btnAddPatent.Click += new System.EventHandler(this.btnAddPatent_Click_1);
+            // 
+            // dgvPatents
+            // 
+            this.dgvPatents.AllowUserToAddRows = false;
+            this.dgvPatents.AllowUserToDeleteRows = false;
+            this.dgvPatents.AllowUserToResizeColumns = false;
+            this.dgvPatents.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPatents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPatents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPatents.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            this.dgvPatents.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPatents.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.dgvPatents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPatents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPatents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ptid,
+            this.inventionTitle,
+            this.college,
+            this.inventor,
+            this.date_filed,
+            this.app_no,
+            this.status});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatents.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPatents.EnableHeadersVisualStyles = false;
+            this.dgvPatents.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvPatents.Location = new System.Drawing.Point(14, 157);
+            this.dgvPatents.MultiSelect = false;
+            this.dgvPatents.Name = "dgvPatents";
+            this.dgvPatents.ReadOnly = true;
+            this.dgvPatents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatents.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPatents.RowHeadersVisible = false;
+            this.dgvPatents.RowHeadersWidth = 51;
+            this.dgvPatents.RowTemplate.Height = 29;
+            this.dgvPatents.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPatents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvPatents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPatents.Size = new System.Drawing.Size(1090, 579);
+            this.dgvPatents.TabIndex = 22;
+            this.dgvPatents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatents_CellContentClick_1);
+            // 
+            // ptid
+            // 
+            this.ptid.DataPropertyName = "ptid";
+            this.ptid.HeaderText = "ptid";
+            this.ptid.MinimumWidth = 6;
+            this.ptid.Name = "ptid";
+            this.ptid.ReadOnly = true;
+            this.ptid.Visible = false;
+            // 
+            // inventionTitle
+            // 
+            this.inventionTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.inventionTitle.DataPropertyName = "inventionTitle";
+            this.inventionTitle.HeaderText = "Name of the Invention";
+            this.inventionTitle.MinimumWidth = 6;
+            this.inventionTitle.Name = "inventionTitle";
+            this.inventionTitle.ReadOnly = true;
             // 
             // college
             // 
-            this.college.HeaderText = "College";
+            this.college.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.college.DataPropertyName = "college";
+            this.college.HeaderText = "College/Unit";
             this.college.MinimumWidth = 6;
             this.college.Name = "college";
+            this.college.ReadOnly = true;
+            this.college.Width = 218;
             // 
             // inventor
             // 
+            this.inventor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.inventor.DataPropertyName = "inventor";
             this.inventor.HeaderText = "Inventor";
             this.inventor.MinimumWidth = 6;
             this.inventor.Name = "inventor";
+            this.inventor.ReadOnly = true;
+            this.inventor.Width = 157;
             // 
             // date_filed
             // 
-            this.date_filed.HeaderText = "Date Filed";
+            this.date_filed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.date_filed.DataPropertyName = "date_filed";
+            this.date_filed.HeaderText = "Date filed";
             this.date_filed.MinimumWidth = 6;
             this.date_filed.Name = "date_filed";
+            this.date_filed.ReadOnly = true;
+            this.date_filed.Width = 161;
             // 
             // app_no
             // 
+            this.app_no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.app_no.DataPropertyName = "app_no";
             this.app_no.HeaderText = "Application No.";
             this.app_no.MinimumWidth = 6;
             this.app_no.Name = "app_no";
+            this.app_no.ReadOnly = true;
+            this.app_no.Width = 233;
             // 
-            // appr_date
+            // status
             // 
-            this.appr_date.HeaderText = "Approval Date";
-            this.appr_date.MinimumWidth = 6;
-            this.appr_date.Name = "appr_date";
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.FillWeight = 35F;
-            this.edit.HeaderText = "Edit";
-            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.MinimumWidth = 6;
-            this.edit.Name = "edit";
-            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.edit.Width = 98;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.FillWeight = 35F;
-            this.delete.HeaderText = "Del";
-            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 88;
+            this.status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "Status";
+            this.status.MinimumWidth = 6;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 129;
             // 
             // patentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
-            this.Controls.Add(this.btnAddPatents);
-            this.Controls.Add(this.lblSearchPatents);
             this.Controls.Add(this.dgvPatents);
+            this.Controls.Add(this.btnDelPatent);
+            this.Controls.Add(this.btnEditPatent);
+            this.Controls.Add(this.btnAddPatent);
+            this.Controls.Add(this.lblSearchPatents);
             this.Controls.Add(this.txtboxSearchPatents);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPatents);
             this.Controls.Add(this.textBox2);
             this.Name = "patentForm";
             this.Text = "patentForm";
+            this.Load += new System.EventHandler(this.patentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -271,21 +328,21 @@
         }
 
         #endregion
-
-        private Button btnAddPatents;
         private Label lblSearchPatents;
-        private DataGridView dgvPatents;
         private TextBox txtboxSearchPatents;
         private Label label2;
         private Label lblPatents;
         private TextBox textBox2;
-        private DataGridViewTextBoxColumn invention;
+        private Button btnDelPatent;
+        private Button btnEditPatent;
+        private Button btnAddPatent;
+        public DataGridView dgvPatents;
+        private DataGridViewTextBoxColumn ptid;
+        private DataGridViewTextBoxColumn inventionTitle;
         private DataGridViewTextBoxColumn college;
         private DataGridViewTextBoxColumn inventor;
         private DataGridViewTextBoxColumn date_filed;
         private DataGridViewTextBoxColumn app_no;
-        private DataGridViewTextBoxColumn appr_date;
-        private DataGridViewImageColumn edit;
-        private DataGridViewImageColumn delete;
+        private DataGridViewTextBoxColumn status;
     }
 }

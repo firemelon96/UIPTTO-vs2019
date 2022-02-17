@@ -89,7 +89,7 @@
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 67);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(448, 504);
+            this.pnlBody.Size = new System.Drawing.Size(440, 598);
             this.pnlBody.TabIndex = 3;
             // 
             // cbAuthor
@@ -111,7 +111,7 @@
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(96, 429);
+            this.btnCancel.Location = new System.Drawing.Point(96, 521);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(146, 42);
             this.btnCancel.TabIndex = 12;
@@ -126,8 +126,9 @@
             this.txtboxCtitle.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxCtitle.ForeColor = System.Drawing.Color.Gray;
             this.txtboxCtitle.Location = new System.Drawing.Point(35, 153);
+            this.txtboxCtitle.Multiline = true;
             this.txtboxCtitle.Name = "txtboxCtitle";
-            this.txtboxCtitle.Size = new System.Drawing.Size(367, 25);
+            this.txtboxCtitle.Size = new System.Drawing.Size(367, 117);
             this.txtboxCtitle.TabIndex = 14;
             // 
             // btnSave
@@ -139,7 +140,7 @@
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(259, 429);
+            this.btnSave.Location = new System.Drawing.Point(259, 521);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(143, 42);
             this.btnSave.TabIndex = 11;
@@ -155,7 +156,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(29, 352);
+            this.label6.Location = new System.Drawing.Point(29, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(183, 25);
             this.label6.TabIndex = 28;
@@ -167,7 +168,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(29, 187);
+            this.label5.Location = new System.Drawing.Point(29, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 25);
             this.label5.TabIndex = 28;
@@ -191,7 +192,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(29, 249);
+            this.label4.Location = new System.Drawing.Point(29, 341);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(198, 25);
             this.label4.TabIndex = 31;
@@ -229,9 +230,9 @@
             this.dptDatefiled.CustomFormat = "dd/MM/yyyy";
             this.dptDatefiled.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dptDatefiled.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dptDatefiled.Location = new System.Drawing.Point(35, 212);
+            this.dptDatefiled.Location = new System.Drawing.Point(35, 304);
             this.dptDatefiled.Name = "dptDatefiled";
-            this.dptDatefiled.Size = new System.Drawing.Size(369, 29);
+            this.dptDatefiled.Size = new System.Drawing.Size(367, 29);
             this.dptDatefiled.TabIndex = 23;
             this.dptDatefiled.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
             // 
@@ -240,15 +241,15 @@
             this.dptApprovaldate.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dptApprovaldate.CalendarForeColor = System.Drawing.Color.Gray;
             this.dptApprovaldate.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dptApprovaldate.CustomFormat = "";
+            this.dptApprovaldate.CustomFormat = "dd/MM/yyyy";
             this.dptApprovaldate.Enabled = false;
             this.dptApprovaldate.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dptApprovaldate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dptApprovaldate.Location = new System.Drawing.Point(35, 380);
+            this.dptApprovaldate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dptApprovaldate.Location = new System.Drawing.Point(35, 472);
             this.dptApprovaldate.Name = "dptApprovaldate";
             this.dptApprovaldate.Size = new System.Drawing.Size(369, 29);
             this.dptApprovaldate.TabIndex = 23;
-            this.dptApprovaldate.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dptApprovaldate.Value = new System.DateTime(2020, 12, 1, 0, 0, 0, 0);
             // 
             // textBox5
             // 
@@ -257,7 +258,7 @@
             this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(35, 159);
+            this.textBox5.Location = new System.Drawing.Point(35, 251);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(367, 25);
@@ -268,7 +269,7 @@
             this.rbProgress.AutoSize = true;
             this.rbProgress.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbProgress.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.rbProgress.Location = new System.Drawing.Point(186, 314);
+            this.rbProgress.Location = new System.Drawing.Point(186, 406);
             this.rbProgress.Name = "rbProgress";
             this.rbProgress.Size = new System.Drawing.Size(173, 29);
             this.rbProgress.TabIndex = 25;
@@ -280,7 +281,7 @@
             this.rbApproved.AutoSize = true;
             this.rbApproved.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbApproved.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.rbApproved.Location = new System.Drawing.Point(33, 314);
+            this.rbApproved.Location = new System.Drawing.Point(33, 406);
             this.rbApproved.Name = "rbApproved";
             this.rbApproved.Size = new System.Drawing.Size(147, 29);
             this.rbApproved.TabIndex = 24;
@@ -293,7 +294,7 @@
             this.txtboxCregno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxCregno.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxCregno.ForeColor = System.Drawing.Color.Gray;
-            this.txtboxCregno.Location = new System.Drawing.Point(35, 277);
+            this.txtboxCregno.Location = new System.Drawing.Point(35, 369);
             this.txtboxCregno.Name = "txtboxCregno";
             this.txtboxCregno.Size = new System.Drawing.Size(369, 25);
             this.txtboxCregno.TabIndex = 21;
@@ -316,7 +317,7 @@
             this.textBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox13.Enabled = false;
             this.textBox13.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox13.Location = new System.Drawing.Point(35, 389);
+            this.textBox13.Location = new System.Drawing.Point(35, 481);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(369, 25);
@@ -329,7 +330,7 @@
             this.textBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(35, 221);
+            this.textBox11.Location = new System.Drawing.Point(35, 313);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(367, 25);
@@ -355,7 +356,7 @@
             this.textBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(35, 283);
+            this.textBox9.Location = new System.Drawing.Point(35, 375);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(369, 25);
@@ -381,7 +382,7 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(448, 67);
+            this.pnlTitle.Size = new System.Drawing.Size(440, 67);
             this.pnlTitle.TabIndex = 2;
             // 
             // txtboxId
@@ -391,7 +392,6 @@
             this.txtboxId.ReadOnly = true;
             this.txtboxId.Size = new System.Drawing.Size(41, 27);
             this.txtboxId.TabIndex = 3;
-            this.txtboxId.Visible = false;
             // 
             // lblNewCopyright
             // 
@@ -418,7 +418,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 571);
+            this.ClientSize = new System.Drawing.Size(440, 665);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlTitle);
             this.MaximizeBox = false;

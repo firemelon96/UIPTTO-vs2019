@@ -46,7 +46,7 @@
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCopyright)).BeginInit();
@@ -124,6 +124,7 @@
             this.btnDelCopyright.Text = "DELETE";
             this.btnDelCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnDelCopyright.UseVisualStyleBackColor = false;
+            this.btnDelCopyright.Click += new System.EventHandler(this.btnDelCopyright_Click);
             // 
             // btnEditCopyright
             // 
@@ -199,7 +200,7 @@
             this.title,
             this.college,
             this.author,
-            this.birthday,
+            this.date_filed,
             this.reg_no,
             this.status});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -246,13 +247,12 @@
             // 
             // title
             // 
-            this.title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.title.DataPropertyName = "title";
             this.title.HeaderText = "Name of the material";
             this.title.MinimumWidth = 6;
             this.title.Name = "title";
             this.title.ReadOnly = true;
-            this.title.Width = 302;
             // 
             // college
             // 
@@ -266,19 +266,23 @@
             // 
             // author
             // 
+            this.author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.author.DataPropertyName = "author";
             this.author.HeaderText = "Author";
             this.author.MinimumWidth = 6;
             this.author.Name = "author";
             this.author.ReadOnly = true;
+            this.author.Width = 138;
             // 
-            // birthday
+            // date_filed
             // 
-            this.birthday.DataPropertyName = "date_filed";
-            this.birthday.HeaderText = "Date filed";
-            this.birthday.MinimumWidth = 6;
-            this.birthday.Name = "birthday";
-            this.birthday.ReadOnly = true;
+            this.date_filed.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.date_filed.DataPropertyName = "date_filed";
+            this.date_filed.HeaderText = "Date filed";
+            this.date_filed.MinimumWidth = 6;
+            this.date_filed.Name = "date_filed";
+            this.date_filed.ReadOnly = true;
+            this.date_filed.Width = 176;
             // 
             // reg_no
             // 
@@ -337,7 +341,7 @@
         private DataGridViewTextBoxColumn title;
         private DataGridViewTextBoxColumn college;
         private DataGridViewTextBoxColumn author;
-        private DataGridViewTextBoxColumn birthday;
+        private DataGridViewTextBoxColumn date_filed;
         private DataGridViewTextBoxColumn reg_no;
         private DataGridViewTextBoxColumn status;
     }

@@ -13,7 +13,7 @@ namespace UIPTTO_DATABASE.Models
         [Column("c_Id")]
         public int CId { get; set; }
         [Column("c_Title")]
-        [StringLength(50)]
+        [StringLength(255)]
         public string? CTitle { get; set; }
         [Column("c_Status")]
         [StringLength(15)]

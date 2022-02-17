@@ -29,237 +29,186 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addTradmarkForm));
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtboxTitle = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pnlBody = new System.Windows.Forms.Panel();
-            this.dtpNextFilingDAU = new System.Windows.Forms.DateTimePicker();
-            this.dtpCORExpiration = new System.Windows.Forms.DateTimePicker();
-            this.dtpApprovalDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpDateFiled = new System.Windows.Forms.DateTimePicker();
-            this.txtboxRegistrationNo = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dptDatefiled = new System.Windows.Forms.DateTimePicker();
+            this.txtboxTtitle = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblNewTrademark = new System.Windows.Forms.Label();
             this.pbTrademark = new System.Windows.Forms.PictureBox();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.txtTregno = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dtpTappr = new System.Windows.Forms.DateTimePicker();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dtpTnxt = new System.Windows.Forms.DateTimePicker();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.dtpTCOR = new System.Windows.Forms.DateTimePicker();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrademark)).BeginInit();
             this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Silver;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(411, 354);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnCancel.Size = new System.Drawing.Size(202, 53);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.TabStop = false;
-            this.btnCancel.Text = "CANCEL";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(631, 354);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnSave.Size = new System.Drawing.Size(168, 53);
-            this.btnSave.TabIndex = 7;
-            this.btnSave.TabStop = false;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox11.Enabled = false;
-            this.textBox11.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(436, 197);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(363, 43);
-            this.textBox11.TabIndex = 4;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox13.Enabled = false;
-            this.textBox13.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox13.Location = new System.Drawing.Point(436, 282);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(363, 43);
-            this.textBox13.TabIndex = 4;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(35, 197);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(363, 43);
-            this.textBox9.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(35, 282);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(363, 43);
-            this.textBox3.TabIndex = 4;
-            // 
-            // txtboxTitle
-            // 
-            this.txtboxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxTitle.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxTitle.Location = new System.Drawing.Point(35, 23);
-            this.txtboxTitle.Name = "txtboxTitle";
-            //this.txtboxTitle.PlaceholderText = "Name of the Material/Publication";
-            this.txtboxTitle.Size = new System.Drawing.Size(764, 43);
-            this.txtboxTitle.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(35, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(764, 43);
-            this.textBox2.TabIndex = 4;
-            // 
             // pnlBody
             // 
             this.pnlBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(229)))), ((int)(((byte)(230)))));
-            this.pnlBody.Controls.Add(this.dtpNextFilingDAU);
-            this.pnlBody.Controls.Add(this.dtpCORExpiration);
-            this.pnlBody.Controls.Add(this.dtpApprovalDate);
-            this.pnlBody.Controls.Add(this.dtpDateFiled);
             this.pnlBody.Controls.Add(this.btnCancel);
             this.pnlBody.Controls.Add(this.btnSave);
-            this.pnlBody.Controls.Add(this.textBox11);
-            this.pnlBody.Controls.Add(this.textBox13);
-            this.pnlBody.Controls.Add(this.txtboxRegistrationNo);
-            this.pnlBody.Controls.Add(this.textBox9);
-            this.pnlBody.Controls.Add(this.textBox3);
+            this.pnlBody.Controls.Add(this.txtTregno);
             this.pnlBody.Controls.Add(this.textBox5);
-            this.pnlBody.Controls.Add(this.txtboxTitle);
-            this.pnlBody.Controls.Add(this.textBox2);
+            this.pnlBody.Controls.Add(this.label3);
+            this.pnlBody.Controls.Add(this.label6);
+            this.pnlBody.Controls.Add(this.label2);
+            this.pnlBody.Controls.Add(this.label1);
+            this.pnlBody.Controls.Add(this.label5);
+            this.pnlBody.Controls.Add(this.label4);
+            this.pnlBody.Controls.Add(this.dtpTCOR);
+            this.pnlBody.Controls.Add(this.dtpTnxt);
+            this.pnlBody.Controls.Add(this.textBox7);
+            this.pnlBody.Controls.Add(this.dtpTappr);
+            this.pnlBody.Controls.Add(this.textBox6);
+            this.pnlBody.Controls.Add(this.dptDatefiled);
+            this.pnlBody.Controls.Add(this.textBox3);
+            this.pnlBody.Controls.Add(this.txtboxTtitle);
+            this.pnlBody.Controls.Add(this.textBox1);
+            this.pnlBody.Controls.Add(this.textBox4);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 67);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(847, 436);
+            this.pnlBody.Size = new System.Drawing.Size(456, 549);
             this.pnlBody.TabIndex = 9;
             // 
-            // dtpNextFilingDAU
+            // label3
             // 
-            this.dtpNextFilingDAU.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpNextFilingDAU.CustomFormat = "";
-            this.dtpNextFilingDAU.Enabled = false;
-            this.dtpNextFilingDAU.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpNextFilingDAU.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNextFilingDAU.Location = new System.Drawing.Point(35, 274);
-            this.dtpNextFilingDAU.Name = "dtpNextFilingDAU";
-            this.dtpNextFilingDAU.Size = new System.Drawing.Size(363, 43);
-            this.dtpNextFilingDAU.TabIndex = 5;
-            this.dtpNextFilingDAU.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(25, 388);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 25);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "COR Expiration:";
             // 
-            // dtpCORExpiration
+            // label6
             // 
-            this.dtpCORExpiration.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpCORExpiration.CustomFormat = "";
-            this.dtpCORExpiration.Enabled = false;
-            this.dtpCORExpiration.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpCORExpiration.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCORExpiration.Location = new System.Drawing.Point(436, 274);
-            this.dtpCORExpiration.Name = "dtpCORExpiration";
-            this.dtpCORExpiration.Size = new System.Drawing.Size(363, 43);
-            this.dtpCORExpiration.TabIndex = 6;
-            this.dtpCORExpiration.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(25, 136);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(281, 25);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "Registration No. Issued:";
             // 
-            // dtpApprovalDate
+            // label2
             // 
-            this.dtpApprovalDate.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpApprovalDate.CustomFormat = "";
-            this.dtpApprovalDate.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpApprovalDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpApprovalDate.Location = new System.Drawing.Point(436, 190);
-            this.dtpApprovalDate.Name = "dtpApprovalDate";
-            this.dtpApprovalDate.Size = new System.Drawing.Size(363, 43);
-            this.dtpApprovalDate.TabIndex = 4;
-            this.dtpApprovalDate.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(25, 323);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 25);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Filling of Next DAU:";
             // 
-            // dtpDateFiled
+            // label1
             // 
-            this.dtpDateFiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDateFiled.CustomFormat = "";
-            this.dtpDateFiled.Font = new System.Drawing.Font("Gotham", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDateFiled.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDateFiled.Location = new System.Drawing.Point(35, 190);
-            this.dtpDateFiled.Name = "dtpDateFiled";
-            this.dtpDateFiled.Size = new System.Drawing.Size(363, 43);
-            this.dtpDateFiled.TabIndex = 3;
-            this.dtpDateFiled.Value = new System.DateTime(2022, 1, 28, 0, 0, 0, 0);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(25, 258);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 25);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Approval date: ";
             // 
-            // txtboxRegistrationNo
+            // label5
             // 
-            this.txtboxRegistrationNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxRegistrationNo.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxRegistrationNo.Location = new System.Drawing.Point(35, 105);
-            this.txtboxRegistrationNo.Name = "txtboxRegistrationNo";
-            //this.txtboxRegistrationNo.PlaceholderText = "Registration No. Issued";
-            this.txtboxRegistrationNo.Size = new System.Drawing.Size(764, 43);
-            this.txtboxRegistrationNo.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(25, 196);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 25);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Date Filed:";
             // 
-            // textBox5
+            // label4
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(35, 114);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(764, 43);
-            this.textBox5.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(25, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(396, 25);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Name of the material/publication:";
+            // 
+            // dptDatefiled
+            // 
+            this.dptDatefiled.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptDatefiled.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dptDatefiled.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dptDatefiled.CustomFormat = "dd/MM/yyyy";
+            this.dptDatefiled.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dptDatefiled.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dptDatefiled.Location = new System.Drawing.Point(31, 221);
+            this.dptDatefiled.Name = "dptDatefiled";
+            this.dptDatefiled.Size = new System.Drawing.Size(390, 29);
+            this.dptDatefiled.TabIndex = 35;
+            this.dptDatefiled.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
+            // 
+            // txtboxTtitle
+            // 
+            this.txtboxTtitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxTtitle.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxTtitle.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxTtitle.Location = new System.Drawing.Point(31, 30);
+            this.txtboxTtitle.Multiline = true;
+            this.txtboxTtitle.Name = "txtboxTtitle";
+            this.txtboxTtitle.Size = new System.Drawing.Size(391, 96);
+            this.txtboxTtitle.TabIndex = 34;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(31, 230);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(390, 25);
+            this.textBox1.TabIndex = 33;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(32, 108);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(390, 25);
+            this.textBox4.TabIndex = 32;
             // 
             // lblNewTrademark
             // 
@@ -290,14 +239,154 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(847, 67);
+            this.pnlTitle.Size = new System.Drawing.Size(456, 67);
             this.pnlTitle.TabIndex = 8;
+            // 
+            // txtTregno
+            // 
+            this.txtTregno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTregno.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTregno.ForeColor = System.Drawing.Color.Gray;
+            this.txtTregno.Location = new System.Drawing.Point(31, 164);
+            this.txtTregno.Name = "txtTregno";
+            this.txtTregno.Size = new System.Drawing.Size(391, 25);
+            this.txtTregno.TabIndex = 39;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Location = new System.Drawing.Point(31, 170);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(391, 25);
+            this.textBox5.TabIndex = 38;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(31, 295);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(390, 25);
+            this.textBox3.TabIndex = 33;
+            // 
+            // dtpTappr
+            // 
+            this.dtpTappr.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTappr.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dtpTappr.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dtpTappr.CustomFormat = "dd/MM/yyyy";
+            this.dtpTappr.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTappr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTappr.Location = new System.Drawing.Point(31, 286);
+            this.dtpTappr.Name = "dtpTappr";
+            this.dtpTappr.Size = new System.Drawing.Size(390, 29);
+            this.dtpTappr.TabIndex = 35;
+            this.dtpTappr.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox6.Enabled = false;
+            this.textBox6.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox6.Location = new System.Drawing.Point(31, 360);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(390, 25);
+            this.textBox6.TabIndex = 33;
+            // 
+            // dtpTnxt
+            // 
+            this.dtpTnxt.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTnxt.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dtpTnxt.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dtpTnxt.CustomFormat = "dd/MM/yyyy";
+            this.dtpTnxt.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTnxt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTnxt.Location = new System.Drawing.Point(31, 351);
+            this.dtpTnxt.Name = "dtpTnxt";
+            this.dtpTnxt.Size = new System.Drawing.Size(390, 29);
+            this.dtpTnxt.TabIndex = 35;
+            this.dtpTnxt.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox7.Enabled = false;
+            this.textBox7.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox7.Location = new System.Drawing.Point(31, 425);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(390, 25);
+            this.textBox7.TabIndex = 33;
+            // 
+            // dtpTCOR
+            // 
+            this.dtpTCOR.CalendarFont = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTCOR.CalendarForeColor = System.Drawing.Color.Gray;
+            this.dtpTCOR.CalendarTitleForeColor = System.Drawing.Color.Gray;
+            this.dtpTCOR.CustomFormat = "dd/MM/yyyy";
+            this.dtpTCOR.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpTCOR.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTCOR.Location = new System.Drawing.Point(31, 416);
+            this.dtpTCOR.Name = "dtpTCOR";
+            this.dtpTCOR.Size = new System.Drawing.Size(390, 29);
+            this.dtpTCOR.TabIndex = 35;
+            this.dtpTCOR.Value = new System.DateTime(2020, 1, 28, 0, 0, 0, 0);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(115, 478);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(146, 42);
+            this.btnCancel.TabIndex = 41;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(278, 478);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(143, 42);
+            this.btnSave.TabIndex = 40;
+            this.btnSave.TabStop = false;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // addTradmarkForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 503);
+            this.ClientSize = new System.Drawing.Size(456, 616);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlTitle);
             this.MaximizeBox = false;
@@ -314,24 +403,29 @@
         }
 
         #endregion
-
-        private Button btnCancel;
-        private Button btnSave;
-        private TextBox textBox11;
-        private TextBox textBox13;
-        private TextBox textBox9;
-        private TextBox textBox3;
-        private TextBox txtboxTitle;
-        private TextBox textBox2;
         private Panel pnlBody;
-        private TextBox txtboxRegistrationNo;
-        private TextBox textBox5;
-        private Label lblNewTrademark;
         private PictureBox pbTrademark;
         private Panel pnlTitle;
-        private DateTimePicker dtpNextFilingDAU;
-        private DateTimePicker dtpCORExpiration;
-        private DateTimePicker dtpApprovalDate;
-        private DateTimePicker dtpDateFiled;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Label label5;
+        private Label label4;
+        public DateTimePicker dptDatefiled;
+        public TextBox txtboxTtitle;
+        private TextBox textBox1;
+        private TextBox textBox4;
+        private Label label6;
+        public TextBox txtTregno;
+        private TextBox textBox5;
+        public DateTimePicker dtpTCOR;
+        public DateTimePicker dtpTnxt;
+        private TextBox textBox7;
+        public DateTimePicker dtpTappr;
+        private TextBox textBox6;
+        private TextBox textBox3;
+        private Button btnCancel;
+        public Button btnSave;
+        public Label lblNewTrademark;
     }
 }

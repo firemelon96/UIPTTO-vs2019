@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UIPTTO_DATABASE.childForms.popupForm;
+using UIPTTO_DATABASE.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace UIPTTO_DATABASE.childForms
 {
     public partial class trademarkForm : Form
     {
+        private mainDBContext db = new mainDBContext();
+        TrademarkTable trademark = new TrademarkTable();
         public trademarkForm()
         {
             InitializeComponent();
