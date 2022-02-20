@@ -10,6 +10,7 @@ namespace UIPTTO_DATABASE.Models
     [Table("user_Table")]
     public partial class UserTable
     {
+        [Key]
         [Column("u_Id")]
         public int UId { get; set; }
         [Column("u_Fname")]
@@ -36,5 +37,11 @@ namespace UIPTTO_DATABASE.Models
         [StringLength(10)]
         [Unicode(false)]
         public string? UGender { get; set; }
+
+        public string? PFullname {
+            get {
+                return UFname + " " + ULname;
+            }
+        }
     }
 }
