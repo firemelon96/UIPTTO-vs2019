@@ -425,6 +425,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addIssnForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addIssnForm";
             this.pnlBody.ResumeLayout(false);
             this.pnlBody.PerformLayout();

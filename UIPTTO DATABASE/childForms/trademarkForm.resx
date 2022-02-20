@@ -82,7 +82,7 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDelCopyright.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDelTrademark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAcpJREFUSEu11b9LlVEcx3GdQqEhksCh5hpaAjdtDP+AGlr6AU6N4aaTk2M06yAK
@@ -96,7 +96,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnEditCopyright.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEditTrademark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
         0AAADdABEGw9BwAAAaBJREFUSEu11k8rBHEcx/E9yAFR2pyUA+IgnDwAB1HKwVPAzdlhS54AeQJuDoqD
@@ -109,7 +109,7 @@
         8tL5l1gH140KP9qwl9FAQwz0AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnAddCopyright.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAddTrademark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
         0AAADdABEGw9BwAAAcFJREFUSEut1b0vBEEcxvEjQuKtJRJRoaJFiRIFiUoEhWioNP4WiUIiEoXCn6CT

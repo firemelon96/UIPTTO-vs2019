@@ -424,6 +424,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addCopyrightForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Copyright Form";
             this.Load += new System.EventHandler(this.addCopyrightForm_Load);
             this.pnlBody.ResumeLayout(false);

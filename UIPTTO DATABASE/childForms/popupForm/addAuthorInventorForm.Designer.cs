@@ -417,6 +417,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addAuthorInventorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add new Profile";
             this.Load += new System.EventHandler(this.addAuthorInventorForm_Load);
             this.panel1.ResumeLayout(false);

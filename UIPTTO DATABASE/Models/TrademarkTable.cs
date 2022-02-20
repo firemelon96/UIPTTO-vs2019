@@ -15,6 +15,9 @@ namespace UIPTTO_DATABASE.Models
         [Column("t_Title")]
         [StringLength(255)]
         public string? TTitle { get; set; }
+        [Column("t_Status")]
+        [StringLength(15)]
+        public string? tStatus { get; set; }
         [Column("t_DateFiled", TypeName = "date")]
         public DateTime? TDateFiled { get; set; }
         [Column("t_RegNo")]

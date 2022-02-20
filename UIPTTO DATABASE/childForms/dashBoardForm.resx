@@ -61,7 +61,7 @@
   <data name="pbPatents.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAADQJJREFUeF7t3QesLFUdx3GsiL0iGlQUe4sNWyzYJYoFYzfW2MGuUVFi7EZNCMZG
+        DAAACwwBP0AiyAAADQJJREFUeF7t3QesLFUdx3GsiL0iGlQUe4sNWyzYJYoFYzfW2MGuUVFi7EZNCMZG
         YokNxa6xK9HYwYa9YMHeURAFfZbf9/rOcu7Z35xzdmf27u7Zeclnecyb/5nZ+d875bTZY9euXTl3lTfI
         l+SXcupoML+Vr8g75L5ydnE56MUulDsLSf3vaMf8VB4uLh9zcwuPFrcDo53xMXF5mUu64BhxGx3trE/I
         npLmZ2bx/3CtdRsbLcfxEudnLuEvB4rbyGi5nirbEjar8JeTxG1gtFz/kgvItqTNgo+DxBUe/F0Ol4Pl
@@ -146,7 +146,7 @@
   <data name="pbIsbn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAB19JREFUeF7t3WvInnMcB/BtTps5JlOOLVmIsg2jyRvCixGRsFCYTJpiScihVsJI
+        vQAADr0BR/uQrQAAB19JREFUeF7t3WvInnMcB/BtTps5JlOOLVmIsg2jyRvCixGRsFCYTJpiScihVsJI
         y5k3vJAcajkkDRNp4oVkDmOtiZHDyOQwNny/67nq32/f+/9c931f/+f+Xc/9u+tT63df/8N1fXc/z3W6
         n2vCli1bxtqLsAnWwSpYDkvgLDgQVJvQI1ks7AP4r4Ot8C5cA9NAtQ9dkMXCXgcVrvU7PA6zQPUTapDF
         wuoGnFoGx4PqL2TIYmG9BFxh0BNB9RsEWSysn4DpQ5gCqu9gyGJh/QZMa+FQUP2HhCwW1kTA9AfMBzVG
@@ -184,7 +184,7 @@
   <data name="pbTrademarks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAADfJJREFUeF7t3QeQLEUBxnHEiBHMomWOZU6YM2YtEcqAmBHKhLlUxJwxUIplQlAx
+        DAAACwwBP0AiyAAADfJJREFUeF7t3QeQLEUBxnHEiBHMomWOZU6YM2YtEcqAmBHKhLlUxJwxUIplQlAx
         J8wBwzNhBhFBURTBgKACgoj5Gb7/erP09n49O7M7PTP3rq/qV/VeT3dP6LsJHbfavHnzluCicjN5gDxf
         DpRD5VvyczlZTpc/yVnyR/mdHC/flS/IwfJieajcXi4jbl/rig1cB64uFMTrhUL8s/y3Y/+Q78sBsodc
         X9yxjJoNHKlbyovkO+IKpA9HCb9U95RziTvOUbGBI8Ftd2d5ofxU3AUf0i9lP9lVrijuHAZnAwfGxXqV

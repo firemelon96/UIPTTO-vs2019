@@ -26,9 +26,37 @@ namespace UIPTTO_DATABASE.childForms
             lblcopyrightCount.Text = copyright.ToString();
         }
 
+        void patentsCount()
+        {
+            var patent = db.PatentTables.Count();
+            patentCount.Text = patent.ToString();
+        }
+
+        void issnCOunt()
+        {
+            var issn = db.IssnTables.Count();
+            ISSNCount.Text = issn.ToString();
+        }
+
+        void isbnCOunt()
+        {
+            var isbn = db.IsbnTables.Count();
+            ISBNCount.Text = isbn.ToString();
+        }
+
+        void trademarkCOunt()
+        {
+            var trademark = db.TrademarkTables.Count();
+            trademarkCounts.Text = trademark.ToString();
+        }
+
         private void dashBoardForm_Load(object sender, EventArgs e)
         {
             copyrightCount();
+            patentsCount();
+            issnCOunt();
+            isbnCOunt();
+            trademarkCOunt();
         }
     }
 }

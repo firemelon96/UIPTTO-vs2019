@@ -79,5 +79,10 @@ namespace UIPTTO_DATABASE
         {
             openChildForm(new userForm());
         }
+
+        private void mainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

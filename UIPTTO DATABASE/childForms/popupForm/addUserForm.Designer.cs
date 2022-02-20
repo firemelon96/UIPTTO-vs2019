@@ -122,7 +122,6 @@
             this.txtboxPassword.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxPassword.Location = new System.Drawing.Point(436, 188);
             this.txtboxPassword.Name = "txtboxPassword";
-            //this.txtboxPassword.PlaceholderText = "Password";
             this.txtboxPassword.Size = new System.Drawing.Size(363, 43);
             this.txtboxPassword.TabIndex = 5;
             // 
@@ -132,7 +131,6 @@
             this.txtboxLastName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxLastName.Location = new System.Drawing.Point(436, 23);
             this.txtboxLastName.Name = "txtboxLastName";
-            //this.txtboxLastName.PlaceholderText = "Last Name";
             this.txtboxLastName.Size = new System.Drawing.Size(363, 43);
             this.txtboxLastName.TabIndex = 2;
             // 
@@ -178,7 +176,6 @@
             this.txtboxUsername.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxUsername.Location = new System.Drawing.Point(35, 188);
             this.txtboxUsername.Name = "txtboxUsername";
-            //this.txtboxUsername.PlaceholderText = "Username";
             this.txtboxUsername.Size = new System.Drawing.Size(363, 43);
             this.txtboxUsername.TabIndex = 4;
             // 
@@ -200,7 +197,6 @@
             this.txtboxEmail.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxEmail.Location = new System.Drawing.Point(35, 105);
             this.txtboxEmail.Name = "txtboxEmail";
-            //this.txtboxEmail.PlaceholderText = "Email";
             this.txtboxEmail.Size = new System.Drawing.Size(764, 43);
             this.txtboxEmail.TabIndex = 3;
             // 
@@ -222,7 +218,6 @@
             this.txtboxFirstName.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtboxFirstName.Location = new System.Drawing.Point(35, 23);
             this.txtboxFirstName.Name = "txtboxFirstName";
-            //this.txtboxFirstName.PlaceholderText = "First Name";
             this.txtboxFirstName.Size = new System.Drawing.Size(363, 43);
             this.txtboxFirstName.TabIndex = 1;
             // 
@@ -317,6 +312,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addUserForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addUserForm";
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();

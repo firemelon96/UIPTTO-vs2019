@@ -424,6 +424,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "addPatentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addPatentForm";
             this.pnlBody.ResumeLayout(false);
             this.pnlBody.PerformLayout();
