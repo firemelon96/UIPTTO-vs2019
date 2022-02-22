@@ -37,7 +37,6 @@
             this.lblCopyright = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxSearchCopyright = new System.Windows.Forms.TextBox();
-            this.lblSearchCopyright = new System.Windows.Forms.Label();
             this.btnDelCopyright = new System.Windows.Forms.Button();
             this.btnEditCopyright = new System.Windows.Forms.Button();
             this.btnAddCopyright = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.date_filed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCopyright)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +58,11 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(867, 107);
+            this.textBox2.Location = new System.Drawing.Point(809, 107);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(235, 29);
             this.textBox2.TabIndex = 9;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblCopyright
             // 
@@ -90,22 +91,11 @@
             this.txtboxSearchCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxSearchCopyright.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxSearchCopyright.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxSearchCopyright.Location = new System.Drawing.Point(867, 99);
+            this.txtboxSearchCopyright.Location = new System.Drawing.Point(809, 99);
             this.txtboxSearchCopyright.Name = "txtboxSearchCopyright";
             this.txtboxSearchCopyright.Size = new System.Drawing.Size(235, 29);
             this.txtboxSearchCopyright.TabIndex = 8;
-            // 
-            // lblSearchCopyright
-            // 
-            this.lblSearchCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSearchCopyright.AutoSize = true;
-            this.lblSearchCopyright.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSearchCopyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchCopyright.Location = new System.Drawing.Point(722, 107);
-            this.lblSearchCopyright.Name = "lblSearchCopyright";
-            this.lblSearchCopyright.Size = new System.Drawing.Size(135, 31);
-            this.lblSearchCopyright.TabIndex = 11;
-            this.lblSearchCopyright.Text = "SEARCH";
+            this.txtboxSearchCopyright.TextChanged += new System.EventHandler(this.txtboxSearchCopyright_TextChanged);
             // 
             // btnDelCopyright
             // 
@@ -282,7 +272,7 @@
             this.date_filed.MinimumWidth = 6;
             this.date_filed.Name = "date_filed";
             this.date_filed.ReadOnly = true;
-            this.date_filed.Width = 176;
+            this.date_filed.Width = 161;
             // 
             // reg_no
             // 
@@ -304,16 +294,31 @@
             this.status.ReadOnly = true;
             this.status.Width = 129;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1060, 97);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(42, 42);
+            this.btnSearch.TabIndex = 17;
+            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // copyrightForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dgvCopyright);
             this.Controls.Add(this.btnDelCopyright);
             this.Controls.Add(this.btnEditCopyright);
             this.Controls.Add(this.btnAddCopyright);
-            this.Controls.Add(this.lblSearchCopyright);
             this.Controls.Add(this.txtboxSearchCopyright);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCopyright);
@@ -332,7 +337,6 @@
         private Label lblCopyright;
         private Label label2;
         private TextBox txtboxSearchCopyright;
-        private Label lblSearchCopyright;
         private Button btnDelCopyright;
         private Button btnEditCopyright;
         private Button btnAddCopyright;
@@ -344,5 +348,6 @@
         private DataGridViewTextBoxColumn date_filed;
         private DataGridViewTextBoxColumn reg_no;
         private DataGridViewTextBoxColumn status;
+        public Button btnSearch;
     }
 }

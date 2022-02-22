@@ -33,14 +33,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxUsername = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linklblCreate = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -100,15 +102,14 @@
             this.panel2.Size = new System.Drawing.Size(495, 25);
             this.panel2.TabIndex = 1;
             // 
-            // textBox1
+            // txtboxUsername
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(61, 185);
-            this.textBox1.Name = "textBox1";
-            //this.textBox1.PlaceholderText = "Username";
-            this.textBox1.Size = new System.Drawing.Size(363, 43);
-            this.textBox1.TabIndex = 1;
+            this.txtboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxUsername.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxUsername.Location = new System.Drawing.Point(61, 185);
+            this.txtboxUsername.Name = "txtboxUsername";
+            this.txtboxUsername.Size = new System.Drawing.Size(363, 43);
+            this.txtboxUsername.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -121,17 +122,15 @@
             this.textBox2.Size = new System.Drawing.Size(363, 43);
             this.textBox2.TabIndex = 2;
             // 
-            // textBox3
+            // txtboxPassword
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(61, 270);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            //this.textBox3.PlaceholderText = "Password";
-            this.textBox3.Size = new System.Drawing.Size(363, 43);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.txtboxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxPassword.Font = new System.Drawing.Font("Gotham", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtboxPassword.Location = new System.Drawing.Point(61, 270);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.Size = new System.Drawing.Size(363, 43);
+            this.txtboxPassword.TabIndex = 2;
+            this.txtboxPassword.UseSystemPasswordChar = true;
             // 
             // textBox4
             // 
@@ -144,19 +143,19 @@
             this.textBox4.Size = new System.Drawing.Size(363, 43);
             this.textBox4.TabIndex = 4;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Gotham Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(285, 402);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 56);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Gotham Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(285, 402);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(141, 56);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
@@ -168,6 +167,7 @@
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label3
             // 
@@ -178,17 +178,37 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Don\'t Have an Account?";
             // 
-            // linkLabel1
+            // linklblCreate
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.Location = new System.Drawing.Point(61, 422);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(179, 25);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "CREATE NOW";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linklblCreate.AutoSize = true;
+            this.linklblCreate.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linklblCreate.Location = new System.Drawing.Point(61, 422);
+            this.linklblCreate.Name = "linklblCreate";
+            this.linklblCreate.Size = new System.Drawing.Size(179, 25);
+            this.linklblCreate.TabIndex = 6;
+            this.linklblCreate.TabStop = true;
+            this.linklblCreate.Text = "CREATE NOW";
+            this.linklblCreate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(61, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "USERNAME:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(61, 242);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 25);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "PASSWORD:";
             // 
             // loginForm
             // 
@@ -196,13 +216,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(495, 510);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.linklblCreate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxUsername);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -224,13 +246,15 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txtboxUsername;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtboxPassword;
         private TextBox textBox4;
-        private Button button1;
+        private Button btnLogin;
         private CheckBox checkBox1;
         private Label label3;
-        private LinkLabel linkLabel1;
+        private LinkLabel linklblCreate;
+        private Label label4;
+        private Label label5;
     }
 }

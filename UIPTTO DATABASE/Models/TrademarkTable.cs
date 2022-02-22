@@ -15,9 +15,6 @@ namespace UIPTTO_DATABASE.Models
         [Column("t_Title")]
         [StringLength(255)]
         public string? TTitle { get; set; }
-        [Column("t_Status")]
-        [StringLength(15)]
-        public string? tStatus { get; set; }
         [Column("t_DateFiled", TypeName = "date")]
         public DateTime? TDateFiled { get; set; }
         [Column("t_RegNo")]
@@ -28,5 +25,8 @@ namespace UIPTTO_DATABASE.Models
         public DateTime? TDaufiling { get; set; }
         [Column("t_ExpiryDate", TypeName = "date")]
         public DateTime? TExpiryDate { get; set; }
+        [Column("t_Status")]
+        [StringLength(15)]
+        public string? TStatus { get; set; }
     }
 }

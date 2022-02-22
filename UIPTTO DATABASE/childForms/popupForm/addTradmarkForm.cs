@@ -35,11 +35,11 @@ namespace UIPTTO_DATABASE.childForms.popupForm
             tradmarkTable.TExpiryDate = dtpTCOR.Value;
             if (rbApproved.Checked)
             {
-                tradmarkTable.tStatus = "Approved";
+                tradmarkTable.TStatus = "Approved";
             }
             else
             {
-                tradmarkTable.tStatus = "On Progress";
+                tradmarkTable.TStatus = "On Progress";
             }
 
             //kapag naconvert na sa integer, iccheck ko. if(profileTable.PId == 0)

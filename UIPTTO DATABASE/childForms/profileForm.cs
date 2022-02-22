@@ -53,15 +53,25 @@ namespace UIPTTO_DATABASE.childForms
 
         public void populateDgv()
         {
-            var authors = from p in db.ProfileTables
-                          select new {
-                              id = p.PId,
-                              fullname = p.PFname + " " + p.PLname,
-                              email = p.PEmail,
-                              college = p.PCollege,
-                              birthday = p.PDob,
-                              gender = p.PGender
-                          };
+            var authors = db.ProfileTables
+                .Select(p => new {
+                    id = p.PId,
+                    fullname = p.PFname + " " + p.PLname,
+                    email = p.PEmail,
+                    college = p.PCollege,
+                    birthday = p.PDob,
+                    gender = p.PGender
+                });
+
+            //var authors = from p in db.ProfileTables
+                //          select new {
+                  //            id = p.PId,
+                 //             fullname = p.PFname + " " + p.PLname,
+                 //             email = p.PEmail,
+                 //             college = p.PCollege,
+                 //             birthday = p.PDob,
+                 //             gender = p.PGender
+                  //        };
             dgvProfile.DataSource = authors.ToList();
             
         }
@@ -130,9 +140,62 @@ namespace UIPTTO_DATABASE.childForms
                     //db.ProfileTables.Attach(ProfileTable);
                 db.ProfileTables.Remove(ProfileTable);                    
                 db.SaveChanges();
+                txtboxSearchProfile.Text = "";
                     
                 MessageBox.Show("Author Record Deleted Successfully!");
                 populateDgv();
+            }
+        }
+
+        private void txtboxSearchProfile_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxSearchProfile.Text))
+            {
+                populateDgv();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxSearchProfile.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                var joinTbles = db.ProfileTables
+                .Select(p => new {
+                    p.PId,
+                    p.PFname,
+                    p.PLname,
+                    p.PEmail,
+                    p.PCollege,
+                    p.PDob,
+                    p.PGender
+                })
+                .Where(x => x.PFname.Contains(txtboxSearchProfile.Text)
+                || x.PLname.Contains(txtboxSearchProfile.Text)
+                || x.PCollege.Contains(txtboxSearchProfile.Text)
+                || x.PEmail.Contains(txtboxSearchProfile.Text))
+                .Select(x => new {
+                    id = x.PId,
+                    fullname = x.PFname + " " + x.PLname,
+                    email = x.PEmail,
+                    college = x.PCollege,
+                    birthday = x.PDob,
+                    gender = x.PGender
+                });
+
+                    dgvProfile.DataSource = joinTbles.ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
             }
         }
     }

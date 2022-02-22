@@ -62,6 +62,7 @@ namespace UIPTTO_DATABASE.childForms
                 }
                 );
             dgvIssn.DataSource = joinTbles.ToList();
+            txtboxIssnSearch.Text = "";
         }
 
         private void issnForm_Load(object sender, EventArgs e)
@@ -144,9 +145,68 @@ namespace UIPTTO_DATABASE.childForms
             {
                 db.IssnTables.Remove(issn);
                 db.SaveChanges();
+                txtboxIssnSearch.Text = "";
 
                 MessageBox.Show("ISSN Record Deleted Successfully!");
                 populateDgv();
+            }
+        }
+
+        private void txtboxIssnSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxIssnSearch.Text))
+            {
+                populateDgv();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxIssnSearch.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                    var joinTbles = db.IssnTables
+                .Join(
+                db.ProfileTables,
+                i => i.PId,
+                p => p.PId,
+                (i, p) => new {
+                    i.IId,
+                    i.ITitle,
+                    p.PCollege,
+                    p.PFname,
+                    p.PLname,
+                    p.PFullname,
+                    i.IDateFiled,
+                    i.IIssuedNo,
+                    i.IStatus
+                })
+                .Where(x => x.ITitle.Contains(txtboxIssnSearch.Text)
+                || x.PCollege.Contains(txtboxIssnSearch.Text)
+                || x.PFname.Contains(txtboxIssnSearch.Text)
+                || x.PLname.Contains(txtboxIssnSearch.Text))
+                .Select(x => new {
+                    iid = x.IId,
+                    title = x.ITitle,
+                    college = x.PCollege,
+                    author = x.PFullname,
+                    date_filed = x.IDateFiled,
+                    reg_no = x.IIssuedNo,
+                    status = x.IStatus
+                });
+
+                    dgvIssn.DataSource = joinTbles.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
             }
         }
     }

@@ -15,9 +15,6 @@ namespace UIPTTO_DATABASE.Models
         [Column("c_Title")]
         [StringLength(255)]
         public string? CTitle { get; set; }
-        [Column("c_Status")]
-        [StringLength(15)]
-        public string? CStatus { get; set; }
         [Column("c_DateFiled", TypeName = "date")]
         public DateTime? CDateFiled { get; set; }
         [Column("c_RegNo")]
@@ -26,6 +23,9 @@ namespace UIPTTO_DATABASE.Models
         public DateTime? CApprDate { get; set; }
         [Column("p_Id")]
         public int? PId { get; set; }
+        [Column("c_Status")]
+        [StringLength(15)]
+        public string? CStatus { get; set; }
 
         [ForeignKey(nameof(PId))]
         [InverseProperty(nameof(ProfileTable.CopyrightTables))]

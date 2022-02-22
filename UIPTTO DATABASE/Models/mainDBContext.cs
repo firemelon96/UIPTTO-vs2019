@@ -28,10 +28,8 @@ namespace UIPTTO_DATABASE.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#pragma warning disable CS1030 // #warning directive
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-7549PRF\\SQLEXPRESS;Initial CAtalog=mainDB;Integrated Security=True;ConnectRetryCount=0");
-#pragma warning restore CS1030 // #warning directive
+                optionsBuilder.UseSqlServer("data source=DESKTOP-7549PRF\\SQLEXPRESS;initial catalog=mainDb;integrated security=True;ConnectRetryCount=0");
             }
         }
 
@@ -77,8 +75,6 @@ namespace UIPTTO_DATABASE.Models
             modelBuilder.Entity<UserTable>(entity =>
             {
                 entity.Property(e => e.UGender).IsFixedLength();
-
-                entity.Property(e => e.UId).ValueGeneratedOnAdd();
             });
 
             OnModelCreatingPartial(modelBuilder);

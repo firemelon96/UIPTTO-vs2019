@@ -42,6 +42,7 @@ namespace UIPTTO_DATABASE.childForms
                 }
                 );
             dgvPatents.DataSource = patentjoin.ToList();
+            txtboxSearchPatents.Text = "";
         }
 
         private void patentForm_Load(object sender, EventArgs e)
@@ -146,6 +147,65 @@ namespace UIPTTO_DATABASE.childForms
             {
                 this.btnEditPatent.Enabled = true;
                 this.btnDelPatent.Enabled = true;
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxSearchPatents.Text.Trim()))
+                {
+                    populatepatentDgv();
+                }
+                else
+                {
+                    var joinTbles = db.PatentTables
+                .Join(
+                db.ProfileTables,
+                pt => pt.PId,
+                p => p.PId,
+                (pt, p) => new {
+                    pt.PtId,
+                    pt.PtTitle,
+                    p.PCollege,
+                    p.PFname,
+                    p.PLname,
+                    p.PFullname,
+                    pt.PtDateFiled,
+                    pt.PtRegNo,
+                    pt.PtStatus
+                })
+                .Where(x => x.PtTitle.Contains(txtboxSearchPatents.Text)
+                || x.PCollege.Contains(txtboxSearchPatents.Text)
+                || x.PFname.Contains(txtboxSearchPatents.Text)
+                || x.PLname.Contains(txtboxSearchPatents.Text))
+                .Select(x => new {
+                    ptid = x.PtId,
+                    inventionTitle = x.PtTitle,
+                    college = x.PCollege,
+                    inventor = x.PFullname,
+                    date_filed = x.PtDateFiled,
+                    app_no = x.PtRegNo,
+                    status = x.PtStatus
+                });
+
+                    dgvPatents.DataSource = joinTbles.ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
+            }
+        }
+
+        private void txtboxSearchPatents_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxSearchPatents.Text))
+            {
+                populatepatentDgv();
             }
         }
     }

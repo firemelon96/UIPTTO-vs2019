@@ -44,10 +44,10 @@
             this.college = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblSearchProfile = new System.Windows.Forms.Label();
             this.btnAddAuthor = new System.Windows.Forms.Button();
             this.btnEditAuthor = new System.Windows.Forms.Button();
             this.btnDelAuthor = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,10 +78,11 @@
             this.txtboxSearchProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxSearchProfile.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxSearchProfile.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxSearchProfile.Location = new System.Drawing.Point(867, 101);
+            this.txtboxSearchProfile.Location = new System.Drawing.Point(806, 101);
             this.txtboxSearchProfile.Name = "txtboxSearchProfile";
             this.txtboxSearchProfile.Size = new System.Drawing.Size(235, 29);
             this.txtboxSearchProfile.TabIndex = 2;
+            this.txtboxSearchProfile.TextChanged += new System.EventHandler(this.txtboxSearchProfile_TextChanged);
             // 
             // textBox2
             // 
@@ -89,7 +90,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(867, 109);
+            this.textBox2.Location = new System.Drawing.Point(806, 109);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(235, 29);
             this.textBox2.TabIndex = 2;
@@ -213,18 +214,6 @@
             this.gender.Name = "gender";
             this.gender.ReadOnly = true;
             // 
-            // lblSearchProfile
-            // 
-            this.lblSearchProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSearchProfile.AutoSize = true;
-            this.lblSearchProfile.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSearchProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchProfile.Location = new System.Drawing.Point(722, 109);
-            this.lblSearchProfile.Name = "lblSearchProfile";
-            this.lblSearchProfile.Size = new System.Drawing.Size(135, 31);
-            this.lblSearchProfile.TabIndex = 4;
-            this.lblSearchProfile.Text = "SEARCH";
-            // 
             // btnAddAuthor
             // 
             this.btnAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -283,15 +272,30 @@
             this.btnDelAuthor.UseVisualStyleBackColor = false;
             this.btnDelAuthor.Click += new System.EventHandler(this.btnDelAuthor_Click);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1060, 99);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(42, 42);
+            this.btnSearch.TabIndex = 18;
+            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // profileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelAuthor);
             this.Controls.Add(this.btnEditAuthor);
             this.Controls.Add(this.btnAddAuthor);
-            this.Controls.Add(this.lblSearchProfile);
             this.Controls.Add(this.dgvProfile);
             this.Controls.Add(this.txtboxSearchProfile);
             this.Controls.Add(this.label2);
@@ -312,7 +316,6 @@
         private Label label2;
         private TextBox txtboxSearchProfile;
         private TextBox textBox2;
-        private Label lblSearchProfile;
         private Button btnAddAuthor;
         public DataGridView dgvProfile;
         private DataGridViewTextBoxColumn id;
@@ -323,5 +326,6 @@
         private DataGridViewTextBoxColumn gender;
         private Button btnEditAuthor;
         private Button btnDelAuthor;
+        public Button btnSearch;
     }
 }

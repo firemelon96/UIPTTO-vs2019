@@ -63,6 +63,7 @@ namespace UIPTTO_DATABASE.childForms
                 }
                 );
             dgvIsbn.DataSource = joinTbles.ToList();
+            txtboxSearchIsbn.Text = "";
         }
 
         private void isbnForm_Load(object sender, EventArgs e)
@@ -145,9 +146,69 @@ namespace UIPTTO_DATABASE.childForms
             {
                 db.IsbnTables.Remove(isbnTable);
                 db.SaveChanges();
+                txtboxSearchIsbn.Text = "";
 
                 MessageBox.Show("ISBN Record Deleted Successfully!");
                 populateDgv();
+            }
+        }
+
+        private void txtboxSearchIsbn_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxSearchIsbn.Text))
+            {
+                populateDgv();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxSearchIsbn.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                    var joinTbles = db.IsbnTables
+                .Join(
+                db.ProfileTables,
+                ib => ib.PId,
+                p => p.PId,
+                (ib, p) => new {
+                    ib.IsId,
+                    ib.IsTitle,
+                    p.PCollege,
+                    p.PFname,
+                    p.PLname,
+                    p.PFullname,
+                    ib.IsDateFiled,
+                    ib.IsIssuedNo,
+                    ib.IsStatus
+                })
+                .Where(x => x.IsTitle.Contains(txtboxSearchIsbn.Text)
+                || x.PCollege.Contains(txtboxSearchIsbn.Text)
+                || x.PFname.Contains(txtboxSearchIsbn.Text)
+                || x.PLname.Contains(txtboxSearchIsbn.Text))
+                .Select(x => new {
+                    ibid = x.IsId,
+                    title = x.IsTitle,
+                    college = x.PCollege,
+                    author = x.PFullname,
+                    date_filed = x.IsDateFiled,
+                    reg_no = x.IsIssuedNo,
+                    status = x.IsStatus
+                });
+
+                    dgvIsbn.DataSource = joinTbles.ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
             }
         }
     }

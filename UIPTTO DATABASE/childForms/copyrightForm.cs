@@ -62,6 +62,7 @@ namespace UIPTTO_DATABASE.childForms
                 }
                 );
             dgvCopyright.DataSource = joinTbles.ToList();
+            txtboxSearchCopyright.Text = "";
         }
 
         private void copyrightForm_Load(object sender, EventArgs e)
@@ -144,8 +145,73 @@ namespace UIPTTO_DATABASE.childForms
             {
                 db.CopyrightTables.Remove(copyrightTable);
                 db.SaveChanges();
+                txtboxSearchCopyright.Text = "";
 
                 MessageBox.Show("Author Record Deleted Successfully!");
+                populateDgv();
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxSearchCopyright.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                    var joinTbles = db.CopyrightTables
+                .Join(
+                db.ProfileTables,
+                c => c.PId,
+                p => p.PId,
+                (c, p) => new {
+                    c.CId,
+                    c.CTitle,
+                    p.PCollege,
+                    p.PFname,
+                    p.PLname,
+                    p.PFullname,
+                    c.CDateFiled,
+                    c.CRegNo,
+                    c.CStatus
+                })
+                .Where(x => x.CTitle.Contains(txtboxSearchCopyright.Text) 
+                || x.PCollege.Contains(txtboxSearchCopyright.Text)
+                || x.PFname.Contains(txtboxSearchCopyright.Text)
+                || x.PLname.Contains(txtboxSearchCopyright.Text))
+                .Select(x=> new {
+                    cid = x.CId,
+                    title = x.CTitle,
+                    college = x.PCollege,
+                    author = x.PFullname,
+                    date_filed = x.CDateFiled,
+                    reg_no = x.CRegNo,
+                    status = x.CStatus
+                });
+                    
+                    dgvCopyright.DataSource = joinTbles.ToList();
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
+            }
+        }
+
+        private void txtboxSearchCopyright_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxSearchCopyright.Text))
+            {
                 populateDgv();
             }
         }

@@ -21,11 +21,11 @@ namespace UIPTTO_DATABASE.Models
         public int? IIssuedNo { get; set; }
         [Column("i_ApprDate", TypeName = "date")]
         public DateTime? IApprDate { get; set; }
+        [Column("p_Id")]
+        public int? PId { get; set; }
         [Column("i_Status")]
         [StringLength(15)]
         public string? IStatus { get; set; }
-        [Column("p_Id")]
-        public int? PId { get; set; }
 
         [ForeignKey(nameof(PId))]
         [InverseProperty(nameof(ProfileTable.IssnTables))]

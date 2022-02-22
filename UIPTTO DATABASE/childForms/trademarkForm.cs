@@ -37,18 +37,30 @@ namespace UIPTTO_DATABASE.childForms
 
         public void populateDgv()
         {
-            var trademark = from t in db.TrademarkTables
-                          select new {
-                              tid = t.TId,
-                              title = t.TTitle ,
-                              reg_no = t.TRegNo,
-                              date_filed = t.TDateFiled,
-                              appr_date = t.TApprDate,
-                              status = t.tStatus,
-                              nxt_filing = t.TDaufiling,
-                              cor_expe = t.TExpiryDate
-                          };
+            var trademark = db.TrademarkTables
+                .Select(t => new {
+                    tid = t.TId,
+                    title = t.TTitle ,
+                    reg_no = t.TRegNo,
+                    date_filed = t.TDateFiled,
+                    appr_date = t.TApprDate,
+                    status = t.TStatus,
+                    nxt_filing = t.TDaufiling,
+                    cor_expe = t.TExpiryDate
+                });
+            //var trademark = from t in db.TrademarkTables
+                        //  select new {
+                         //     tid = t.TId,
+                         //     title = t.TTitle ,
+                         //     reg_no = t.TRegNo,
+                        //      date_filed = t.TDateFiled,
+                        //      appr_date = t.TApprDate,
+                        //      status = t.TStatus,
+                        //      nxt_filing = t.TDaufiling,
+                        //      cor_expe = t.TExpiryDate
+                        //  };
             dgvTrademark.DataSource = trademark.ToList();
+            textBox1.Text = "";
 
         }
 
@@ -75,7 +87,7 @@ namespace UIPTTO_DATABASE.childForms
                     addTradmark.dtpTappr.Value = Convert.ToDateTime( prof.TApprDate);
                     addTradmark.dtpTnxt.Value = Convert.ToDateTime( prof.TDaufiling);
                     addTradmark.dtpTCOR.Value = Convert.ToDateTime(prof.TExpiryDate);
-                    if (prof.tStatus == "Approved")
+                    if (prof.TStatus == "Approved")
                     {
                         addTradmark.rbApproved.Checked = true;
                     }
@@ -96,6 +108,7 @@ namespace UIPTTO_DATABASE.childForms
             {
                 db.TrademarkTables.Remove(trademark);
                 db.SaveChanges();
+                textBox1.Text = "";
 
                 MessageBox.Show("Trademark Record Deleted Successfully!");
                 populateDgv();
@@ -114,6 +127,59 @@ namespace UIPTTO_DATABASE.childForms
             {
                 this.btnEditTrademark.Enabled = false;
                 this.btnDelTrademark.Enabled = false;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                populateDgv();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(textBox1.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                    var joinTbles = db.TrademarkTables
+                    .Select(t => new {
+                    t.TId,
+                    t.TTitle,
+                    t.TRegNo,
+                    t.TDateFiled,
+                    t.TApprDate,
+                    t.TStatus,
+                    t.TDaufiling,
+                    t.TExpiryDate
+                })
+                .Where(x => x.TTitle.Contains(textBox1.Text)
+                || x.TStatus.Contains(textBox1.Text))
+                .Select(x => new {
+                    tid = x.TId,
+                    title = x.TTitle,
+                    reg_no = x.TRegNo,
+                    date_filed = x.TDateFiled,
+                    appr_date = x.TApprDate,
+                    status = x.TStatus,
+                    nxt_filing = x.TDaufiling,
+                    cor_expe = x.TExpiryDate
+                });
+
+                    dgvTrademark.DataSource = joinTbles.ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
             }
         }
     }

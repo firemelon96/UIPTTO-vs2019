@@ -38,9 +38,10 @@ namespace UIPTTO_DATABASE.Models
         [Column("p_DOB", TypeName = "date")]
         public DateTime? PDob { get; set; }
 
-        public string? PFullname 
+        public string PFullname 
         {
-            get {
+            get 
+            {
                 return PFname + " " + PLname;
             }
         }

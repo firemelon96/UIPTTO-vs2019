@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace UIPTTO_DATABASE.Models
 {
-    [Keyless]
     [Table("user_Table")]
     public partial class UserTable
     {
@@ -37,8 +36,7 @@ namespace UIPTTO_DATABASE.Models
         [StringLength(10)]
         [Unicode(false)]
         public string? UGender { get; set; }
-
-        public string? PFullname {
+        public string UFullname {
             get {
                 return UFname + " " + ULname;
             }

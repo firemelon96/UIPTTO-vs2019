@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblSearchUser = new System.Windows.Forms.Label();
             this.txtboxUserSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUserTitle = new System.Windows.Forms.Label();
@@ -42,8 +41,10 @@
             this.btnEditUser = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.uid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,24 +52,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblSearchUser
-            // 
-            this.lblSearchUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSearchUser.AutoSize = true;
-            this.lblSearchUser.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSearchUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchUser.Location = new System.Drawing.Point(722, 107);
-            this.lblSearchUser.Name = "lblSearchUser";
-            this.lblSearchUser.Size = new System.Drawing.Size(135, 31);
-            this.lblSearchUser.TabIndex = 11;
-            this.lblSearchUser.Text = "SEARCH";
-            // 
             // txtboxUserSearch
             // 
             this.txtboxUserSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxUserSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxUserSearch.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxUserSearch.Location = new System.Drawing.Point(867, 99);
+            this.txtboxUserSearch.Location = new System.Drawing.Point(806, 102);
             this.txtboxUserSearch.Name = "txtboxUserSearch";
             this.txtboxUserSearch.Size = new System.Drawing.Size(235, 29);
             this.txtboxUserSearch.TabIndex = 8;
@@ -102,7 +91,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Gotham", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(867, 107);
+            this.textBox2.Location = new System.Drawing.Point(806, 110);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(235, 29);
             this.textBox2.TabIndex = 9;
@@ -198,6 +187,7 @@
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.uid,
             this.fullname,
+            this.email,
             this.username,
             this.password,
             this.gender,
@@ -235,6 +225,21 @@
             this.dgvUsers.TabIndex = 12;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1060, 100);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(42, 42);
+            this.btnSearch.TabIndex = 18;
+            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // uid
             // 
             this.uid.DataPropertyName = "uid";
@@ -251,6 +256,14 @@
             this.fullname.MinimumWidth = 6;
             this.fullname.Name = "fullname";
             this.fullname.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "Email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
             // 
             // username
             // 
@@ -289,11 +302,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 837);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelUser);
             this.Controls.Add(this.btnEditUser);
             this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.dgvUsers);
-            this.Controls.Add(this.lblSearchUser);
             this.Controls.Add(this.txtboxUserSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblUserTitle);
@@ -308,7 +321,6 @@
         }
 
         #endregion
-        private Label lblSearchUser;
         private TextBox txtboxUserSearch;
         private Label label2;
         private Label lblUserTitle;
@@ -317,8 +329,10 @@
         private Button btnEditUser;
         private Button btnAddUser;
         public DataGridView dgvUsers;
+        public Button btnSearch;
         private DataGridViewTextBoxColumn uid;
         private DataGridViewTextBoxColumn fullname;
+        private DataGridViewTextBoxColumn email;
         private DataGridViewTextBoxColumn username;
         private DataGridViewTextBoxColumn password;
         private DataGridViewTextBoxColumn gender;

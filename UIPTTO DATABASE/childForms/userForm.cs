@@ -32,7 +32,10 @@ namespace UIPTTO_DATABASE.childForms
 
         private void txtboxUserSearch_TextChanged(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtboxUserSearch.Text))
+            {
+                populateDgv();
+            }
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
@@ -46,18 +49,30 @@ namespace UIPTTO_DATABASE.childForms
 
         public void populateDgv()
         {
-            var user = from u in db.UserTables
-                          select new {
-                              uid = u.UId,
-                              fullname = u.UFname + " " + u.ULname,
-                              email = u.UEmail,
-                              college = u.UCollege,
-                              username = u.UUsername,
-                              password = u.UPassword,
-                              birthday = u.UDob,
-                              gender = u.UGender
-                          };
+            var user = db.UserTables
+                .Select(u => new {
+                    uid = u.UId,
+                    fullname = u.UFname + " " + u.ULname,
+                    email = u.UEmail,
+                    college = u.UCollege,
+                    username = u.UUsername,
+                    password = u.UPassword,
+                    birthday = u.UDob,
+                    gender = u.UGender
+                });
+            //var user = from u in db.UserTables
+                          //select new {
+                            //  uid = u.UId,
+                            //  fullname = u.UFname + " " + u.ULname,
+                           //  email = u.UEmail,
+                           //   college = u.UCollege,
+                           //   username = u.UUsername,
+                           //   password = u.UPassword,
+                           //   birthday = u.UDob,
+                            //  gender = u.UGender
+                         // };
             dgvUsers.DataSource = user.ToList();
+            txtboxUserSearch.Text = "";
 
         }
 
@@ -117,9 +132,54 @@ namespace UIPTTO_DATABASE.childForms
             {
                 db.UserTables.Remove(userTable);
                 db.SaveChanges();
+                txtboxUserSearch.Text = "";
 
                 MessageBox.Show("Author Record Deleted Successfully!");
                 populateDgv();
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtboxUserSearch.Text.Trim()))
+                {
+                    populateDgv();
+                }
+                else
+                {
+                    var joinTbles = db.UserTables
+                    .Select(u => new {
+                        u.UId,
+                        u.UFname,
+                        u.ULname,
+                        u.UEmail,
+                        u.UCollege,
+                        u.UUsername,
+                        u.UPassword,
+                        u.UDob,
+                        u.UGender
+                    })
+                    .Where(x => x.UFname.Contains(txtboxUserSearch.Text)
+                    || x.ULname.Contains(txtboxUserSearch.Text))
+                    .Select(x => new {
+                        uid = x.UId,
+                        fullname = x.UFname + " " + x.ULname,
+                        email = x.UEmail,
+                        college = x.UCollege,
+                        birthday = x.UDob,
+                        gender = x.UGender
+                    });
+
+                    dgvUsers.DataSource = joinTbles.ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message.ToString());
+
             }
         }
     }
