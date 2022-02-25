@@ -12,14 +12,14 @@ using UIPTTO_DATABASE.Models;
 namespace UIPTTO_DATABASE.Migrations
 {
     [DbContext(typeof(mainDBContext))]
-    [Migration("20220220022600_pkuid")]
-    partial class pkuid
+    [Migration("20220225042843_usertype")]
+    partial class usertype
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.1")
+                .HasAnnotation("ProductVersion", "6.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -265,15 +265,15 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("int")
                         .HasColumnName("t_RegNo");
 
+                    b.Property<string>("TStatus")
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("t_Status");
+
                     b.Property<string>("TTitle")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("t_Title");
-
-                    b.Property<string>("tStatus")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)")
-                        .HasColumnName("t_Status");
 
                     b.HasKey("TId");
 
@@ -282,6 +282,13 @@ namespace UIPTTO_DATABASE.Migrations
 
             modelBuilder.Entity("UIPTTO_DATABASE.Models.UserTable", b =>
                 {
+                    b.Property<int>("UId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("u_Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UId"), 1L, 1);
+
                     b.Property<string>("UCollege")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
@@ -308,13 +315,6 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnName("u_Gender")
                         .IsFixedLength();
 
-                    b.Property<int>("UId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("u_Id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UId"), 1L, 1);
-
                     b.Property<string>("ULname")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
@@ -325,10 +325,18 @@ namespace UIPTTO_DATABASE.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("u_Password");
 
+                    b.Property<string>("UType")
+                        .HasMaxLength(10)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(10)")
+                        .HasColumnName("u_type");
+
                     b.Property<string>("UUsername")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("u_Username");
+
+                    b.HasKey("UId");
 
                     b.ToTable("user_Table");
                 });

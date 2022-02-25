@@ -36,6 +36,12 @@ namespace UIPTTO_DATABASE.Models
         [StringLength(10)]
         [Unicode(false)]
         public string? UGender { get; set; }
+
+        [Column("u_type")]
+        [StringLength(10)]
+        [Unicode(false)]
+        public string? UType { get; set; }
+
         public string UFullname {
             get {
                 return UFname + " " + ULname;

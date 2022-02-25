@@ -43,12 +43,12 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pbUIPTTOlogo = new System.Windows.Forms.PictureBox();
+            this.lbltype = new System.Windows.Forms.Label();
             this.pnlMainTitleBar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.panelBody = new System.Windows.Forms.Panel();
             this.pnlFooter = new System.Windows.Forms.Panel();
-            this.lbltype = new System.Windows.Forms.Label();
+            this.panelBody = new System.Windows.Forms.Panel();
             this.pnlSideNavigation.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).BeginInit();
@@ -308,6 +308,20 @@
             this.pbUIPTTOlogo.TabIndex = 2;
             this.pbUIPTTOlogo.TabStop = false;
             // 
+            // lbltype
+            // 
+            this.lbltype.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltype.AutoSize = true;
+            this.lbltype.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbltype.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbltype.Location = new System.Drawing.Point(35, 130);
+            this.lbltype.Name = "lbltype";
+            this.lbltype.Size = new System.Drawing.Size(208, 23);
+            this.lbltype.TabIndex = 0;
+            this.lbltype.Text = "Logged in as Admin";
+            // 
             // pnlMainTitleBar
             // 
             this.pnlMainTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -316,18 +330,20 @@
             this.pnlMainTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMainTitleBar.Location = new System.Drawing.Point(280, 0);
             this.pnlMainTitleBar.Name = "pnlMainTitleBar";
-            this.pnlMainTitleBar.Size = new System.Drawing.Size(1132, 61);
+            this.pnlMainTitleBar.Size = new System.Drawing.Size(1132, 65);
             this.pnlMainTitleBar.TabIndex = 1;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1057, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(1070, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblUsername
             // 
@@ -342,15 +358,6 @@
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Hello, USER";
             // 
-            // panelBody
-            // 
-            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(280, 61);
-            this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1132, 852);
-            this.panelBody.TabIndex = 2;
-            this.panelBody.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBody_Paint);
-            // 
             // pnlFooter
             // 
             this.pnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -360,19 +367,14 @@
             this.pnlFooter.Size = new System.Drawing.Size(1132, 24);
             this.pnlFooter.TabIndex = 3;
             // 
-            // lbltype
+            // panelBody
             // 
-            this.lbltype.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbltype.AutoSize = true;
-            this.lbltype.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbltype.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbltype.Location = new System.Drawing.Point(35, 130);
-            this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(208, 23);
-            this.lbltype.TabIndex = 0;
-            this.lbltype.Text = "Logged in as Admin";
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(280, 65);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1132, 848);
+            this.panelBody.TabIndex = 2;
+            this.panelBody.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBody_Paint);
             // 
             // mainForm
             // 
@@ -414,11 +416,11 @@
         private Button btnPatents;
         private Button btnCopyright;
         private Button btnProfile;
-        private Panel panelBody;
         private Panel pnlFooter;
         private PictureBox pictureBox1;
         private Panel pnlNav;
         public Label lblUsername;
         public Label lbltype;
+        private Panel panelBody;
     }
 }

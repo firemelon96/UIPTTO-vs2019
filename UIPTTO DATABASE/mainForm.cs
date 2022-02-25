@@ -23,6 +23,15 @@ namespace UIPTTO_DATABASE
             pnlNav.Left = btnDashboard.Left;
             btnDashboard.BackColor = Color.FromArgb(172, 24, 24);
         }
+
+        public void getusertype()
+        {
+            if (lbltype.Text == "user")
+            {
+                btnBackup.Visible = false; 
+            }
+        }
+
         //childform setting
         private void openChildForm(Form childForm)
         {
@@ -157,6 +166,7 @@ namespace UIPTTO_DATABASE
             //lblUsername.Text = 
             openChildForm(new dashBoardForm());
             //lblUsername.Text = "changeee";
+            getusertype();
             
         }
 
@@ -208,6 +218,18 @@ namespace UIPTTO_DATABASE
         private void btnUser_Leave(object sender, EventArgs e)
         {
             btnUser.BackColor = Color.FromArgb(121, 0, 0);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pnlLogo.Visible = true;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            loginForm login = new loginForm();
+            login.ShowDialog();
         }
     }
 }

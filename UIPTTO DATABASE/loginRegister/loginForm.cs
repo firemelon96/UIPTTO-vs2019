@@ -30,26 +30,34 @@ namespace UIPTTO_DATABASE.loginRegister
         {
             try
             {
-                var user = db.UserTables.Where(u => u.UUsername == txtboxUsername.Text && u.UPassword == txtboxPassword.Text).FirstOrDefault();
-                if (user != null)
+                if (txtboxUsername.Text != string.Empty || txtboxPassword.Text != string.Empty)
                 {
-                    //textBox_username.Clear();
-                    //textBox_password.Clear();
-                    checkBox1.Checked = false;
-                    
-                    this.Hide();
-                    
-                    mainForm mainForm = new mainForm();
-                    mainForm.lblUsername.Text = "Hello " + user.UUsername;
-                    //mainForm.lbltype.Text = "Logged in as " + user.UCollege;
-                    mainForm.ShowDialog();
+                    var user = db.UserTables.Where(u => u.UUsername == txtboxUsername.Text && u.UPassword == txtboxPassword.Text).FirstOrDefault();
+                    if (user != null)
+                    {
+                        //textBox_username.Clear();
+                        //textBox_password.Clear();
+                        checkBox1.Checked = false;
+
+                        this.Hide();
+
+                        mainForm mainForm = new mainForm();
+                        mainForm.lblUsername.Text = "Hello " + user.UUsername;
+                        mainForm.lbltype.Text = user.UType;
+                        mainForm.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username and Password doesnt exist");
+                        //textBox_username.Focus();
+                        //textBox_username.SelectAll();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Username and Password dont exist");
-                    //textBox_username.Focus();
-                    //textBox_username.SelectAll();
+                    MessageBox.Show("Enter Value in all Fields");
                 }
+                
             }
             catch (Exception)
             {
