@@ -30,14 +30,18 @@ namespace UIPTTO_DATABASE.loginRegister
         {
             try
             {
-                if (db.UserTables.Where(u => u.UUsername == txtboxUsername.Text && u.UPassword == txtboxPassword.Text).Count() > 0)
+                var user = db.UserTables.Where(u => u.UUsername == txtboxUsername.Text && u.UPassword == txtboxPassword.Text).FirstOrDefault();
+                if (user != null)
                 {
                     //textBox_username.Clear();
                     //textBox_password.Clear();
                     checkBox1.Checked = false;
-
+                    
                     this.Hide();
+                    
                     mainForm mainForm = new mainForm();
+                    mainForm.lblUsername.Text = "Hello " + user.UUsername;
+                    //mainForm.lbltype.Text = "Logged in as " + user.UCollege;
                     mainForm.ShowDialog();
                 }
                 else

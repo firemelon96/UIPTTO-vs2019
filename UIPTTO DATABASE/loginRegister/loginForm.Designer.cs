@@ -246,9 +246,7 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Panel panel2;
-        private TextBox txtboxUsername;
         private TextBox textBox2;
-        private TextBox txtboxPassword;
         private TextBox textBox4;
         private Button btnLogin;
         private CheckBox checkBox1;
@@ -256,5 +254,7 @@
         private LinkLabel linklblCreate;
         private Label label4;
         private Label label5;
+        public TextBox txtboxUsername;
+        public TextBox txtboxPassword;
     }
 }

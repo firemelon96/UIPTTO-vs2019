@@ -204,7 +204,7 @@
             this.lblDashPatents.AutoSize = true;
             this.lblDashPatents.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashPatents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDashPatents.Location = new System.Drawing.Point(14, 111);
+            this.lblDashPatents.Location = new System.Drawing.Point(49, 111);
             this.lblDashPatents.Name = "lblDashPatents";
             this.lblDashPatents.Size = new System.Drawing.Size(123, 25);
             this.lblDashPatents.TabIndex = 1;
@@ -251,7 +251,7 @@
             this.lblDashIssn.AutoSize = true;
             this.lblDashIssn.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashIssn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDashIssn.Location = new System.Drawing.Point(16, 111);
+            this.lblDashIssn.Location = new System.Drawing.Point(109, 111);
             this.lblDashIssn.Name = "lblDashIssn";
             this.lblDashIssn.Size = new System.Drawing.Size(67, 25);
             this.lblDashIssn.TabIndex = 1;
@@ -298,7 +298,7 @@
             this.lblDashIsbn.AutoSize = true;
             this.lblDashIsbn.Font = new System.Drawing.Font("Gotham", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashIsbn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDashIsbn.Location = new System.Drawing.Point(14, 111);
+            this.lblDashIsbn.Location = new System.Drawing.Point(101, 111);
             this.lblDashIsbn.Name = "lblDashIsbn";
             this.lblDashIsbn.Size = new System.Drawing.Size(69, 25);
             this.lblDashIsbn.TabIndex = 1;

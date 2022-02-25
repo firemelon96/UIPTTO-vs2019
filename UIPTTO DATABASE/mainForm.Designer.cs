@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.pnlSideNavigation = new System.Windows.Forms.Panel();
+            this.pnlNav = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.panelBody = new System.Windows.Forms.Panel();
             this.pnlFooter = new System.Windows.Forms.Panel();
+            this.lbltype = new System.Windows.Forms.Label();
             this.pnlSideNavigation.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).BeginInit();
@@ -57,6 +59,7 @@
             // pnlSideNavigation
             // 
             this.pnlSideNavigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlSideNavigation.Controls.Add(this.pnlNav);
             this.pnlSideNavigation.Controls.Add(this.btnUser);
             this.pnlSideNavigation.Controls.Add(this.btnBackup);
             this.pnlSideNavigation.Controls.Add(this.btnReport);
@@ -73,6 +76,14 @@
             this.pnlSideNavigation.Name = "pnlSideNavigation";
             this.pnlSideNavigation.Size = new System.Drawing.Size(280, 913);
             this.pnlSideNavigation.TabIndex = 0;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.White;
+            this.pnlNav.Location = new System.Drawing.Point(0, 265);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(5, 100);
+            this.pnlNav.TabIndex = 3;
             // 
             // btnUser
             // 
@@ -92,6 +103,7 @@
             this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUser.UseVisualStyleBackColor = true;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            this.btnUser.Leave += new System.EventHandler(this.btnUser_Leave);
             // 
             // btnBackup
             // 
@@ -102,7 +114,7 @@
             this.btnBackup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBackup.Image = ((System.Drawing.Image)(resources.GetObject("btnBackup.Image")));
             this.btnBackup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackup.Location = new System.Drawing.Point(0, 607);
+            this.btnBackup.Location = new System.Drawing.Point(0, 646);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnBackup.Size = new System.Drawing.Size(280, 57);
@@ -111,6 +123,7 @@
             this.btnBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBackup.UseVisualStyleBackColor = true;
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            this.btnBackup.Leave += new System.EventHandler(this.btnBackup_Leave);
             // 
             // btnReport
             // 
@@ -121,7 +134,7 @@
             this.btnReport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnReport.Image = global::UIPTTO_DATABASE.Properties.Resources.report2;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(0, 550);
+            this.btnReport.Location = new System.Drawing.Point(0, 589);
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnReport.Size = new System.Drawing.Size(280, 57);
@@ -130,6 +143,7 @@
             this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReport.UseVisualStyleBackColor = true;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            this.btnReport.Leave += new System.EventHandler(this.btnReport_Leave);
             // 
             // btnTrademark
             // 
@@ -140,7 +154,7 @@
             this.btnTrademark.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTrademark.Image = global::UIPTTO_DATABASE.Properties.Resources.trademark2;
             this.btnTrademark.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrademark.Location = new System.Drawing.Point(0, 493);
+            this.btnTrademark.Location = new System.Drawing.Point(0, 532);
             this.btnTrademark.Name = "btnTrademark";
             this.btnTrademark.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnTrademark.Size = new System.Drawing.Size(280, 57);
@@ -149,6 +163,7 @@
             this.btnTrademark.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrademark.UseVisualStyleBackColor = true;
             this.btnTrademark.Click += new System.EventHandler(this.btnTrademark_Click);
+            this.btnTrademark.Leave += new System.EventHandler(this.btnTrademark_Leave);
             // 
             // btnISBN
             // 
@@ -159,7 +174,7 @@
             this.btnISBN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnISBN.Image = global::UIPTTO_DATABASE.Properties.Resources.open_book2;
             this.btnISBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnISBN.Location = new System.Drawing.Point(0, 436);
+            this.btnISBN.Location = new System.Drawing.Point(0, 475);
             this.btnISBN.Name = "btnISBN";
             this.btnISBN.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnISBN.Size = new System.Drawing.Size(280, 57);
@@ -168,6 +183,7 @@
             this.btnISBN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnISBN.UseVisualStyleBackColor = true;
             this.btnISBN.Click += new System.EventHandler(this.btnISBN_Click);
+            this.btnISBN.Leave += new System.EventHandler(this.btnISBN_Leave);
             // 
             // btnISSN
             // 
@@ -178,7 +194,7 @@
             this.btnISSN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnISSN.Image = global::UIPTTO_DATABASE.Properties.Resources.bar_code2;
             this.btnISSN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnISSN.Location = new System.Drawing.Point(0, 379);
+            this.btnISSN.Location = new System.Drawing.Point(0, 418);
             this.btnISSN.Name = "btnISSN";
             this.btnISSN.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnISSN.Size = new System.Drawing.Size(280, 57);
@@ -187,6 +203,7 @@
             this.btnISSN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnISSN.UseVisualStyleBackColor = true;
             this.btnISSN.Click += new System.EventHandler(this.btnISSN_Click);
+            this.btnISSN.Leave += new System.EventHandler(this.btnISSN_Leave);
             // 
             // btnPatents
             // 
@@ -197,7 +214,7 @@
             this.btnPatents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnPatents.Image = global::UIPTTO_DATABASE.Properties.Resources.patent2;
             this.btnPatents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPatents.Location = new System.Drawing.Point(0, 322);
+            this.btnPatents.Location = new System.Drawing.Point(0, 361);
             this.btnPatents.Name = "btnPatents";
             this.btnPatents.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnPatents.Size = new System.Drawing.Size(280, 57);
@@ -206,6 +223,7 @@
             this.btnPatents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPatents.UseVisualStyleBackColor = true;
             this.btnPatents.Click += new System.EventHandler(this.btnPatents_Click);
+            this.btnPatents.Leave += new System.EventHandler(this.btnPatents_Leave);
             // 
             // btnCopyright
             // 
@@ -216,7 +234,7 @@
             this.btnCopyright.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCopyright.Image = global::UIPTTO_DATABASE.Properties.Resources.copyright2;
             this.btnCopyright.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCopyright.Location = new System.Drawing.Point(0, 265);
+            this.btnCopyright.Location = new System.Drawing.Point(0, 304);
             this.btnCopyright.Name = "btnCopyright";
             this.btnCopyright.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCopyright.Size = new System.Drawing.Size(280, 57);
@@ -225,6 +243,7 @@
             this.btnCopyright.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCopyright.UseVisualStyleBackColor = true;
             this.btnCopyright.Click += new System.EventHandler(this.btnCopyright_Click);
+            this.btnCopyright.Leave += new System.EventHandler(this.btnCopyright_Leave);
             // 
             // btnProfile
             // 
@@ -235,7 +254,7 @@
             this.btnProfile.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 208);
+            this.btnProfile.Location = new System.Drawing.Point(0, 247);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnProfile.Size = new System.Drawing.Size(280, 57);
@@ -245,6 +264,7 @@
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            this.btnProfile.Leave += new System.EventHandler(this.btnProfile_Leave);
             // 
             // btnDashboard
             // 
@@ -255,7 +275,7 @@
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDashboard.Image = global::UIPTTO_DATABASE.Properties.Resources.dashboard2;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 151);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 190);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnDashboard.Size = new System.Drawing.Size(280, 57);
@@ -264,15 +284,17 @@
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
             // 
             // pnlLogo
             // 
             this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pnlLogo.Controls.Add(this.pbUIPTTOlogo);
+            this.pnlLogo.Controls.Add(this.lbltype);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(280, 151);
+            this.pnlLogo.Size = new System.Drawing.Size(280, 190);
             this.pnlLogo.TabIndex = 0;
             // 
             // pbUIPTTOlogo
@@ -327,6 +349,7 @@
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1132, 852);
             this.panelBody.TabIndex = 2;
+            this.panelBody.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBody_Paint);
             // 
             // pnlFooter
             // 
@@ -336,6 +359,20 @@
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(1132, 24);
             this.pnlFooter.TabIndex = 3;
+            // 
+            // lbltype
+            // 
+            this.lbltype.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltype.AutoSize = true;
+            this.lbltype.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbltype.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbltype.Location = new System.Drawing.Point(35, 130);
+            this.lbltype.Name = "lbltype";
+            this.lbltype.Size = new System.Drawing.Size(208, 23);
+            this.lbltype.TabIndex = 0;
+            this.lbltype.Text = "Logged in as Admin";
             // 
             // mainForm
             // 
@@ -349,8 +386,10 @@
             this.Name = "mainForm";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainForm_FormClosing);
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.pnlSideNavigation.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
+            this.pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUIPTTOlogo)).EndInit();
             this.pnlMainTitleBar.ResumeLayout(false);
             this.pnlMainTitleBar.PerformLayout();
@@ -375,9 +414,11 @@
         private Button btnPatents;
         private Button btnCopyright;
         private Button btnProfile;
-        private Label lblUsername;
         private Panel panelBody;
         private Panel pnlFooter;
         private PictureBox pictureBox1;
+        private Panel pnlNav;
+        public Label lblUsername;
+        public Label lbltype;
     }
 }
